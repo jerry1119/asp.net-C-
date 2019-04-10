@@ -1,0 +1,6 @@
+c:\users\hejie\documents\visual studio 2015\Projects\Net加强05\02获得页面中所有职位\bin\Debug\02获得页面中所有职位.exe.config
+c:\users\hejie\documents\visual studio 2015\Projects\Net加强05\02获得页面中所有职位\bin\Debug\02获得页面中所有职位.exe
+c:\users\hejie\documents\visual studio 2015\Projects\Net加强05\02获得页面中所有职位\bin\Debug\02获得页面中所有职位.pdb
+c:\users\hejie\documents\visual studio 2015\Projects\Net加强05\02获得页面中所有职位\obj\Debug\02获得页面中所有职位.csprojResolveAssemblyReference.cache
+c:\users\hejie\documents\visual studio 2015\Projects\Net加强05\02获得页面中所有职位\obj\Debug\02获得页面中所有职位.exe
+c:\users\hejie\documents\visual studio 2015\Projects\Net加强05\02获得页面中所有职位\obj\Debug\02获得页面中所有职位.pdb

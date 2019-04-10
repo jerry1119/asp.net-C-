@@ -1,0 +1,5 @@
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强02\ProOperation\bin\Debug\ProOperation.dll
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强02\ProOperation\bin\Debug\ProOperation.pdb
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强02\ProOperation\obj\Debug\ProOperation.csprojResolveAssemblyReference.cache
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强02\ProOperation\obj\Debug\ProOperation.dll
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强02\ProOperation\obj\Debug\ProOperation.pdb

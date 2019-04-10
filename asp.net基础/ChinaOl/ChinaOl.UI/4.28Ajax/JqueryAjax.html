@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="../Js/jquery-1.7.1.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#btnGet").click(function () {
+                $.get("GetDate.ashx", {"name":"lisi","pwd":"123"},
+                    function (data) {
+                        alert(data)
+                    });
+            });
+
+            $("#btnPost").click(function () {
+                $.post("GetDate.ashx", { "name": "postlisi", "pwd": "1234" },
+                    function (data) {
+                        alert(data)
+                    });
+            });
+
+            $("#btnAjax").click(function () {
+                $.ajax({
+                    type: "GET",
+                    url: "GetDate.ashx",
+                    data: "name=jerry&pwd=12",
+                    success: function (msg) {
+                        alert(msg);
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="button" value="Get" id="btnGet" />
+    <input type="button" value="Post" id="btnPost" />
+    <input type="button" value="Ajax" id="btnAjax" />
+</body>
+</html>

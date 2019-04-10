@@ -1,0 +1,6 @@
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强04\08正则表达式匹配练习\bin\Debug\08正则表达式匹配练习.exe.config
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强04\08正则表达式匹配练习\bin\Debug\08正则表达式匹配练习.exe
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强04\08正则表达式匹配练习\bin\Debug\08正则表达式匹配练习.pdb
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强04\08正则表达式匹配练习\obj\Debug\08正则表达式匹配练习.csprojResolveAssemblyReference.cache
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强04\08正则表达式匹配练习\obj\Debug\08正则表达式匹配练习.exe
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强04\08正则表达式匹配练习\obj\Debug\08正则表达式匹配练习.pdb

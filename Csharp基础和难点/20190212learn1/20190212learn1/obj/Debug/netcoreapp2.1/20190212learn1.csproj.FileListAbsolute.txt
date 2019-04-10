@@ -1,0 +1,14 @@
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\20190212learn1\bin\Debug\netcoreapp2.1\20190212learn1.deps.json
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\20190212learn1\bin\Debug\netcoreapp2.1\20190212learn1.runtimeconfig.json
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\20190212learn1\bin\Debug\netcoreapp2.1\20190212learn1.runtimeconfig.dev.json
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\20190212learn1\bin\Debug\netcoreapp2.1\20190212learn1.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\20190212learn1\bin\Debug\netcoreapp2.1\20190212learn1.pdb
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\20190212learn1\obj\Debug\netcoreapp2.1\20190212learn1.csprojAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\20190212learn1\obj\Debug\netcoreapp2.1\20190212learn1.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\20190212learn1\obj\Debug\netcoreapp2.1\20190212learn1.RazorAssemblyInfo.cache
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\20190212learn1\obj\Debug\netcoreapp2.1\20190212learn1.RazorAssemblyInfo.cs
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\20190212learn1\obj\Debug\netcoreapp2.1\20190212learn1.AssemblyInfoInputs.cache
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\20190212learn1\obj\Debug\netcoreapp2.1\20190212learn1.AssemblyInfo.cs
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\20190212learn1\obj\Debug\netcoreapp2.1\20190212learn1.RazorTargetAssemblyInfo.cache
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\20190212learn1\obj\Debug\netcoreapp2.1\20190212learn1.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\20190212learn1\obj\Debug\netcoreapp2.1\20190212learn1.pdb

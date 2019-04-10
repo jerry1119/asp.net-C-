@@ -1,0 +1,8 @@
+c:\users\hejie\documents\visual studio 2015\Projects\MOOC\02两个相同的文本框\bin\Debug\02两个相同的文本框.exe.config
+c:\users\hejie\documents\visual studio 2015\Projects\MOOC\02两个相同的文本框\bin\Debug\02两个相同的文本框.exe
+c:\users\hejie\documents\visual studio 2015\Projects\MOOC\02两个相同的文本框\bin\Debug\02两个相同的文本框.pdb
+c:\users\hejie\documents\visual studio 2015\Projects\MOOC\02两个相同的文本框\obj\Debug\_02两个相同的文本框.Form1.resources
+c:\users\hejie\documents\visual studio 2015\Projects\MOOC\02两个相同的文本框\obj\Debug\_02两个相同的文本框.Properties.Resources.resources
+c:\users\hejie\documents\visual studio 2015\Projects\MOOC\02两个相同的文本框\obj\Debug\02两个相同的文本框.csproj.GenerateResource.Cache
+c:\users\hejie\documents\visual studio 2015\Projects\MOOC\02两个相同的文本框\obj\Debug\02两个相同的文本框.exe
+c:\users\hejie\documents\visual studio 2015\Projects\MOOC\02两个相同的文本框\obj\Debug\02两个相同的文本框.pdb

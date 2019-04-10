@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01下载网页中的图片", "01下载网页中的图片\01下载网页中的图片.csproj", "{387D4C17-63AC-4EE5-AEEB-7D8483A2A878}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02获得页面中所有职位", "02获得页面中所有职位\02获得页面中所有职位.csproj", "{92819287-58AF-4263-A0B7-AB8AFEDFC590}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03写入一个XML文件", "03写入一个XML文件\03写入一个XML文件.csproj", "{C8778E28-DDAC-4DAB-8D39-5FA9E2C3B0B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04添加带属性的XML文档", "04添加带属性的XML文件\04添加带属性的XML文档.csproj", "{76C164AF-95EA-47FF-A4F4-6ADE221B63C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05文档对象模型", "05文档对象模型\05文档对象模型.csproj", "{A217FC3A-39F0-44D7-B4F8-43B4BAA5C8BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "乘法表", "乘法表\乘法表.csproj", "{FF62F2BD-CAF4-4AEF-BF26-EBB9594E84A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{387D4C17-63AC-4EE5-AEEB-7D8483A2A878}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{387D4C17-63AC-4EE5-AEEB-7D8483A2A878}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{387D4C17-63AC-4EE5-AEEB-7D8483A2A878}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{387D4C17-63AC-4EE5-AEEB-7D8483A2A878}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92819287-58AF-4263-A0B7-AB8AFEDFC590}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92819287-58AF-4263-A0B7-AB8AFEDFC590}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92819287-58AF-4263-A0B7-AB8AFEDFC590}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92819287-58AF-4263-A0B7-AB8AFEDFC590}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8778E28-DDAC-4DAB-8D39-5FA9E2C3B0B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8778E28-DDAC-4DAB-8D39-5FA9E2C3B0B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8778E28-DDAC-4DAB-8D39-5FA9E2C3B0B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8778E28-DDAC-4DAB-8D39-5FA9E2C3B0B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76C164AF-95EA-47FF-A4F4-6ADE221B63C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76C164AF-95EA-47FF-A4F4-6ADE221B63C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76C164AF-95EA-47FF-A4F4-6ADE221B63C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76C164AF-95EA-47FF-A4F4-6ADE221B63C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A217FC3A-39F0-44D7-B4F8-43B4BAA5C8BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A217FC3A-39F0-44D7-B4F8-43B4BAA5C8BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A217FC3A-39F0-44D7-B4F8-43B4BAA5C8BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A217FC3A-39F0-44D7-B4F8-43B4BAA5C8BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF62F2BD-CAF4-4AEF-BF26-EBB9594E84A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF62F2BD-CAF4-4AEF-BF26-EBB9594E84A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF62F2BD-CAF4-4AEF-BF26-EBB9594E84A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF62F2BD-CAF4-4AEF-BF26-EBB9594E84A4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

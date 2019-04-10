@@ -1,0 +1,5 @@
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强03\02StringBuilder\bin\Debug\02StringBuilder.exe.config
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强03\02StringBuilder\bin\Debug\02StringBuilder.exe
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强03\02StringBuilder\bin\Debug\02StringBuilder.pdb
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强03\02StringBuilder\obj\Debug\02StringBuilder.exe
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强03\02StringBuilder\obj\Debug\02StringBuilder.pdb

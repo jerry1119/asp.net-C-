@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+此文件由 Web 项目的发布/打包过程使用。可以通过编辑此 MSBuild 文件
+自定义此过程的行为。为了解与此相关的更多内容，请访问 https://go.microsoft.com/fwlink/?LinkID=208121。 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_NewBackgroundProfile>False</_NewBackgroundProfile>
+    <_PublishTargetUrl>C:\Users\Administrator\Documents\My Web Sites\ChinaOl</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="4.11XinWen/NewList.aspx">
+      <publishTime>04/13/2017 09:54:50</publishTime>
+    </File>
+    <File Include="4.13autoLogin/Login.aspx">
+      <publishTime>04/26/2017 12:26:36</publishTime>
+    </File>
+    <File Include="4.13autoLogin/UserInfiList.aspx">
+      <publishTime>04/19/2017 09:05:04</publishTime>
+    </File>
+    <File Include="4.13autoLogin/ValidateCode.ashx">
+      <publishTime>04/18/2017 23:57:21</publishTime>
+    </File>
+    <File Include="4.28Ajax/AjaxDemo.aspx">
+      <publishTime>04/28/2017 10:16:35</publishTime>
+    </File>
+    <File Include="4.28Ajax/AjaxPostDemo.aspx">
+      <publishTime>04/28/2017 10:53:51</publishTime>
+    </File>
+    <File Include="4.28Ajax/CheckUserName.ashx">
+      <publishTime>05/04/2017 13:52:21</publishTime>
+    </File>
+    <File Include="4.28Ajax/GetDate.ashx">
+      <publishTime>04/28/2017 10:02:50</publishTime>
+    </File>
+    <File Include="4.28Ajax/JqueryAjax.html">
+      <publishTime>05/16/2017 12:20:15</publishTime>
+    </File>
+    <File Include="4.28Ajax/Login.html">
+      <publishTime>05/16/2017 12:20:15</publishTime>
+    </File>
+    <File Include="4.28Ajax/Register.html">
+      <publishTime>05/16/2017 12:20:15</publishTime>
+    </File>
+    <File Include="4.28Ajax/userLogin.ashx">
+      <publishTime>05/04/2017 14:30:21</publishTime>
+    </File>
+    <File Include="5.5Json/AddUserInfo.ashx">
+      <publishTime>05/06/2017 11:36:52</publishTime>
+    </File>
+    <File Include="5.5Json/DeleteUser.ashx">
+      <publishTime>05/06/2017 10:42:31</publishTime>
+    </File>
+    <File Include="5.5Json/EditUserInfo.ashx">
+      <publishTime>05/06/2017 15:04:27</publishTime>
+    </File>
+    <File Include="5.5Json/GetJson.ashx">
+      <publishTime>05/05/2017 22:44:39</publishTime>
+    </File>
+    <File Include="5.5Json/JsonDemo.html">
+      <publishTime>05/16/2017 12:20:15</publishTime>
+    </File>
+    <File Include="5.5Json/ShowDetail.ashx">
+      <publishTime>05/06/2017 09:43:04</publishTime>
+    </File>
+    <File Include="5.5Json/UserInfoList.html">
+      <publishTime>05/16/2017 12:20:15</publishTime>
+    </File>
+    <File Include="5.5Json/UserList.ashx">
+      <publishTime>05/05/2017 23:19:23</publishTime>
+    </File>
+    <File Include="5.7Chache/ChacheDemo.aspx">
+      <publishTime>05/07/2017 13:29:49</publishTime>
+    </File>
+    <File Include="AddUserInfo.ashx">
+      <publishTime>04/08/2017 10:36:26</publishTime>
+    </File>
+    <File Include="AddUserInfo.html">
+      <publishTime>05/16/2017 12:20:15</publishTime>
+    </File>
+    <File Include="ApplicationInsights.config">
+      <publishTime>04/07/2017 17:58:38</publishTime>
+    </File>
+    <File Include="Aspx/AddUserInfo.aspx">
+      <publishTime>04/11/2017 10:11:21</publishTime>
+    </File>
+    <File Include="Aspx/Delete.ashx">
+      <publishTime>04/11/2017 09:05:44</publishTime>
+    </File>
+    <File Include="Aspx/EditUser.aspx">
+      <publishTime>04/11/2017 10:41:17</publishTime>
+    </File>
+    <File Include="Aspx/UserInfoList.aspx">
+      <publishTime>04/11/2017 10:17:54</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>04/07/2017 17:58:38</publishTime>
+    </File>
+    <File Include="bin/ChinaOl.Bll.dll">
+      <publishTime>01/18/2018 21:18:39</publishTime>
+    </File>
+    <File Include="bin/ChinaOl.Bll.pdb">
+      <publishTime>01/18/2018 21:18:39</publishTime>
+    </File>
+    <File Include="bin/ChinaOl.Common.dll">
+      <publishTime>01/18/2018 21:18:38</publishTime>
+    </File>
+    <File Include="bin/ChinaOl.Common.pdb">
+      <publishTime>01/18/2018 21:18:38</publishTime>
+    </File>
+    <File Include="bin/ChinaOl.Dal.dll">
+      <publishTime>01/18/2018 21:18:37</publishTime>
+    </File>
+    <File Include="bin/ChinaOl.Dal.pdb">
+      <publishTime>01/18/2018 21:18:37</publishTime>
+    </File>
+    <File Include="bin/ChinaOl.Model.dll">
+      <publishTime>01/18/2018 21:18:37</publishTime>
+    </File>
+    <File Include="bin/ChinaOl.Model.pdb">
+      <publishTime>01/18/2018 21:18:37</publishTime>
+    </File>
+    <File Include="bin/ChinaOl.UI.dll">
+      <publishTime>01/18/2018 21:31:18</publishTime>
+    </File>
+    <File Include="bin/ChinaOl.UI.pdb">
+      <publishTime>01/18/2018 21:31:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>11/30/2016 16:07:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>12/07/2016 11:45:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>12/07/2016 11:50:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>12/06/2016 15:15:48</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>12/07/2016 11:49:10</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>12/07/2016 11:50:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>12/06/2016 15:09:52</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>06/15/2015 02:06:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="Css/normalize.min.css">
+      <publishTime>01/18/2018 21:27:33</publishTime>
+    </File>
+    <File Include="Css/pageBarStyle.css">
+      <publishTime>05/06/2017 15:42:18</publishTime>
+    </File>
+    <File Include="Css/style.css">
+      <publishTime>01/18/2018 21:27:33</publishTime>
+    </File>
+    <File Include="Css/tableStyle.css">
+      <publishTime>04/08/2017 09:55:15</publishTime>
+    </File>
+    <File Include="css3d_periodictable.html">
+      <publishTime>01/18/2018 21:23:44</publishTime>
+    </File>
+    <File Include="EditUserInfo.ashx">
+      <publishTime>04/08/2017 15:58:10</publishTime>
+    </File>
+    <File Include="Error.html">
+      <publishTime>05/16/2017 12:20:15</publishTime>
+    </File>
+    <File Include="index.html">
+      <publishTime>01/18/2018 21:27:59</publishTime>
+    </File>
+    <File Include="Js/CSS3DRenderer.js">
+      <publishTime>01/18/2018 21:23:54</publishTime>
+    </File>
+    <File Include="Js/easyui-lang-zh_CN.js">
+      <publishTime>05/06/2017 09:29:06</publishTime>
+    </File>
+    <File Include="Js/index.js">
+      <publishTime>01/18/2018 21:27:21</publishTime>
+    </File>
+    <File Include="Js/jquery-1.7.1.js">
+      <publishTime>04/08/2017 09:55:43</publishTime>
+    </File>
+    <File Include="Js/jquery.easyui.min.js">
+      <publishTime>05/06/2017 09:28:54</publishTime>
+    </File>
+    <File Include="Js/jquery.min.js">
+      <publishTime>01/18/2018 21:27:21</publishTime>
+    </File>
+    <File Include="Js/three.min.js">
+      <publishTime>01/18/2018 21:23:54</publishTime>
+    </File>
+    <File Include="Js/TrackballControls.js">
+      <publishTime>01/18/2018 21:23:54</publishTime>
+    </File>
+    <File Include="Js/tween.min.js">
+      <publishTime>01/18/2018 21:23:54</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>04/07/2017 17:58:38</publishTime>
+    </File>
+    <File Include="scss/style.scss">
+      <publishTime>01/18/2018 21:27:42</publishTime>
+    </File>
+    <File Include="ShowDetail.ashx">
+      <publishTime>04/08/2017 14:22:30</publishTime>
+    </File>
+    <File Include="ShowEdit.ashx">
+      <publishTime>04/08/2017 15:19:51</publishTime>
+    </File>
+    <File Include="ShowEdit.html">
+      <publishTime>05/16/2017 12:20:16</publishTime>
+    </File>
+    <File Include="UserDelet.ashx">
+      <publishTime>04/08/2017 15:04:36</publishTime>
+    </File>
+    <File Include="UserDetail.html">
+      <publishTime>05/16/2017 12:20:16</publishTime>
+    </File>
+    <File Include="UserInfoList.ashx">
+      <publishTime>04/08/2017 09:58:08</publishTime>
+    </File>
+    <File Include="UserInfoList.html">
+      <publishTime>05/16/2017 12:20:16</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>01/18/2018 21:31:19</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

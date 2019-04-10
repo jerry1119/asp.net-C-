@@ -1,0 +1,11 @@
+C:\Users\hejie\documents\visual studio 2015\Projects\ChinaOl\ChinaOl.Common\bin\Debug\ChinaOl.Common.dll
+C:\Users\hejie\documents\visual studio 2015\Projects\ChinaOl\ChinaOl.Common\bin\Debug\ChinaOl.Common.pdb
+C:\Users\hejie\documents\visual studio 2015\Projects\ChinaOl\ChinaOl.Common\obj\Debug\ChinaOl.Common.dll
+C:\Users\hejie\documents\visual studio 2015\Projects\ChinaOl\ChinaOl.Common\obj\Debug\ChinaOl.Common.pdb
+C:\Users\hejie\documents\visual studio 2015\Projects\ChinaOl\ChinaOl.Common\obj\Debug\ChinaOl.Common.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\ChinaOl\ChinaOl.Common\bin\Debug\ChinaOl.Common.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\ChinaOl\ChinaOl.Common\bin\Debug\ChinaOl.Common.pdb
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\ChinaOl\ChinaOl.Common\obj\Debug\ChinaOl.Common.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\ChinaOl\ChinaOl.Common\obj\Debug\ChinaOl.Common.pdb
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\ChinaOl\ChinaOl.Common\obj\Debug\ChinaOl.Common.csprojAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\ChinaOl\ChinaOl.Common\obj\Debug\ChinaOl.Common.csproj.CoreCompileInputs.cache

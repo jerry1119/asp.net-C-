@@ -1,0 +1,10 @@
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\存储过程实现转账\bin\Debug\存储过程实现转账.exe.config
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\存储过程实现转账\bin\Debug\存储过程实现转账.exe
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\存储过程实现转账\bin\Debug\存储过程实现转账.pdb
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\存储过程实现转账\obj\Debug\存储过程实现转账.csprojAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\存储过程实现转账\obj\Debug\存储过程实现转账.Form1.resources
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\存储过程实现转账\obj\Debug\存储过程实现转账.Properties.Resources.resources
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\存储过程实现转账\obj\Debug\存储过程实现转账.csproj.GenerateResource.cache
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\存储过程实现转账\obj\Debug\存储过程实现转账.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\存储过程实现转账\obj\Debug\存储过程实现转账.exe
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\存储过程实现转账\obj\Debug\存储过程实现转账.pdb

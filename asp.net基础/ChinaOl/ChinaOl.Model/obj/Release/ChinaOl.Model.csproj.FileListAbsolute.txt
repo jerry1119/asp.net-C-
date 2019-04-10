@@ -1,0 +1,4 @@
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\ChinaOl\ChinaOl.Model\bin\Release\ChinaOl.Model.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\ChinaOl\ChinaOl.Model\bin\Release\ChinaOl.Model.pdb
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\ChinaOl\ChinaOl.Model\obj\Release\ChinaOl.Model.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\ChinaOl\ChinaOl.Model\obj\Release\ChinaOl.Model.pdb

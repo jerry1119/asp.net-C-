@@ -1,0 +1,15 @@
+C:\Users\hejie\Documents\Visual Studio 2015\Projects\Net加强04\04资料管理器\bin\Debug\04资料管理器.exe.config
+C:\Users\hejie\Documents\Visual Studio 2015\Projects\Net加强04\04资料管理器\bin\Debug\04资料管理器.exe
+C:\Users\hejie\Documents\Visual Studio 2015\Projects\Net加强04\04资料管理器\bin\Debug\04资料管理器.pdb
+C:\Users\hejie\Documents\Visual Studio 2015\Projects\Net加强04\04资料管理器\obj\Debug\04资料管理器.csprojResolveAssemblyReference.cache
+C:\Users\hejie\Documents\Visual Studio 2015\Projects\Net加强04\04资料管理器\obj\Debug\_04资料管理器.Form1.resources
+C:\Users\hejie\Documents\Visual Studio 2015\Projects\Net加强04\04资料管理器\obj\Debug\_04资料管理器.Properties.Resources.resources
+C:\Users\hejie\Documents\Visual Studio 2015\Projects\Net加强04\04资料管理器\obj\Debug\04资料管理器.csproj.GenerateResource.Cache
+C:\Users\hejie\Documents\Visual Studio 2015\Projects\Net加强04\04资料管理器\obj\Debug\04资料管理器.exe
+C:\Users\hejie\Documents\Visual Studio 2015\Projects\Net加强04\04资料管理器\obj\Debug\04资料管理器.pdb
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\Net加强04\04资料管理器\obj\Debug\04资料管理器.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\Net加强04\04资料管理器\obj\Debug\_04资料管理器.Form1.resources
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\Net加强04\04资料管理器\obj\Debug\_04资料管理器.Properties.Resources.resources
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\Net加强04\04资料管理器\obj\Debug\04资料管理器.csproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\Net加强04\04资料管理器\obj\Debug\04资料管理器.exe
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\Net加强04\04资料管理器\obj\Debug\04资料管理器.pdb

@@ -1,0 +1,5 @@
+C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\05动物类继承\bin\Debug\05动物类继承.exe.config
+C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\05动物类继承\bin\Debug\05动物类继承.exe
+C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\05动物类继承\bin\Debug\05动物类继承.pdb
+C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\05动物类继承\obj\Debug\05动物类继承.exe
+C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\05动物类继承\obj\Debug\05动物类继承.pdb

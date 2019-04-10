@@ -1,0 +1,9 @@
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强03\03使用StringBuilder来拼接HTML中的Table表格\bin\Debug\03使用StringBuilder来拼接HTML中的Table表格.exe.config
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强03\03使用StringBuilder来拼接HTML中的Table表格\bin\Debug\03使用StringBuilder来拼接HTML中的Table表格.exe
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强03\03使用StringBuilder来拼接HTML中的Table表格\bin\Debug\03使用StringBuilder来拼接HTML中的Table表格.pdb
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强03\03使用StringBuilder来拼接HTML中的Table表格\obj\Debug\03使用StringBuilder来拼接HTML中的Table表格.csprojResolveAssemblyReference.cache
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强03\03使用StringBuilder来拼接HTML中的Table表格\obj\Debug\_03使用StringBuilder来拼接HTML中的Table表格.Form1.resources
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强03\03使用StringBuilder来拼接HTML中的Table表格\obj\Debug\_03使用StringBuilder来拼接HTML中的Table表格.Properties.Resources.resources
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强03\03使用StringBuilder来拼接HTML中的Table表格\obj\Debug\03使用StringBuilder来拼接HTML中的Table表格.csproj.GenerateResource.Cache
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强03\03使用StringBuilder来拼接HTML中的Table表格\obj\Debug\03使用StringBuilder来拼接HTML中的Table表格.exe
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强03\03使用StringBuilder来拼接HTML中的Table表格\obj\Debug\03使用StringBuilder来拼接HTML中的Table表格.pdb

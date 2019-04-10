@@ -1,0 +1,6 @@
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强05\乘法表\bin\Debug\乘法表.exe.config
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强05\乘法表\bin\Debug\乘法表.exe
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强05\乘法表\bin\Debug\乘法表.pdb
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强05\乘法表\obj\Debug\乘法表.csprojResolveAssemblyReference.cache
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强05\乘法表\obj\Debug\乘法表.exe
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强05\乘法表\obj\Debug\乘法表.pdb

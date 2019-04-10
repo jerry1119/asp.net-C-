@@ -1,0 +1,6 @@
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强03\13年月日转换\bin\Debug\13年月日转换.exe.config
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强03\13年月日转换\bin\Debug\13年月日转换.exe
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强03\13年月日转换\bin\Debug\13年月日转换.pdb
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强03\13年月日转换\obj\Debug\13年月日转换.csprojResolveAssemblyReference.cache
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强03\13年月日转换\obj\Debug\13年月日转换.exe
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强03\13年月日转换\obj\Debug\13年月日转换.pdb

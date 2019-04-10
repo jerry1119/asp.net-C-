@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8546953B-8062-4E24-BEF5-03F0B8F191CB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ChinaOl.UI</RootNamespace>
+    <AssemblyName>ChinaOl.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=2.0.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.6\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.2.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.2.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.2.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.2.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.2.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.2.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="4.11XinWen\NewList.aspx" />
+    <Content Include="4.13autoLogin\Login.aspx" />
+    <Content Include="4.13autoLogin\UserInfiList.aspx" />
+    <Content Include="4.28Ajax\AjaxDemo.aspx" />
+    <Content Include="4.28Ajax\AjaxPostDemo.aspx" />
+    <Content Include="4.28Ajax\JqueryAjax.html" />
+    <Content Include="4.28Ajax\Login.html" />
+    <Content Include="4.28Ajax\Register.html" />
+    <Content Include="5.5Json\JsonDemo.html" />
+    <Content Include="5.5Json\UserInfoList.html" />
+    <Content Include="5.7Chache\ChacheDemo.aspx" />
+    <Content Include="AddUserInfo.html" />
+    <Content Include="Aspx\AddUserInfo.aspx" />
+    <Content Include="Aspx\EditUser.aspx" />
+    <Content Include="Aspx\UserInfoList.aspx" />
+    <Content Include="css3d_periodictable.html" />
+    <Content Include="Css\normalize.min.css" />
+    <Content Include="Css\pageBarStyle.css" />
+    <Content Include="Css\style.css" />
+    <Content Include="Css\tableStyle.css" />
+    <Content Include="Error.html" />
+    <Content Include="index.html" />
+    <Content Include="Js\CSS3DRenderer.js" />
+    <Content Include="Js\easyui-lang-zh_CN.js" />
+    <Content Include="Js\index.js" />
+    <Content Include="Js\jquery-1.7.1.js" />
+    <Content Include="Js\jquery.easyui.min.js" />
+    <Content Include="Js\jquery.min.js" />
+    <Content Include="Js\three.min.js" />
+    <Content Include="Js\TrackballControls.js" />
+    <Content Include="Js\tween.min.js" />
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ShowEdit.html" />
+    <Content Include="UserDetail.html" />
+    <Content Include="UserInfoList.ashx" />
+    <Content Include="AddUserInfo.ashx" />
+    <Content Include="ShowDetail.ashx" />
+    <Content Include="UserDelet.ashx" />
+    <Content Include="ShowEdit.ashx" />
+    <Content Include="EditUserInfo.ashx" />
+    <Content Include="Aspx\Delete.ashx" />
+    <Content Include="4.13autoLogin\ValidateCode.ashx" />
+    <Content Include="4.28Ajax\GetDate.ashx" />
+    <Content Include="4.28Ajax\CheckUserName.ashx" />
+    <Content Include="4.28Ajax\userLogin.ashx" />
+    <Content Include="5.5Json\GetJson.ashx" />
+    <Content Include="5.5Json\UserList.ashx" />
+    <Content Include="5.5Json\ShowDetail.ashx" />
+    <Content Include="5.5Json\DeleteUser.ashx" />
+    <Content Include="5.5Json\AddUserInfo.ashx" />
+    <Content Include="5.5Json\EditUserInfo.ashx" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <Content Include="scss\style.scss" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="UserInfoList.html" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="4.11XinWen\NewList.aspx.cs">
+      <DependentUpon>NewList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="4.11XinWen\NewList.aspx.designer.cs">
+      <DependentUpon>NewList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="4.13autoLogin\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="4.13autoLogin\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="4.13autoLogin\UserInfiList.aspx.cs">
+      <DependentUpon>UserInfiList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="4.13autoLogin\UserInfiList.aspx.designer.cs">
+      <DependentUpon>UserInfiList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="4.13autoLogin\ValidateCode.ashx.cs">
+      <DependentUpon>ValidateCode.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="4.28Ajax\AjaxDemo.aspx.cs">
+      <DependentUpon>AjaxDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="4.28Ajax\AjaxDemo.aspx.designer.cs">
+      <DependentUpon>AjaxDemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="4.28Ajax\AjaxPostDemo.aspx.cs">
+      <DependentUpon>AjaxPostDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="4.28Ajax\AjaxPostDemo.aspx.designer.cs">
+      <DependentUpon>AjaxPostDemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="4.28Ajax\CheckUserName.ashx.cs">
+      <DependentUpon>CheckUserName.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="4.28Ajax\GetDate.ashx.cs">
+      <DependentUpon>GetDate.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="4.28Ajax\userLogin.ashx.cs">
+      <DependentUpon>userLogin.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="5.5Json\AddUserInfo.ashx.cs">
+      <DependentUpon>AddUserInfo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="5.5Json\DeleteUser.ashx.cs">
+      <DependentUpon>DeleteUser.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="5.5Json\EditUserInfo.ashx.cs">
+      <DependentUpon>EditUserInfo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="5.5Json\GetJson.ashx.cs">
+      <DependentUpon>GetJson.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="5.5Json\ShowDetail.ashx.cs">
+      <DependentUpon>ShowDetail.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="5.5Json\UserList.ashx.cs">
+      <DependentUpon>UserList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="5.7Chache\ChacheDemo.aspx.cs">
+      <DependentUpon>ChacheDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="5.7Chache\ChacheDemo.aspx.designer.cs">
+      <DependentUpon>ChacheDemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddUserInfo.ashx.cs">
+      <DependentUpon>AddUserInfo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Aspx\AddUserInfo.aspx.cs">
+      <DependentUpon>AddUserInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aspx\AddUserInfo.aspx.designer.cs">
+      <DependentUpon>AddUserInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aspx\Delete.ashx.cs">
+      <DependentUpon>Delete.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Aspx\EditUser.aspx.cs">
+      <DependentUpon>EditUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aspx\EditUser.aspx.designer.cs">
+      <DependentUpon>EditUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aspx\UserInfoList.aspx.cs">
+      <DependentUpon>UserInfoList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aspx\UserInfoList.aspx.designer.cs">
+      <DependentUpon>UserInfoList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditUserInfo.ashx.cs">
+      <DependentUpon>EditUserInfo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShowDetail.ashx.cs">
+      <DependentUpon>ShowDetail.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ShowEdit.ashx.cs">
+      <DependentUpon>ShowEdit.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="UserDelet.ashx.cs">
+      <DependentUpon>UserDelet.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfoList.ashx.cs">
+      <DependentUpon>UserInfoList.ashx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ChinaOl.Bll\ChinaOl.Bll.csproj">
+      <Project>{b6192ad0-743e-458c-97d1-80ee4ef980d1}</Project>
+      <Name>ChinaOl.Bll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ChinaOl.Common\ChinaOl.Common.csproj">
+      <Project>{88d02a8d-a83a-4afe-85cd-67954521f89a}</Project>
+      <Name>ChinaOl.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ChinaOl.Model\ChinaOl.Model.csproj">
+      <Project>{71ee6b85-a5b9-473f-93e6-2a0cfd25fd05}</Project>
+      <Name>ChinaOl.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="4.11XinWen\WebDemos\" />
+    <Folder Include="Css\themes\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57308</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:57308/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

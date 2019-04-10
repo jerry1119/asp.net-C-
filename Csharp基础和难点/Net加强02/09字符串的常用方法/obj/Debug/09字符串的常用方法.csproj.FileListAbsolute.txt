@@ -1,0 +1,12 @@
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强02\09字符串的常用方法\bin\Debug\09字符串的常用方法.exe.config
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强02\09字符串的常用方法\bin\Debug\09字符串的常用方法.exe
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强02\09字符串的常用方法\bin\Debug\09字符串的常用方法.pdb
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强02\09字符串的常用方法\obj\Debug\09字符串的常用方法.exe
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强02\09字符串的常用方法\obj\Debug\09字符串的常用方法.pdb
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强02\09字符串的常用方法\obj\Debug\09字符串的常用方法.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\Net加强02\09字符串的常用方法\bin\Debug\09字符串的常用方法.exe.config
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\Net加强02\09字符串的常用方法\bin\Debug\09字符串的常用方法.exe
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\Net加强02\09字符串的常用方法\bin\Debug\09字符串的常用方法.pdb
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\Net加强02\09字符串的常用方法\obj\Debug\09字符串的常用方法.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\Net加强02\09字符串的常用方法\obj\Debug\09字符串的常用方法.exe
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\Net加强02\09字符串的常用方法\obj\Debug\09字符串的常用方法.pdb

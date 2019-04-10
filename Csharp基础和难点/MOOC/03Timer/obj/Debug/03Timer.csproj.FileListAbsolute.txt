@@ -1,0 +1,8 @@
+c:\users\hejie\documents\visual studio 2015\Projects\MOOC\03Timer\bin\Debug\03Timer.exe.config
+c:\users\hejie\documents\visual studio 2015\Projects\MOOC\03Timer\bin\Debug\03Timer.exe
+c:\users\hejie\documents\visual studio 2015\Projects\MOOC\03Timer\bin\Debug\03Timer.pdb
+c:\users\hejie\documents\visual studio 2015\Projects\MOOC\03Timer\obj\Debug\_03Timer.Form1.resources
+c:\users\hejie\documents\visual studio 2015\Projects\MOOC\03Timer\obj\Debug\_03Timer.Properties.Resources.resources
+c:\users\hejie\documents\visual studio 2015\Projects\MOOC\03Timer\obj\Debug\03Timer.csproj.GenerateResource.Cache
+c:\users\hejie\documents\visual studio 2015\Projects\MOOC\03Timer\obj\Debug\03Timer.exe
+c:\users\hejie\documents\visual studio 2015\Projects\MOOC\03Timer\obj\Debug\03Timer.pdb

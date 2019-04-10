@@ -1,0 +1,6 @@
+C:\Users\hejie\Documents\Visual Studio 2015\Projects\Net加强02\05简单工厂设计模式练习\bin\Debug\05简单工厂设计模式练习.exe.config
+C:\Users\hejie\Documents\Visual Studio 2015\Projects\Net加强02\05简单工厂设计模式练习\bin\Debug\05简单工厂设计模式练习.exe
+C:\Users\hejie\Documents\Visual Studio 2015\Projects\Net加强02\05简单工厂设计模式练习\bin\Debug\05简单工厂设计模式练习.pdb
+C:\Users\hejie\Documents\Visual Studio 2015\Projects\Net加强02\05简单工厂设计模式练习\obj\Debug\05简单工厂设计模式练习.csprojResolveAssemblyReference.cache
+C:\Users\hejie\Documents\Visual Studio 2015\Projects\Net加强02\05简单工厂设计模式练习\obj\Debug\05简单工厂设计模式练习.exe
+C:\Users\hejie\Documents\Visual Studio 2015\Projects\Net加强02\05简单工厂设计模式练习\obj\Debug\05简单工厂设计模式练习.pdb

@@ -1,0 +1,6 @@
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强03\08List\bin\Debug\08List.exe.config
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强03\08List\bin\Debug\08List.exe
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强03\08List\bin\Debug\08List.pdb
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强03\08List\obj\Debug\08List.exe
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强03\08List\obj\Debug\08List.pdb
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强03\08List\obj\Debug\08List泛型集合的3个练习.csprojResolveAssemblyReference.cache

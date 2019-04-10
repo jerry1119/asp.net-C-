@@ -1,0 +1,11 @@
+C:\Users\hejie\documents\visual studio 2015\Projects\ChinaOl\ChinaOl.Model\bin\Debug\ChinaOl.Model.dll
+C:\Users\hejie\documents\visual studio 2015\Projects\ChinaOl\ChinaOl.Model\bin\Debug\ChinaOl.Model.pdb
+C:\Users\hejie\documents\visual studio 2015\Projects\ChinaOl\ChinaOl.Model\obj\Debug\ChinaOl.Model.dll
+C:\Users\hejie\documents\visual studio 2015\Projects\ChinaOl\ChinaOl.Model\obj\Debug\ChinaOl.Model.pdb
+C:\Users\hejie\documents\visual studio 2015\Projects\ChinaOl\ChinaOl.Model\obj\Debug\ChinaOl.Model.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\ChinaOl\ChinaOl.Model\bin\Debug\ChinaOl.Model.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\ChinaOl\ChinaOl.Model\bin\Debug\ChinaOl.Model.pdb
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\ChinaOl\ChinaOl.Model\obj\Debug\ChinaOl.Model.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\ChinaOl\ChinaOl.Model\obj\Debug\ChinaOl.Model.pdb
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\ChinaOl\ChinaOl.Model\obj\Debug\ChinaOl.Model.csprojAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\ChinaOl\ChinaOl.Model\obj\Debug\ChinaOl.Model.csproj.CoreCompileInputs.cache

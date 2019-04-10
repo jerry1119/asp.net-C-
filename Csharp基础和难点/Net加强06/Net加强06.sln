@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01委托概念", "01委托概念\01委托概念.csproj", "{2E2E7AFC-B1E7-40EC-9D1B-ADA0B76F3448}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02求数组的最大值", "02求数组的最大值\02求数组的最大值.csproj", "{7A39452A-E56A-4B82-930E-00FC0AC5DED5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03泛型委托", "03泛型委托\03泛型委托.csproj", "{17E637D0-4F55-4E9A-8C53-3C1408531F98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04多播委托", "04多播委托\04多播委托.csproj", "{B43C82B7-EC76-4A82-9E4B-3E82BDA54480}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05使用委托进行窗体间的传值", "05使用委托进行窗体间的传值\05使用委托进行窗体间的传值.csproj", "{C712DE8E-35FD-49E9-8CD7-9D019727F06C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06使用WinForm应用程序模拟事件", "06使用WinForm应用程序模拟事件\06使用WinForm应用程序模拟事件.csproj", "{0E609F6B-B3F0-4406-B193-3D44B8E0956E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "水仙花数", "水仙花数\水仙花数.csproj", "{33B444E2-47AD-4B0F-AE45-DA7471358884}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E2E7AFC-B1E7-40EC-9D1B-ADA0B76F3448}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E2E7AFC-B1E7-40EC-9D1B-ADA0B76F3448}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E2E7AFC-B1E7-40EC-9D1B-ADA0B76F3448}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E2E7AFC-B1E7-40EC-9D1B-ADA0B76F3448}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A39452A-E56A-4B82-930E-00FC0AC5DED5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A39452A-E56A-4B82-930E-00FC0AC5DED5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A39452A-E56A-4B82-930E-00FC0AC5DED5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A39452A-E56A-4B82-930E-00FC0AC5DED5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17E637D0-4F55-4E9A-8C53-3C1408531F98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17E637D0-4F55-4E9A-8C53-3C1408531F98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17E637D0-4F55-4E9A-8C53-3C1408531F98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17E637D0-4F55-4E9A-8C53-3C1408531F98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B43C82B7-EC76-4A82-9E4B-3E82BDA54480}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B43C82B7-EC76-4A82-9E4B-3E82BDA54480}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B43C82B7-EC76-4A82-9E4B-3E82BDA54480}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B43C82B7-EC76-4A82-9E4B-3E82BDA54480}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C712DE8E-35FD-49E9-8CD7-9D019727F06C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C712DE8E-35FD-49E9-8CD7-9D019727F06C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C712DE8E-35FD-49E9-8CD7-9D019727F06C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C712DE8E-35FD-49E9-8CD7-9D019727F06C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E609F6B-B3F0-4406-B193-3D44B8E0956E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E609F6B-B3F0-4406-B193-3D44B8E0956E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E609F6B-B3F0-4406-B193-3D44B8E0956E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E609F6B-B3F0-4406-B193-3D44B8E0956E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33B444E2-47AD-4B0F-AE45-DA7471358884}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33B444E2-47AD-4B0F-AE45-DA7471358884}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33B444E2-47AD-4B0F-AE45-DA7471358884}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33B444E2-47AD-4B0F-AE45-DA7471358884}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

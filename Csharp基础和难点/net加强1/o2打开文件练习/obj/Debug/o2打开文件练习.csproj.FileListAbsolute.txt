@@ -1,0 +1,5 @@
+C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\o2打开文件练习\bin\Debug\o2打开文件练习.exe.config
+C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\o2打开文件练习\bin\Debug\o2打开文件练习.exe
+C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\o2打开文件练习\bin\Debug\o2打开文件练习.pdb
+C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\o2打开文件练习\obj\Debug\o2打开文件练习.exe
+C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\o2打开文件练习\obj\Debug\o2打开文件练习.pdb

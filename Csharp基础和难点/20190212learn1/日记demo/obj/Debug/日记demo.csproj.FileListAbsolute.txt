@@ -1,0 +1,11 @@
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\日记demo\bin\Debug\日记demo.exe.config
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\日记demo\bin\Debug\日记demo.exe
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\日记demo\bin\Debug\日记demo.pdb
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\日记demo\obj\Debug\日记demo.csprojAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\日记demo\obj\Debug\日记demo.Properties.Resources.resources
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\日记demo\obj\Debug\日记demo.csproj.GenerateResource.cache
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\日记demo\obj\Debug\日记demo.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\日记demo\obj\Debug\日记demo.exe
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\日记demo\obj\Debug\日记demo.pdb
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\日记demo\obj\Debug\日记demo.Form1.resources
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\日记demo\obj\Debug\日记demo.addDiary.resources

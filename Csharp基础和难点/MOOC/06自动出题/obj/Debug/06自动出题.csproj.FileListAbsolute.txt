@@ -1,0 +1,9 @@
+C:\Users\hejie\documents\visual studio 2015\Projects\MOOC\06自动出题\bin\Debug\06自动出题.exe.config
+C:\Users\hejie\documents\visual studio 2015\Projects\MOOC\06自动出题\bin\Debug\06自动出题.exe
+C:\Users\hejie\documents\visual studio 2015\Projects\MOOC\06自动出题\bin\Debug\06自动出题.pdb
+C:\Users\hejie\documents\visual studio 2015\Projects\MOOC\06自动出题\obj\Debug\06自动出题.csprojResolveAssemblyReference.cache
+C:\Users\hejie\documents\visual studio 2015\Projects\MOOC\06自动出题\obj\Debug\_06自动出题.Form1.resources
+C:\Users\hejie\documents\visual studio 2015\Projects\MOOC\06自动出题\obj\Debug\_06自动出题.Properties.Resources.resources
+C:\Users\hejie\documents\visual studio 2015\Projects\MOOC\06自动出题\obj\Debug\06自动出题.csproj.GenerateResource.Cache
+C:\Users\hejie\documents\visual studio 2015\Projects\MOOC\06自动出题\obj\Debug\06自动出题.exe
+C:\Users\hejie\documents\visual studio 2015\Projects\MOOC\06自动出题\obj\Debug\06自动出题.pdb

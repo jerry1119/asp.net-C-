@@ -1,0 +1,5 @@
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\ChinaOl\ChinaOl.Common\bin\Release\ChinaOl.Common.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\ChinaOl\ChinaOl.Common\bin\Release\ChinaOl.Common.pdb
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\ChinaOl\ChinaOl.Common\obj\Release\ChinaOl.Common.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\ChinaOl\ChinaOl.Common\obj\Release\ChinaOl.Common.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\ChinaOl\ChinaOl.Common\obj\Release\ChinaOl.Common.pdb

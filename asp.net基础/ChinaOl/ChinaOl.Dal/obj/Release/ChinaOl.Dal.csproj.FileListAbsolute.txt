@@ -1,0 +1,7 @@
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\ChinaOl\ChinaOl.Dal\bin\Release\ChinaOl.Dal.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\ChinaOl\ChinaOl.Dal\bin\Release\ChinaOl.Dal.pdb
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\ChinaOl\ChinaOl.Dal\bin\Release\ChinaOl.Model.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\ChinaOl\ChinaOl.Dal\bin\Release\ChinaOl.Model.pdb
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\ChinaOl\ChinaOl.Dal\obj\Release\ChinaOl.Dal.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\ChinaOl\ChinaOl.Dal\obj\Release\ChinaOl.Dal.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\ChinaOl\ChinaOl.Dal\obj\Release\ChinaOl.Dal.pdb

@@ -1,0 +1,5 @@
+C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\08抽象类\bin\Debug\08抽象类.exe.config
+C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\08抽象类\bin\Debug\08抽象类.exe
+C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\08抽象类\bin\Debug\08抽象类.pdb
+C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\08抽象类\obj\Debug\08抽象类.exe
+C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\08抽象类\obj\Debug\08抽象类.pdb

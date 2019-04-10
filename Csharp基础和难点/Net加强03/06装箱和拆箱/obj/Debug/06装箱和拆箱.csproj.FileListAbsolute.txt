@@ -1,0 +1,5 @@
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强03\06装箱和拆箱\bin\Debug\06装箱和拆箱.exe.config
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强03\06装箱和拆箱\bin\Debug\06装箱和拆箱.exe
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强03\06装箱和拆箱\bin\Debug\06装箱和拆箱.pdb
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强03\06装箱和拆箱\obj\Debug\06装箱和拆箱.exe
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强03\06装箱和拆箱\obj\Debug\06装箱和拆箱.pdb

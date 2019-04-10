@@ -1,0 +1,6 @@
+c:\users\hejie\documents\visual studio 2015\Projects\Net加强03\01复习\bin\Debug\01复习.exe.config
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强03\01复习\bin\Debug\01复习.exe
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强03\01复习\bin\Debug\01复习.pdb
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强03\01复习\obj\Debug\01复习.csprojResolveAssemblyReference.cache
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强03\01复习\obj\Debug\01复习.exe
+C:\Users\hejie\documents\visual studio 2015\Projects\Net加强03\01复习\obj\Debug\01复习.pdb

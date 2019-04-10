@@ -1,0 +1,7 @@
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\311多线程\bin\Debug\311多线程.exe.config
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\311多线程\bin\Debug\311多线程.exe
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\311多线程\bin\Debug\311多线程.pdb
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\311多线程\obj\Debug\311多线程.csprojAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\311多线程\obj\Debug\311多线程.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\311多线程\obj\Debug\311多线程.exe
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\311多线程\obj\Debug\311多线程.pdb

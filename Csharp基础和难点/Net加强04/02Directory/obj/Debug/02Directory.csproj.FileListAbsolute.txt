@@ -1,0 +1,6 @@
+c:\users\hejie\documents\visual studio 2015\Projects\Net加强04\02Directory\bin\Debug\02Directory.exe.config
+c:\users\hejie\documents\visual studio 2015\Projects\Net加强04\02Directory\bin\Debug\02Directory.exe
+c:\users\hejie\documents\visual studio 2015\Projects\Net加强04\02Directory\bin\Debug\02Directory.pdb
+c:\users\hejie\documents\visual studio 2015\Projects\Net加强04\02Directory\obj\Debug\02Directory.csprojResolveAssemblyReference.cache
+c:\users\hejie\documents\visual studio 2015\Projects\Net加强04\02Directory\obj\Debug\02Directory.exe
+c:\users\hejie\documents\visual studio 2015\Projects\Net加强04\02Directory\obj\Debug\02Directory.pdb
