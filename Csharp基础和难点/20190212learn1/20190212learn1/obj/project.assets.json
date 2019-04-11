@@ -11799,11 +11799,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Documents\\Visual Studio 2017\\Projects\\20190212learn1\\20190212learn1\\20190212learn1.csproj",
+      "projectUniqueName": "I:\\Microsoft VS Code\\netCode\\Projects\\Csharp基础和难点\\20190212learn1\\20190212learn1\\20190212learn1.csproj",
       "projectName": "20190212learn1",
-      "projectPath": "C:\\Users\\Administrator\\Documents\\Visual Studio 2017\\Projects\\20190212learn1\\20190212learn1\\20190212learn1.csproj",
+      "projectPath": "I:\\Microsoft VS Code\\netCode\\Projects\\Csharp基础和难点\\20190212learn1\\20190212learn1\\20190212learn1.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\Documents\\Visual Studio 2017\\Projects\\20190212learn1\\20190212learn1\\obj\\",
+      "outputPath": "I:\\Microsoft VS Code\\netCode\\Projects\\Csharp基础和难点\\20190212learn1\\20190212learn1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

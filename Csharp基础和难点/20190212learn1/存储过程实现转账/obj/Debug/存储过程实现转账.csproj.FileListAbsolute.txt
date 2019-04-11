@@ -8,3 +8,13 @@ C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\存�
 C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\存储过程实现转账\obj\Debug\存储过程实现转账.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\存储过程实现转账\obj\Debug\存储过程实现转账.exe
 C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\存储过程实现转账\obj\Debug\存储过程实现转账.pdb
+I:\Microsoft VS Code\netCode\Projects\Csharp基础和难点\20190212learn1\存储过程实现转账\bin\Debug\存储过程实现转账.exe.config
+I:\Microsoft VS Code\netCode\Projects\Csharp基础和难点\20190212learn1\存储过程实现转账\bin\Debug\存储过程实现转账.exe
+I:\Microsoft VS Code\netCode\Projects\Csharp基础和难点\20190212learn1\存储过程实现转账\bin\Debug\存储过程实现转账.pdb
+I:\Microsoft VS Code\netCode\Projects\Csharp基础和难点\20190212learn1\存储过程实现转账\obj\Debug\存储过程实现转账.csprojAssemblyReference.cache
+I:\Microsoft VS Code\netCode\Projects\Csharp基础和难点\20190212learn1\存储过程实现转账\obj\Debug\存储过程实现转账.Form1.resources
+I:\Microsoft VS Code\netCode\Projects\Csharp基础和难点\20190212learn1\存储过程实现转账\obj\Debug\存储过程实现转账.Properties.Resources.resources
+I:\Microsoft VS Code\netCode\Projects\Csharp基础和难点\20190212learn1\存储过程实现转账\obj\Debug\存储过程实现转账.csproj.GenerateResource.cache
+I:\Microsoft VS Code\netCode\Projects\Csharp基础和难点\20190212learn1\存储过程实现转账\obj\Debug\存储过程实现转账.csproj.CoreCompileInputs.cache
+I:\Microsoft VS Code\netCode\Projects\Csharp基础和难点\20190212learn1\存储过程实现转账\obj\Debug\存储过程实现转账.exe
+I:\Microsoft VS Code\netCode\Projects\Csharp基础和难点\20190212learn1\存储过程实现转账\obj\Debug\存储过程实现转账.pdb

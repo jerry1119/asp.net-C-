@@ -1,0 +1,10 @@
+I:\Microsoft VS Code\netCode\Projects\Csharp基础和难点\20190212learn1\Socket聊天室客户端\obj\Debug\Socket聊天室.Form2.resources
+I:\Microsoft VS Code\netCode\Projects\Csharp基础和难点\20190212learn1\Socket聊天室客户端\obj\Debug\Socket聊天室客户端.Properties.Resources.resources
+I:\Microsoft VS Code\netCode\Projects\Csharp基础和难点\20190212learn1\Socket聊天室客户端\obj\Debug\Socket聊天室客户端.csproj.GenerateResource.cache
+I:\Microsoft VS Code\netCode\Projects\Csharp基础和难点\20190212learn1\Socket聊天室客户端\obj\Debug\Socket聊天室客户端.csproj.CoreCompileInputs.cache
+I:\Microsoft VS Code\netCode\Projects\Csharp基础和难点\20190212learn1\Socket聊天室客户端\bin\Debug\Socket聊天室客户端.exe.config
+I:\Microsoft VS Code\netCode\Projects\Csharp基础和难点\20190212learn1\Socket聊天室客户端\bin\Debug\Socket聊天室客户端.exe
+I:\Microsoft VS Code\netCode\Projects\Csharp基础和难点\20190212learn1\Socket聊天室客户端\bin\Debug\Socket聊天室客户端.pdb
+I:\Microsoft VS Code\netCode\Projects\Csharp基础和难点\20190212learn1\Socket聊天室客户端\obj\Debug\Socket聊天室客户端.Form1.resources
+I:\Microsoft VS Code\netCode\Projects\Csharp基础和难点\20190212learn1\Socket聊天室客户端\obj\Debug\Socket聊天室客户端.exe
+I:\Microsoft VS Code\netCode\Projects\Csharp基础和难点\20190212learn1\Socket聊天室客户端\obj\Debug\Socket聊天室客户端.pdb
