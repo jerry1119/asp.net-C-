@@ -1,0 +1,25 @@
+﻿@model List<Person>
+@{ 
+    ViewBag.title = "Index2的title";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index2</title>
+</head>
+<body>
+    <div> 
+        <h2>Index2页面自己的内容</h2>
+    </div>
+    <br />
+    <select>
+        @foreach (Person person in Model)
+        {
+            <option selected="@(person.ID==2)">@person.Name</option>
+        }
+    </select>
+</body>
+</html>

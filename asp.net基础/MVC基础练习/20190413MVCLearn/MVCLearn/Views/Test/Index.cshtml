@@ -1,0 +1,75 @@
+﻿
+@{
+    ViewBag.Title = "这是Index页面的标题";
+    Layout = "~/Views/_LayoutPage1.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    @section Header
+    {
+        Index页面在Layout头部的位置
+    }
+
+    @* Razor语法 *@
+    @{string a = "asd"; }
+    @a
+    @a.Length
+    <p>中间写html代码也不会干扰C#代码</p>
+    @{ string[] strs = { "shuzu", "baidu", "qq" };}
+    @foreach (var item in strs)
+    {
+        if (item.Length < 3)
+        {
+            <span style="color:red">@item</span>
+            <text>想在C#块中单纯的输出字符，可以写在这个中</text>
+        }
+    }
+    @* 在不好识别的情况下，把C#代码的对象括起来 *@
+    @{ string s = "yufaTest";}
+    abc@s.ashx
+            <a href="abc@s.ashx">content</a>
+            <a href="abc(@s).ashx">content</a>
+            <a href="abc@(s).ashx">content</a>
+    @* 还可以智能识别邮箱 *@
+    @{ string qq = "asd";}
+            <span>123@qq.com</span>
+            <span>123@(qq).com</span>
+    @* 这个有点厉害。。注意C#的是双引号,注意C#代码结尾的 ; 别忘了  *@
+    @{ bool IsOK = true;}
+            <p style="color:@(IsOK ? "red" : "green")">颜色</p>
+    @* 如何用c#输出html *@
+    @{ string s1 = "<a href='http://www.baidu.com'>百度</a>";}
+    @s1
+    @Html.Raw(s1)
+            @*<a href="~/Views/1.jpg">content</a> 以~/开头，会自动进行虚拟路径处理*@
+    @this.GetType().Assembly.Location
+    @* 页面要保持简单，razor页面会动态编译一个程序集，里面进行html拼接等操作 *@
+    @* 页面继承自webViewPage  *@
+
+            <br />
+    @ViewData["myName"]
+    @ViewData["myPwd"]
+    @ViewBag.myName
+    @ViewBag.age
+    @ViewData["name2"]
+    <div>
+        <form action="/Test/Index" method="post">
+            Num1:<input type="text" name="Num1" value="@Model.Num1" />
+            Num1:<input type="text" name="Num2" value="@Model.Num2" />
+                 <input type="submit" name="name" value="=" />
+                 <span>@Model.Result</span>
+        </form>
+    </div>
+    @section Footer
+    {
+    <p>这是Index页面在layOut页面的footer位置的内容</p>
+        }
+</body>
+</html>

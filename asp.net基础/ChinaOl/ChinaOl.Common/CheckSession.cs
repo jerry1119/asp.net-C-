@@ -9,6 +9,7 @@ namespace ChinaOl.Common
     //Session统一校验，写在这个类中，哪个页面需要Session校验，继承这个类就行
     public class CheckSession : System.Web.UI.Page
     {
+        public ChinaOl.Model.UserInfo userinfo { get; set; }
         //Init事件，aspx初始化时触发，先于Page_Load
         public void Page_Init(object sender, EventArgs e)
         {
@@ -16,6 +17,7 @@ namespace ChinaOl.Common
             {
                 Response.Redirect("Login.aspx");
             }
+            userinfo = Session["userInfo"] as Model.UserInfo;
         }
     }
 }

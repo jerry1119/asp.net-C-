@@ -9,3 +9,9 @@ C:\Users\Administrator\Documents\Visual Studio 2017\Projects\ChinaOl\ChinaOl.Mod
 C:\Users\Administrator\Documents\Visual Studio 2017\Projects\ChinaOl\ChinaOl.Model\obj\Debug\ChinaOl.Model.pdb
 C:\Users\Administrator\Documents\Visual Studio 2017\Projects\ChinaOl\ChinaOl.Model\obj\Debug\ChinaOl.Model.csprojAssemblyReference.cache
 C:\Users\Administrator\Documents\Visual Studio 2017\Projects\ChinaOl\ChinaOl.Model\obj\Debug\ChinaOl.Model.csproj.CoreCompileInputs.cache
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\ChinaOl\ChinaOl.Model\bin\Debug\ChinaOl.Model.dll
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\ChinaOl\ChinaOl.Model\bin\Debug\ChinaOl.Model.pdb
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\ChinaOl\ChinaOl.Model\obj\Debug\ChinaOl.Model.csprojAssemblyReference.cache
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\ChinaOl\ChinaOl.Model\obj\Debug\ChinaOl.Model.csproj.CoreCompileInputs.cache
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\ChinaOl\ChinaOl.Model\obj\Debug\ChinaOl.Model.dll
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\ChinaOl\ChinaOl.Model\obj\Debug\ChinaOl.Model.pdb

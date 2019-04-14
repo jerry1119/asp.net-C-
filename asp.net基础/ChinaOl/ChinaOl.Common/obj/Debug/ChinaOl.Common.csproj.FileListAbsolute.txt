@@ -9,3 +9,12 @@ C:\Users\Administrator\Documents\Visual Studio 2017\Projects\ChinaOl\ChinaOl.Com
 C:\Users\Administrator\Documents\Visual Studio 2017\Projects\ChinaOl\ChinaOl.Common\obj\Debug\ChinaOl.Common.pdb
 C:\Users\Administrator\Documents\Visual Studio 2017\Projects\ChinaOl\ChinaOl.Common\obj\Debug\ChinaOl.Common.csprojAssemblyReference.cache
 C:\Users\Administrator\Documents\Visual Studio 2017\Projects\ChinaOl\ChinaOl.Common\obj\Debug\ChinaOl.Common.csproj.CoreCompileInputs.cache
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\ChinaOl\ChinaOl.Common\bin\Debug\ChinaOl.Common.dll
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\ChinaOl\ChinaOl.Common\bin\Debug\ChinaOl.Common.pdb
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\ChinaOl\ChinaOl.Common\obj\Debug\ChinaOl.Common.csprojAssemblyReference.cache
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\ChinaOl\ChinaOl.Common\obj\Debug\ChinaOl.Common.csproj.CoreCompileInputs.cache
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\ChinaOl\ChinaOl.Common\obj\Debug\ChinaOl.Common.dll
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\ChinaOl\ChinaOl.Common\obj\Debug\ChinaOl.Common.pdb
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\ChinaOl\ChinaOl.Common\bin\Debug\ChinaOl.Model.dll
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\ChinaOl\ChinaOl.Common\bin\Debug\ChinaOl.Model.pdb
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\ChinaOl\ChinaOl.Common\obj\Debug\ChinaOl.Common.csproj.CopyComplete

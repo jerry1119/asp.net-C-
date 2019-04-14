@@ -22,3 +22,16 @@ C:\Users\Administrator\Documents\Visual Studio 2017\Projects\ChinaOl\ChinaOl.Bll
 C:\Users\Administrator\Documents\Visual Studio 2017\Projects\ChinaOl\ChinaOl.Bll\obj\Debug\ChinaOl.Bll.csprojAssemblyReference.cache
 C:\Users\Administrator\Documents\Visual Studio 2017\Projects\ChinaOl\ChinaOl.Bll\obj\Debug\ChinaOl.Bll.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Documents\Visual Studio 2017\Projects\ChinaOl\ChinaOl.Bll\obj\Debug\ChinaOl.Bll.csproj.CopyComplete
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\ChinaOl\ChinaOl.Bll\bin\Debug\ChinaOl.Bll.dll
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\ChinaOl\ChinaOl.Bll\bin\Debug\ChinaOl.Bll.pdb
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\ChinaOl\ChinaOl.Bll\bin\Debug\ChinaOl.Common.dll
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\ChinaOl\ChinaOl.Bll\bin\Debug\ChinaOl.Dal.dll
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\ChinaOl\ChinaOl.Bll\bin\Debug\ChinaOl.Model.dll
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\ChinaOl\ChinaOl.Bll\bin\Debug\ChinaOl.Common.pdb
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\ChinaOl\ChinaOl.Bll\bin\Debug\ChinaOl.Dal.pdb
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\ChinaOl\ChinaOl.Bll\bin\Debug\ChinaOl.Model.pdb
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\ChinaOl\ChinaOl.Bll\obj\Debug\ChinaOl.Bll.csprojAssemblyReference.cache
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\ChinaOl\ChinaOl.Bll\obj\Debug\ChinaOl.Bll.csproj.CoreCompileInputs.cache
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\ChinaOl\ChinaOl.Bll\obj\Debug\ChinaOl.Bll.csproj.CopyComplete
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\ChinaOl\ChinaOl.Bll\obj\Debug\ChinaOl.Bll.dll
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\ChinaOl\ChinaOl.Bll\obj\Debug\ChinaOl.Bll.pdb

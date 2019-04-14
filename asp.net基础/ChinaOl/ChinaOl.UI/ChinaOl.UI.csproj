@@ -95,7 +95,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="4.11XinWen\NewList.aspx" />
     <Content Include="4.13autoLogin\Login.aspx" />
     <Content Include="4.13autoLogin\UserInfiList.aspx" />
     <Content Include="4.28Ajax\AjaxDemo.aspx" />
@@ -115,7 +114,6 @@
     <Content Include="Css\pageBarStyle.css" />
     <Content Include="Css\style.css" />
     <Content Include="Css\tableStyle.css" />
-    <Content Include="Error.html" />
     <Content Include="index.html" />
     <Content Include="Js\CSS3DRenderer.js" />
     <Content Include="Js\easyui-lang-zh_CN.js" />
@@ -149,6 +147,7 @@
     <Content Include="5.5Json\DeleteUser.ashx" />
     <Content Include="5.5Json\AddUserInfo.ashx" />
     <Content Include="5.5Json\EditUserInfo.ashx" />
+    <Content Include="libman.json" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <Content Include="scss\style.scss" />
     <None Include="Web.Debug.config">
@@ -165,12 +164,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="4.11XinWen\NewList.aspx.cs">
-      <DependentUpon>NewList.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="4.11XinWen\NewList.aspx.designer.cs">
-      <DependentUpon>NewList.aspx</DependentUpon>
-    </Compile>
     <Compile Include="4.13autoLogin\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -295,7 +288,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="4.11XinWen\WebDemos\" />
+    <Folder Include="App_Code\" />
     <Folder Include="Css\themes\" />
   </ItemGroup>
   <PropertyGroup>

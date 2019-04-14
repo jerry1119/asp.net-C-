@@ -21,7 +21,7 @@ namespace ChinaOl.UI._4._13autoLogin
             //{
             //    Response.Write("欢迎" + ((UserInfo)Session["userInfo"]).UserName+"登录本系统");
             //}
-            Response.Write("欢迎" + ((UserInfo)Session["userInfo"]).UserName + "登录本系统");
+            Response.Write("欢迎" + userinfo.UserName + "登录本系统");
         }
     }
 }

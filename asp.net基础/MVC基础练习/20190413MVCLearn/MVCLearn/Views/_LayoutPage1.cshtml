@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    @RenderSection("Header")
+    <h1>这里是layout的内容</h1>
+    <div>
+        @RenderBody()
+    </div>
+    @* 可设置 true 就表示必须得实现 ，false就是可实现可不 *@
+    @RenderSection("Footer",false)
+
+    @if (IsSectionDefined("Sec1"))
+    {
+        @RenderSection("Sec1")
+    }
+    else
+    {
+        <text>如果子页面没有实现，就显示这里的内容</text>
+    }
+</body>
+</html>

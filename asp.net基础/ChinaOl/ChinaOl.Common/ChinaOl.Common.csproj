@@ -51,6 +51,12 @@
     <Compile Include="ValidateCode.cs" />
     <Compile Include="webCommon.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ChinaOl.Model\ChinaOl.Model.csproj">
+      <Project>{71EE6B85-A5B9-473F-93E6-2A0CFD25FD05}</Project>
+      <Name>ChinaOl.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
