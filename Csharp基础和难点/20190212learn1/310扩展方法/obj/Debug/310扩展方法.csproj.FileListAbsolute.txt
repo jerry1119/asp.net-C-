@@ -5,3 +5,10 @@ C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\310�
 C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\310扩展方法\obj\Debug\310扩展方法.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\310扩展方法\obj\Debug\310扩展方法.exe
 C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\310扩展方法\obj\Debug\310扩展方法.pdb
+I:\Microsoft VS Code\netCode\Projects\Csharp基础和难点\20190212learn1\310扩展方法\bin\Debug\310扩展方法.exe.config
+I:\Microsoft VS Code\netCode\Projects\Csharp基础和难点\20190212learn1\310扩展方法\bin\Debug\310扩展方法.exe
+I:\Microsoft VS Code\netCode\Projects\Csharp基础和难点\20190212learn1\310扩展方法\bin\Debug\310扩展方法.pdb
+I:\Microsoft VS Code\netCode\Projects\Csharp基础和难点\20190212learn1\310扩展方法\obj\Debug\310扩展方法.csprojAssemblyReference.cache
+I:\Microsoft VS Code\netCode\Projects\Csharp基础和难点\20190212learn1\310扩展方法\obj\Debug\310扩展方法.csproj.CoreCompileInputs.cache
+I:\Microsoft VS Code\netCode\Projects\Csharp基础和难点\20190212learn1\310扩展方法\obj\Debug\310扩展方法.exe
+I:\Microsoft VS Code\netCode\Projects\Csharp基础和难点\20190212learn1\310扩展方法\obj\Debug\310扩展方法.pdb

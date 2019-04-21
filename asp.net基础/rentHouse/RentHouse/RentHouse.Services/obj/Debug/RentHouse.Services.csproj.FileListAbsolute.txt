@@ -1,0 +1,2 @@
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Services\obj\Debug\RentHouse.Services.csprojAssemblyReference.cache
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Services\obj\Debug\RentHouse.Services.csproj.CoreCompileInputs.cache

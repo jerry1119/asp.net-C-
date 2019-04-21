@@ -1,0 +1,7 @@
+I:\Microsoft VS Code\netCode\Projects\Csharp基础和难点\20190212learn1\414Linq\bin\Debug\414Linq.exe.config
+I:\Microsoft VS Code\netCode\Projects\Csharp基础和难点\20190212learn1\414Linq\bin\Debug\414Linq.exe
+I:\Microsoft VS Code\netCode\Projects\Csharp基础和难点\20190212learn1\414Linq\bin\Debug\414Linq.pdb
+I:\Microsoft VS Code\netCode\Projects\Csharp基础和难点\20190212learn1\414Linq\obj\Debug\414Linq.csprojAssemblyReference.cache
+I:\Microsoft VS Code\netCode\Projects\Csharp基础和难点\20190212learn1\414Linq\obj\Debug\414Linq.csproj.CoreCompileInputs.cache
+I:\Microsoft VS Code\netCode\Projects\Csharp基础和难点\20190212learn1\414Linq\obj\Debug\414Linq.exe
+I:\Microsoft VS Code\netCode\Projects\Csharp基础和难点\20190212learn1\414Linq\obj\Debug\414Linq.pdb

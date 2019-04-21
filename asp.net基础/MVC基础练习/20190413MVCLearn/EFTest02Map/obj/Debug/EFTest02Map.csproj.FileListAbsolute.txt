@@ -1,0 +1,13 @@
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\MVC基础练习\20190413MVCLearn\EFTest02Map\bin\Debug\EFTest02Map.exe.config
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\MVC基础练习\20190413MVCLearn\EFTest02Map\bin\Debug\EFTest02Map.exe
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\MVC基础练习\20190413MVCLearn\EFTest02Map\bin\Debug\EFTest02Map.pdb
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\MVC基础练习\20190413MVCLearn\EFTest02Map\bin\Debug\EntityFramework.dll
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\MVC基础练习\20190413MVCLearn\EFTest02Map\bin\Debug\EntityFramework.SqlServer.dll
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\MVC基础练习\20190413MVCLearn\EFTest02Map\bin\Debug\EntityFramework.xml
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\MVC基础练习\20190413MVCLearn\EFTest02Map\bin\Debug\EntityFramework.SqlServer.xml
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\MVC基础练习\20190413MVCLearn\EFTest02Map\bin\Debug\zh-Hans\EntityFramework.resources.dll
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\MVC基础练习\20190413MVCLearn\EFTest02Map\obj\Debug\EFTest02Map.csprojAssemblyReference.cache
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\MVC基础练习\20190413MVCLearn\EFTest02Map\obj\Debug\EFTest02Map.csproj.CoreCompileInputs.cache
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\MVC基础练习\20190413MVCLearn\EFTest02Map\obj\Debug\EFTest02Map.csproj.CopyComplete
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\MVC基础练习\20190413MVCLearn\EFTest02Map\obj\Debug\EFTest02Map.exe
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\MVC基础练习\20190413MVCLearn\EFTest02Map\obj\Debug\EFTest02Map.pdb

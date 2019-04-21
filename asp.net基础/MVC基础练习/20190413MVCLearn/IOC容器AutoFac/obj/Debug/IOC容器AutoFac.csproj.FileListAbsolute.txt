@@ -1,0 +1,11 @@
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\MVC基础练习\20190413MVCLearn\IOC容器AutoFac\bin\Debug\IOC容器AutoFac.exe.config
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\MVC基础练习\20190413MVCLearn\IOC容器AutoFac\bin\Debug\IOC容器AutoFac.exe
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\MVC基础练习\20190413MVCLearn\IOC容器AutoFac\bin\Debug\IOC容器AutoFac.pdb
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\MVC基础练习\20190413MVCLearn\IOC容器AutoFac\obj\Debug\IOC容器AutoFac.csprojAssemblyReference.cache
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\MVC基础练习\20190413MVCLearn\IOC容器AutoFac\obj\Debug\IOC容器AutoFac.csproj.CoreCompileInputs.cache
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\MVC基础练习\20190413MVCLearn\IOC容器AutoFac\obj\Debug\IOC容器AutoFac.exe
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\MVC基础练习\20190413MVCLearn\IOC容器AutoFac\obj\Debug\IOC容器AutoFac.pdb
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\MVC基础练习\20190413MVCLearn\IOC容器AutoFac\bin\Debug\Autofac.dll
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\MVC基础练习\20190413MVCLearn\IOC容器AutoFac\bin\Debug\Autofac.pdb
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\MVC基础练习\20190413MVCLearn\IOC容器AutoFac\bin\Debug\Autofac.xml
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\MVC基础练习\20190413MVCLearn\IOC容器AutoFac\obj\Debug\IOC容器AutoFac.csproj.CopyComplete

@@ -1,0 +1,419 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="sqlPracticeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="bank">
+          <Key>
+            <PropertyRef Name="cid" />
+          </Key>
+          <Property Name="cid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="balance" Type="money" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="tId" />
+          </Key>
+          <Property Name="tId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="tName" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="tParentId" Type="int" Nullable="false" />
+          <Property Name="tNote" Type="nvarchar" MaxLength="1000" />
+        </EntityType>
+        <EntityType Name="classes">
+          <Key>
+            <PropertyRef Name="classID" />
+          </Key>
+          <Property Name="classID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="className" Type="nvarchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ContentInfo">
+          <Key>
+            <PropertyRef Name="dId" />
+          </Key>
+          <Property Name="dId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="dTId" Type="int" Nullable="false" />
+          <Property Name="dName" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="dContent" Type="varchar(max)" />
+          <Property Name="dInTime" Type="datetime" />
+          <Property Name="dEditeTime" Type="datetime" />
+          <Property Name="dIsDeleted" Type="bit" />
+        </EntityType>
+        <EntityType Name="scoreInfo">
+          <Key>
+            <PropertyRef Name="scoreID" />
+          </Key>
+          <Property Name="scoreID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="stuID" Type="int" />
+          <Property Name="subID" Type="int" />
+          <Property Name="score" Type="decimal" Precision="4" Scale="1" />
+        </EntityType>
+        <EntityType Name="studentInfo">
+          <Key>
+            <PropertyRef Name="stuID" />
+          </Key>
+          <Property Name="stuID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="stuName" Type="nvarchar" MaxLength="10" />
+          <Property Name="stuSex" Type="bit" />
+          <Property Name="stubirthday" Type="date" />
+          <Property Name="stuPhone" Type="char" MaxLength="11" />
+          <Property Name="stuEmail" Type="varchar" MaxLength="20" />
+          <Property Name="stuClassID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="subJect">
+          <Key>
+            <PropertyRef Name="subID" />
+          </Key>
+          <Property Name="subID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="subName" Type="nvarchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="userInfo">
+          <Key>
+            <PropertyRef Name="userID" />
+          </Key>
+          <Property Name="userID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="userName" Type="nvarchar" MaxLength="10" />
+          <Property Name="userPwd" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <Association Name="FK__ContentInf__dTId__3A81B327">
+          <End Role="Category" Type="Self.Category" Multiplicity="1" />
+          <End Role="ContentInfo" Type="Self.ContentInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Category">
+              <PropertyRef Name="tId" />
+            </Principal>
+            <Dependent Role="ContentInfo">
+              <PropertyRef Name="dTId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__scoreInfo__subID__164452B1">
+          <End Role="subJect" Type="Self.subJect" Multiplicity="0..1" />
+          <End Role="scoreInfo" Type="Self.scoreInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="subJect">
+              <PropertyRef Name="subID" />
+            </Principal>
+            <Dependent Role="scoreInfo">
+              <PropertyRef Name="subID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_scoreInfo_studentInfo">
+          <End Role="studentInfo" Type="Self.studentInfo" Multiplicity="0..1" />
+          <End Role="scoreInfo" Type="Self.scoreInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="studentInfo">
+              <PropertyRef Name="stuID" />
+            </Principal>
+            <Dependent Role="scoreInfo">
+              <PropertyRef Name="stuID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_students_classes">
+          <End Role="classes" Type="Self.classes" Multiplicity="1" />
+          <End Role="studentInfo" Type="Self.studentInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="classes">
+              <PropertyRef Name="classID" />
+            </Principal>
+            <Dependent Role="studentInfo">
+              <PropertyRef Name="stuClassID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="sqlPracticeModelStoreContainer">
+          <EntitySet Name="bank" EntityType="Self.bank" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="classes" EntityType="Self.classes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ContentInfo" EntityType="Self.ContentInfo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="scoreInfo" EntityType="Self.scoreInfo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="studentInfo" EntityType="Self.studentInfo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="subJect" EntityType="Self.subJect" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="userInfo" EntityType="Self.userInfo" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__ContentInf__dTId__3A81B327" Association="Self.FK__ContentInf__dTId__3A81B327">
+            <End Role="Category" EntitySet="Category" />
+            <End Role="ContentInfo" EntitySet="ContentInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK__scoreInfo__subID__164452B1" Association="Self.FK__scoreInfo__subID__164452B1">
+            <End Role="subJect" EntitySet="subJect" />
+            <End Role="scoreInfo" EntitySet="scoreInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_scoreInfo_studentInfo" Association="Self.FK_scoreInfo_studentInfo">
+            <End Role="studentInfo" EntitySet="studentInfo" />
+            <End Role="scoreInfo" EntitySet="scoreInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_students_classes" Association="Self.FK_students_classes">
+            <End Role="classes" EntitySet="classes" />
+            <End Role="studentInfo" EntitySet="studentInfo" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="sqlPracticeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="bank">
+          <Key>
+            <PropertyRef Name="cid" />
+          </Key>
+          <Property Name="cid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="balance" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="tId" />
+          </Key>
+          <Property Name="tId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="tName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="tParentId" Type="Int32" Nullable="false" />
+          <Property Name="tNote" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="ContentInfoes" Relationship="Self.FK__ContentInf__dTId__3A81B327" FromRole="Category" ToRole="ContentInfo" />
+        </EntityType>
+        <EntityType Name="class">
+          <Key>
+            <PropertyRef Name="classID" />
+          </Key>
+          <Property Name="classID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="className" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="studentInfoes" Relationship="Self.FK_students_classes" FromRole="classes" ToRole="studentInfo" />
+        </EntityType>
+        <EntityType Name="ContentInfo">
+          <Key>
+            <PropertyRef Name="dId" />
+          </Key>
+          <Property Name="dId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="dTId" Type="Int32" Nullable="false" />
+          <Property Name="dName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="dContent" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="dInTime" Type="DateTime" Precision="3" />
+          <Property Name="dEditeTime" Type="DateTime" Precision="3" />
+          <Property Name="dIsDeleted" Type="Boolean" />
+          <NavigationProperty Name="Category" Relationship="Self.FK__ContentInf__dTId__3A81B327" FromRole="ContentInfo" ToRole="Category" />
+        </EntityType>
+        <EntityType Name="scoreInfo">
+          <Key>
+            <PropertyRef Name="scoreID" />
+          </Key>
+          <Property Name="scoreID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="stuID" Type="Int32" />
+          <Property Name="subID" Type="Int32" />
+          <Property Name="score" Type="Decimal" Precision="4" Scale="1" />
+          <NavigationProperty Name="subJect" Relationship="Self.FK__scoreInfo__subID__164452B1" FromRole="scoreInfo" ToRole="subJect" />
+          <NavigationProperty Name="studentInfo" Relationship="Self.FK_scoreInfo_studentInfo" FromRole="scoreInfo" ToRole="studentInfo" />
+        </EntityType>
+        <EntityType Name="studentInfo">
+          <Key>
+            <PropertyRef Name="stuID" />
+          </Key>
+          <Property Name="stuID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="stuName" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="stuSex" Type="Boolean" />
+          <Property Name="stubirthday" Type="DateTime" Precision="0" />
+          <Property Name="stuPhone" Type="String" MaxLength="11" FixedLength="true" Unicode="false" />
+          <Property Name="stuEmail" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="stuClassID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="class" Relationship="Self.FK_students_classes" FromRole="studentInfo" ToRole="classes" />
+          <NavigationProperty Name="scoreInfoes" Relationship="Self.FK_scoreInfo_studentInfo" FromRole="studentInfo" ToRole="scoreInfo" />
+        </EntityType>
+        <EntityType Name="subJect">
+          <Key>
+            <PropertyRef Name="subID" />
+          </Key>
+          <Property Name="subID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="subName" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="scoreInfoes" Relationship="Self.FK__scoreInfo__subID__164452B1" FromRole="subJect" ToRole="scoreInfo" />
+        </EntityType>
+        <EntityType Name="userInfo">
+          <Key>
+            <PropertyRef Name="userID" />
+          </Key>
+          <Property Name="userID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="userName" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="userPwd" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <Association Name="FK__ContentInf__dTId__3A81B327">
+          <End Role="Category" Type="Self.Category" Multiplicity="1" />
+          <End Role="ContentInfo" Type="Self.ContentInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Category">
+              <PropertyRef Name="tId" />
+            </Principal>
+            <Dependent Role="ContentInfo">
+              <PropertyRef Name="dTId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_students_classes">
+          <End Role="classes" Type="Self.class" Multiplicity="1" />
+          <End Role="studentInfo" Type="Self.studentInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="classes">
+              <PropertyRef Name="classID" />
+            </Principal>
+            <Dependent Role="studentInfo">
+              <PropertyRef Name="stuClassID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__scoreInfo__subID__164452B1">
+          <End Role="subJect" Type="Self.subJect" Multiplicity="0..1" />
+          <End Role="scoreInfo" Type="Self.scoreInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="subJect">
+              <PropertyRef Name="subID" />
+            </Principal>
+            <Dependent Role="scoreInfo">
+              <PropertyRef Name="subID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_scoreInfo_studentInfo">
+          <End Role="studentInfo" Type="Self.studentInfo" Multiplicity="0..1" />
+          <End Role="scoreInfo" Type="Self.scoreInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="studentInfo">
+              <PropertyRef Name="stuID" />
+            </Principal>
+            <Dependent Role="scoreInfo">
+              <PropertyRef Name="stuID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="sqlPracticeEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="banks" EntityType="Self.bank" />
+          <EntitySet Name="Categories" EntityType="Self.Category" />
+          <EntitySet Name="classes" EntityType="Self.class" />
+          <EntitySet Name="ContentInfoes" EntityType="Self.ContentInfo" />
+          <EntitySet Name="scoreInfoes" EntityType="Self.scoreInfo" />
+          <EntitySet Name="studentInfoes" EntityType="Self.studentInfo" />
+          <EntitySet Name="subJects" EntityType="Self.subJect" />
+          <EntitySet Name="userInfoes" EntityType="Self.userInfo" />
+          <AssociationSet Name="FK__ContentInf__dTId__3A81B327" Association="Self.FK__ContentInf__dTId__3A81B327">
+            <End Role="Category" EntitySet="Categories" />
+            <End Role="ContentInfo" EntitySet="ContentInfoes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_students_classes" Association="Self.FK_students_classes">
+            <End Role="classes" EntitySet="classes" />
+            <End Role="studentInfo" EntitySet="studentInfoes" />
+          </AssociationSet>
+          <AssociationSet Name="FK__scoreInfo__subID__164452B1" Association="Self.FK__scoreInfo__subID__164452B1">
+            <End Role="subJect" EntitySet="subJects" />
+            <End Role="scoreInfo" EntitySet="scoreInfoes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_scoreInfo_studentInfo" Association="Self.FK_scoreInfo_studentInfo">
+            <End Role="studentInfo" EntitySet="studentInfoes" />
+            <End Role="scoreInfo" EntitySet="scoreInfoes" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="sqlPracticeModelStoreContainer" CdmEntityContainer="sqlPracticeEntities">
+          <EntitySetMapping Name="banks">
+            <EntityTypeMapping TypeName="sqlPracticeModel.bank">
+              <MappingFragment StoreEntitySet="bank">
+                <ScalarProperty Name="cid" ColumnName="cid" />
+                <ScalarProperty Name="balance" ColumnName="balance" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Categories">
+            <EntityTypeMapping TypeName="sqlPracticeModel.Category">
+              <MappingFragment StoreEntitySet="Category">
+                <ScalarProperty Name="tId" ColumnName="tId" />
+                <ScalarProperty Name="tName" ColumnName="tName" />
+                <ScalarProperty Name="tParentId" ColumnName="tParentId" />
+                <ScalarProperty Name="tNote" ColumnName="tNote" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="classes">
+            <EntityTypeMapping TypeName="sqlPracticeModel.class">
+              <MappingFragment StoreEntitySet="classes">
+                <ScalarProperty Name="classID" ColumnName="classID" />
+                <ScalarProperty Name="className" ColumnName="className" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ContentInfoes">
+            <EntityTypeMapping TypeName="sqlPracticeModel.ContentInfo">
+              <MappingFragment StoreEntitySet="ContentInfo">
+                <ScalarProperty Name="dId" ColumnName="dId" />
+                <ScalarProperty Name="dTId" ColumnName="dTId" />
+                <ScalarProperty Name="dName" ColumnName="dName" />
+                <ScalarProperty Name="dContent" ColumnName="dContent" />
+                <ScalarProperty Name="dInTime" ColumnName="dInTime" />
+                <ScalarProperty Name="dEditeTime" ColumnName="dEditeTime" />
+                <ScalarProperty Name="dIsDeleted" ColumnName="dIsDeleted" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="scoreInfoes">
+            <EntityTypeMapping TypeName="sqlPracticeModel.scoreInfo">
+              <MappingFragment StoreEntitySet="scoreInfo">
+                <ScalarProperty Name="scoreID" ColumnName="scoreID" />
+                <ScalarProperty Name="stuID" ColumnName="stuID" />
+                <ScalarProperty Name="subID" ColumnName="subID" />
+                <ScalarProperty Name="score" ColumnName="score" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="studentInfoes">
+            <EntityTypeMapping TypeName="sqlPracticeModel.studentInfo">
+              <MappingFragment StoreEntitySet="studentInfo">
+                <ScalarProperty Name="stuID" ColumnName="stuID" />
+                <ScalarProperty Name="stuName" ColumnName="stuName" />
+                <ScalarProperty Name="stuSex" ColumnName="stuSex" />
+                <ScalarProperty Name="stubirthday" ColumnName="stubirthday" />
+                <ScalarProperty Name="stuPhone" ColumnName="stuPhone" />
+                <ScalarProperty Name="stuEmail" ColumnName="stuEmail" />
+                <ScalarProperty Name="stuClassID" ColumnName="stuClassID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="subJects">
+            <EntityTypeMapping TypeName="sqlPracticeModel.subJect">
+              <MappingFragment StoreEntitySet="subJect">
+                <ScalarProperty Name="subID" ColumnName="subID" />
+                <ScalarProperty Name="subName" ColumnName="subName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="userInfoes">
+            <EntityTypeMapping TypeName="sqlPracticeModel.userInfo">
+              <MappingFragment StoreEntitySet="userInfo">
+                <ScalarProperty Name="userID" ColumnName="userID" />
+                <ScalarProperty Name="userName" ColumnName="userName" />
+                <ScalarProperty Name="userPwd" ColumnName="userPwd" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

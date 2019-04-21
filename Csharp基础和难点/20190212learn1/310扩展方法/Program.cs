@@ -35,8 +35,27 @@ namespace _310扩展方法
             list.Add(s3);
             list.Add(s4);
             list.Add(s5);
-
-            Console.WriteLine(list.);
+            // Any() 是否存在至少一个 ， Max()  Min() 最大最小 First() FirstOrDefault Single()
+            Console.WriteLine(list.Any(p=>p.Age>10));
+            //等价于
+            Console.WriteLine(list.Where(p=>p.Age>10).Any());
+            //升序排序
+            //var datas = list.OrderBy(p => p.Age);
+            //降序排序,多个排序
+            //var datas = list.OrderByDescending(p=>p.Age).ThenBy(p=>p.Salary);
+            //Skip(n)  Take(n) 常用来分页
+            var datas =  list.Skip(1).Take(2);
+            //分组,下列为：统计各年龄的平均工资,最高工资
+            var Groupdatas = list.GroupBy(p => p.Age);
+            foreach (var item in Groupdatas)
+            {
+                Console.WriteLine(item.Key+":AVG:"+item.Average(p=>p.Salary)+":Max:"+item.Max(p=>p.Salary));
+            }
+            list.Select(p => new { p.Name, p.Salary });
+            foreach (Person data in datas)
+            {
+                Console.WriteLine(data.FormatOutput());
+            }
             Console.ReadKey();
         }
     }

@@ -41,6 +41,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Socket聊天室", "Socket�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Socket聊天室客户端", "Socket聊天室客户端\Socket聊天室客户端.csproj", "{E196637C-78CB-4907-A32D-4131DC234F1C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "414Linq", "414Linq\414Linq.csproj", "{70E4886C-BA9B-4A87-B0C0-8A929F1D28E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "419CSharp5.0中的异步", "419CSharp5.0中的异步\419CSharp5.0中的异步.csproj", "{70D5EB0A-A7A8-4166-9A00-F495655B9631}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +127,14 @@ Global
 		{E196637C-78CB-4907-A32D-4131DC234F1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E196637C-78CB-4907-A32D-4131DC234F1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E196637C-78CB-4907-A32D-4131DC234F1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70E4886C-BA9B-4A87-B0C0-8A929F1D28E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70E4886C-BA9B-4A87-B0C0-8A929F1D28E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70E4886C-BA9B-4A87-B0C0-8A929F1D28E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70E4886C-BA9B-4A87-B0C0-8A929F1D28E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70D5EB0A-A7A8-4166-9A00-F495655B9631}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70D5EB0A-A7A8-4166-9A00-F495655B9631}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70D5EB0A-A7A8-4166-9A00-F495655B9631}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70D5EB0A-A7A8-4166-9A00-F495655B9631}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

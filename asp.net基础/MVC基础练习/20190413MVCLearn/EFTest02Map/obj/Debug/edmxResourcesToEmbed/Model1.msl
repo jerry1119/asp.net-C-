@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="sqlPracticeModelStoreContainer" CdmEntityContainer="sqlPracticeEntities">
+    <EntitySetMapping Name="banks">
+      <EntityTypeMapping TypeName="sqlPracticeModel.bank">
+        <MappingFragment StoreEntitySet="bank">
+          <ScalarProperty Name="cid" ColumnName="cid" />
+          <ScalarProperty Name="balance" ColumnName="balance" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="sqlPracticeModel.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="tId" ColumnName="tId" />
+          <ScalarProperty Name="tName" ColumnName="tName" />
+          <ScalarProperty Name="tParentId" ColumnName="tParentId" />
+          <ScalarProperty Name="tNote" ColumnName="tNote" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="classes">
+      <EntityTypeMapping TypeName="sqlPracticeModel.class">
+        <MappingFragment StoreEntitySet="classes">
+          <ScalarProperty Name="classID" ColumnName="classID" />
+          <ScalarProperty Name="className" ColumnName="className" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContentInfoes">
+      <EntityTypeMapping TypeName="sqlPracticeModel.ContentInfo">
+        <MappingFragment StoreEntitySet="ContentInfo">
+          <ScalarProperty Name="dId" ColumnName="dId" />
+          <ScalarProperty Name="dTId" ColumnName="dTId" />
+          <ScalarProperty Name="dName" ColumnName="dName" />
+          <ScalarProperty Name="dContent" ColumnName="dContent" />
+          <ScalarProperty Name="dInTime" ColumnName="dInTime" />
+          <ScalarProperty Name="dEditeTime" ColumnName="dEditeTime" />
+          <ScalarProperty Name="dIsDeleted" ColumnName="dIsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="scoreInfoes">
+      <EntityTypeMapping TypeName="sqlPracticeModel.scoreInfo">
+        <MappingFragment StoreEntitySet="scoreInfo">
+          <ScalarProperty Name="scoreID" ColumnName="scoreID" />
+          <ScalarProperty Name="stuID" ColumnName="stuID" />
+          <ScalarProperty Name="subID" ColumnName="subID" />
+          <ScalarProperty Name="score" ColumnName="score" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="studentInfoes">
+      <EntityTypeMapping TypeName="sqlPracticeModel.studentInfo">
+        <MappingFragment StoreEntitySet="studentInfo">
+          <ScalarProperty Name="stuID" ColumnName="stuID" />
+          <ScalarProperty Name="stuName" ColumnName="stuName" />
+          <ScalarProperty Name="stuSex" ColumnName="stuSex" />
+          <ScalarProperty Name="stubirthday" ColumnName="stubirthday" />
+          <ScalarProperty Name="stuPhone" ColumnName="stuPhone" />
+          <ScalarProperty Name="stuEmail" ColumnName="stuEmail" />
+          <ScalarProperty Name="stuClassID" ColumnName="stuClassID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="subJects">
+      <EntityTypeMapping TypeName="sqlPracticeModel.subJect">
+        <MappingFragment StoreEntitySet="subJect">
+          <ScalarProperty Name="subID" ColumnName="subID" />
+          <ScalarProperty Name="subName" ColumnName="subName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="userInfoes">
+      <EntityTypeMapping TypeName="sqlPracticeModel.userInfo">
+        <MappingFragment StoreEntitySet="userInfo">
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="userName" ColumnName="userName" />
+          <ScalarProperty Name="userPwd" ColumnName="userPwd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
