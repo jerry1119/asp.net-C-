@@ -1,0 +1,782 @@
+2019-04-22 04:22:02,389 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:Opened connection at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,398 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:Started transaction at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,399 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:CREATE TABLE [dbo].[T_AdminLogs] (
+    [Id] [bigint] NOT NULL IDENTITY,
+    [AdminUserId] [bigint] NOT NULL,
+    [Message] [nvarchar](max) NOT NULL,
+    [CreateDateTime] [datetime] NOT NULL,
+    [IsDeleted] [bit] NOT NULL,
+    CONSTRAINT [PK_dbo.T_AdminLogs] PRIMARY KEY ([Id])
+)
+2019-04-22 04:22:02,399 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,399 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,404 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 4 ms with result: -1
+
+2019-04-22 04:22:02,404 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,404 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:CREATE TABLE [dbo].[T_AdminUsers] (
+    [Id] [bigint] NOT NULL IDENTITY,
+    [Name] [nvarchar](50) NOT NULL,
+    [PhoneNum] [varchar](20) NOT NULL,
+    [PasswordHash] [varchar](100) NOT NULL,
+    [PasswordSalt] [varchar](20) NOT NULL,
+    [Email] [varchar](30) NOT NULL,
+    [CityId] [bigint],
+    [LoginErrorTimes] [int] NOT NULL,
+    [LastLoginErrorDateTime] [datetime],
+    [CreateDateTime] [datetime] NOT NULL,
+    [IsDeleted] [bit] NOT NULL,
+    CONSTRAINT [PK_dbo.T_AdminUsers] PRIMARY KEY ([Id])
+)
+2019-04-22 04:22:02,404 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,404 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,405 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 1 ms with result: -1
+
+2019-04-22 04:22:02,405 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,405 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:CREATE TABLE [dbo].[T_Cities] (
+    [Id] [bigint] NOT NULL IDENTITY,
+    [Name] [nvarchar](20) NOT NULL,
+    [CreateDateTime] [datetime] NOT NULL,
+    [IsDeleted] [bit] NOT NULL,
+    CONSTRAINT [PK_dbo.T_Cities] PRIMARY KEY ([Id])
+)
+2019-04-22 04:22:02,405 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,405 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,407 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 1 ms with result: -1
+
+2019-04-22 04:22:02,407 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,407 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:CREATE TABLE [dbo].[T_Roles] (
+    [Id] [bigint] NOT NULL IDENTITY,
+    [Name] [nvarchar](50) NOT NULL,
+    [CreateDateTime] [datetime] NOT NULL,
+    [IsDeleted] [bit] NOT NULL,
+    CONSTRAINT [PK_dbo.T_Roles] PRIMARY KEY ([Id])
+)
+2019-04-22 04:22:02,407 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,407 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,408 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,408 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,408 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:CREATE TABLE [dbo].[T_Permissions] (
+    [Id] [bigint] NOT NULL IDENTITY,
+    [Description] [nvarchar](1024),
+    [Name] [nvarchar](50) NOT NULL,
+    [CreateDateTime] [datetime] NOT NULL,
+    [IsDeleted] [bit] NOT NULL,
+    CONSTRAINT [PK_dbo.T_Permissions] PRIMARY KEY ([Id])
+)
+2019-04-22 04:22:02,408 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,408 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,409 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 1 ms with result: -1
+
+2019-04-22 04:22:02,409 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,409 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:CREATE TABLE [dbo].[T_Attachments] (
+    [Id] [bigint] NOT NULL IDENTITY,
+    [Name] [nvarchar](50) NOT NULL,
+    [IconName] [varchar](50) NOT NULL,
+    [CreateDateTime] [datetime] NOT NULL,
+    [IsDeleted] [bit] NOT NULL,
+    CONSTRAINT [PK_dbo.T_Attachments] PRIMARY KEY ([Id])
+)
+2019-04-22 04:22:02,409 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,409 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,410 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,410 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,410 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:CREATE TABLE [dbo].[T_Houses] (
+    [Id] [bigint] NOT NULL IDENTITY,
+    [CommunityId] [bigint] NOT NULL,
+    [RoomTypeId] [bigint] NOT NULL,
+    [Address] [nvarchar](128) NOT NULL,
+    [MonthRent] [int] NOT NULL,
+    [StatusId] [bigint] NOT NULL,
+    [Area] [decimal](18, 2) NOT NULL,
+    [DecorateStatusId] [bigint] NOT NULL,
+    [TotalFloorCount] [int] NOT NULL,
+    [FloorIndex] [int] NOT NULL,
+    [TypeId] [bigint] NOT NULL,
+    [Direction] [nvarchar](20) NOT NULL,
+    [LookableDateTime] [datetime] NOT NULL,
+    [CheckInDateTime] [datetime] NOT NULL,
+    [OwnerName] [nvarchar](20) NOT NULL,
+    [OwnerPhoneNum] [varchar](20) NOT NULL,
+    [Description] [nvarchar](max),
+    [CreateDateTime] [datetime] NOT NULL,
+    [IsDeleted] [bit] NOT NULL,
+    CONSTRAINT [PK_dbo.T_Houses] PRIMARY KEY ([Id])
+)
+2019-04-22 04:22:02,410 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,410 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,411 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 1 ms with result: -1
+
+2019-04-22 04:22:02,411 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,411 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:CREATE TABLE [dbo].[T_Communities] (
+    [Id] [bigint] NOT NULL IDENTITY,
+    [Name] [nvarchar](20) NOT NULL,
+    [RegionId] [bigint] NOT NULL,
+    [Location] [nvarchar](1024) NOT NULL,
+    [Traffic] [nvarchar](max),
+    [BuiltYear] [int],
+    [CreateDateTime] [datetime] NOT NULL,
+    [IsDeleted] [bit] NOT NULL,
+    CONSTRAINT [PK_dbo.T_Communities] PRIMARY KEY ([Id])
+)
+2019-04-22 04:22:02,411 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,411 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,412 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,412 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,412 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:CREATE TABLE [dbo].[T_Regions] (
+    [Id] [bigint] NOT NULL IDENTITY,
+    [Name] [nvarchar](50) NOT NULL,
+    [CityId] [bigint] NOT NULL,
+    [CreateDateTime] [datetime] NOT NULL,
+    [IsDeleted] [bit] NOT NULL,
+    CONSTRAINT [PK_dbo.T_Regions] PRIMARY KEY ([Id])
+)
+2019-04-22 04:22:02,412 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,412 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,413 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,413 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,413 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:CREATE TABLE [dbo].[T_IdNames] (
+    [Id] [bigint] NOT NULL IDENTITY,
+    [TypeName] [nvarchar](1024) NOT NULL,
+    [Name] [nvarchar](1024) NOT NULL,
+    [CreateDateTime] [datetime] NOT NULL,
+    [IsDeleted] [bit] NOT NULL,
+    CONSTRAINT [PK_dbo.T_IdNames] PRIMARY KEY ([Id])
+)
+2019-04-22 04:22:02,413 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,414 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,414 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,414 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,414 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:CREATE TABLE [dbo].[T_HousePics] (
+    [Id] [bigint] NOT NULL IDENTITY,
+    [HouseId] [bigint] NOT NULL,
+    [Url] [nvarchar](1024) NOT NULL,
+    [ThumbUrl] [nvarchar](1024) NOT NULL,
+    [CreateDateTime] [datetime] NOT NULL,
+    [IsDeleted] [bit] NOT NULL,
+    CONSTRAINT [PK_dbo.T_HousePics] PRIMARY KEY ([Id])
+)
+2019-04-22 04:22:02,414 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,415 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,415 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,415 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,416 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:CREATE TABLE [dbo].[T_HouseAppointments] (
+    [Id] [bigint] NOT NULL IDENTITY,
+    [UserId] [bigint],
+    [Name] [nvarchar](20) NOT NULL,
+    [PhoneNum] [varchar](20) NOT NULL,
+    [VisitDate] [datetime] NOT NULL,
+    [HouseId] [bigint] NOT NULL,
+    [Status] [nvarchar](20) NOT NULL,
+    [FollowAdminUserId] [bigint],
+    [FollowDateTime] [datetime],
+    [RowVersion] rowversion NOT NULL,
+    [CreateDateTime] [datetime] NOT NULL,
+    [IsDeleted] [bit] NOT NULL,
+    CONSTRAINT [PK_dbo.T_HouseAppointments] PRIMARY KEY ([Id])
+)
+2019-04-22 04:22:02,416 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,416 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,417 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 1 ms with result: -1
+
+2019-04-22 04:22:02,417 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,417 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:CREATE TABLE [dbo].[T_Users] (
+    [Id] [bigint] NOT NULL IDENTITY,
+    [PhoneNum] [varchar](20) NOT NULL,
+    [PasswordHash] [nvarchar](100) NOT NULL,
+    [PasswordSalt] [nvarchar](20) NOT NULL,
+    [LoginErrorTimes] [int] NOT NULL,
+    [LastLoginErrorDateTime] [datetime],
+    [CityId] [bigint] NOT NULL,
+    [CreateDateTime] [datetime] NOT NULL,
+    [IsDeleted] [bit] NOT NULL,
+    CONSTRAINT [PK_dbo.T_Users] PRIMARY KEY ([Id])
+)
+2019-04-22 04:22:02,417 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,417 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,418 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 1 ms with result: -1
+
+2019-04-22 04:22:02,418 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,418 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:CREATE TABLE [dbo].[T_Settings] (
+    [Id] [bigint] NOT NULL IDENTITY,
+    [Name] [nvarchar](1024) NOT NULL,
+    [Value] [nvarchar](max) NOT NULL,
+    [CreateDateTime] [datetime] NOT NULL,
+    [IsDeleted] [bit] NOT NULL,
+    CONSTRAINT [PK_dbo.T_Settings] PRIMARY KEY ([Id])
+)
+2019-04-22 04:22:02,418 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,418 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,419 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,419 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,419 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:CREATE TABLE [dbo].[T_RolePermissions] (
+    [RoleId] [bigint] NOT NULL,
+    [PermissionId] [bigint] NOT NULL,
+    CONSTRAINT [PK_dbo.T_RolePermissions] PRIMARY KEY ([RoleId], [PermissionId])
+)
+2019-04-22 04:22:02,419 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,419 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,420 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,420 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,420 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:CREATE TABLE [dbo].[T_AdminUserRoles] (
+    [AdminUserId] [bigint] NOT NULL,
+    [RoleId] [bigint] NOT NULL,
+    CONSTRAINT [PK_dbo.T_AdminUserRoles] PRIMARY KEY ([AdminUserId], [RoleId])
+)
+2019-04-22 04:22:02,420 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,420 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,420 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,420 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,420 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:CREATE TABLE [dbo].[T_HouseAttachments] (
+    [AttachmentId] [bigint] NOT NULL,
+    [HouseId] [bigint] NOT NULL,
+    CONSTRAINT [PK_dbo.T_HouseAttachments] PRIMARY KEY ([AttachmentId], [HouseId])
+)
+2019-04-22 04:22:02,421 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,421 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,421 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,421 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,421 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:CREATE INDEX [IX_AdminUserId] ON [dbo].[T_AdminLogs]([AdminUserId])
+2019-04-22 04:22:02,421 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,421 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,424 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 2 ms with result: -1
+
+2019-04-22 04:22:02,424 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,424 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:CREATE INDEX [IX_CityId] ON [dbo].[T_AdminUsers]([CityId])
+2019-04-22 04:22:02,424 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,424 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,424 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,425 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,425 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:CREATE INDEX [IX_CommunityId] ON [dbo].[T_Houses]([CommunityId])
+2019-04-22 04:22:02,425 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,425 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,425 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,425 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,425 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:CREATE INDEX [IX_RoomTypeId] ON [dbo].[T_Houses]([RoomTypeId])
+2019-04-22 04:22:02,425 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,425 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,426 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,426 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,426 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:CREATE INDEX [IX_StatusId] ON [dbo].[T_Houses]([StatusId])
+2019-04-22 04:22:02,426 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,426 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,427 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,427 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,427 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:CREATE INDEX [IX_DecorateStatusId] ON [dbo].[T_Houses]([DecorateStatusId])
+2019-04-22 04:22:02,427 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,427 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,428 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,428 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,428 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:CREATE INDEX [IX_TypeId] ON [dbo].[T_Houses]([TypeId])
+2019-04-22 04:22:02,428 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,428 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,428 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,428 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,428 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:CREATE INDEX [IX_RegionId] ON [dbo].[T_Communities]([RegionId])
+2019-04-22 04:22:02,428 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,428 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,429 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,429 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,429 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:CREATE INDEX [IX_CityId] ON [dbo].[T_Regions]([CityId])
+2019-04-22 04:22:02,429 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,429 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,430 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,430 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,430 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:CREATE INDEX [IX_HouseId] ON [dbo].[T_HousePics]([HouseId])
+2019-04-22 04:22:02,430 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,430 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,430 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,430 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,430 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:CREATE INDEX [IX_UserId] ON [dbo].[T_HouseAppointments]([UserId])
+2019-04-22 04:22:02,430 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,430 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,431 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,431 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,431 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:CREATE INDEX [IX_HouseId] ON [dbo].[T_HouseAppointments]([HouseId])
+2019-04-22 04:22:02,431 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,431 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,432 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,432 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,432 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:CREATE INDEX [IX_FollowAdminUserId] ON [dbo].[T_HouseAppointments]([FollowAdminUserId])
+2019-04-22 04:22:02,432 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,432 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,432 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,432 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,432 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:CREATE INDEX [IX_CityId] ON [dbo].[T_Users]([CityId])
+2019-04-22 04:22:02,432 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,432 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,433 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,433 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,433 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:CREATE INDEX [IX_RoleId] ON [dbo].[T_RolePermissions]([RoleId])
+2019-04-22 04:22:02,433 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,433 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,434 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,434 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,434 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:CREATE INDEX [IX_PermissionId] ON [dbo].[T_RolePermissions]([PermissionId])
+2019-04-22 04:22:02,434 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,434 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,434 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,434 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,434 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:CREATE INDEX [IX_AdminUserId] ON [dbo].[T_AdminUserRoles]([AdminUserId])
+2019-04-22 04:22:02,434 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,434 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,435 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,435 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,435 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:CREATE INDEX [IX_RoleId] ON [dbo].[T_AdminUserRoles]([RoleId])
+2019-04-22 04:22:02,435 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,435 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,436 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,436 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,436 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:CREATE INDEX [IX_AttachmentId] ON [dbo].[T_HouseAttachments]([AttachmentId])
+2019-04-22 04:22:02,436 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,436 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,436 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,436 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,436 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:CREATE INDEX [IX_HouseId] ON [dbo].[T_HouseAttachments]([HouseId])
+2019-04-22 04:22:02,436 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,436 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,437 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,437 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,437 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:ALTER TABLE [dbo].[T_AdminLogs] ADD CONSTRAINT [FK_dbo.T_AdminLogs_dbo.T_AdminUsers_AdminUserId] FOREIGN KEY ([AdminUserId]) REFERENCES [dbo].[T_AdminUsers] ([Id])
+2019-04-22 04:22:02,437 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,437 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,443 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 5 ms with result: -1
+
+2019-04-22 04:22:02,443 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,443 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:ALTER TABLE [dbo].[T_AdminUsers] ADD CONSTRAINT [FK_dbo.T_AdminUsers_dbo.T_Cities_CityId] FOREIGN KEY ([CityId]) REFERENCES [dbo].[T_Cities] ([Id])
+2019-04-22 04:22:02,443 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,443 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,443 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,443 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,443 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:ALTER TABLE [dbo].[T_Houses] ADD CONSTRAINT [FK_dbo.T_Houses_dbo.T_Communities_CommunityId] FOREIGN KEY ([CommunityId]) REFERENCES [dbo].[T_Communities] ([Id])
+2019-04-22 04:22:02,443 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,444 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,444 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,444 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,444 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:ALTER TABLE [dbo].[T_Houses] ADD CONSTRAINT [FK_dbo.T_Houses_dbo.T_IdNames_DecorateStatusId] FOREIGN KEY ([DecorateStatusId]) REFERENCES [dbo].[T_IdNames] ([Id])
+2019-04-22 04:22:02,444 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,444 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,445 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,445 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,445 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:ALTER TABLE [dbo].[T_Houses] ADD CONSTRAINT [FK_dbo.T_Houses_dbo.T_IdNames_RoomTypeId] FOREIGN KEY ([RoomTypeId]) REFERENCES [dbo].[T_IdNames] ([Id])
+2019-04-22 04:22:02,445 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,445 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,445 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,445 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,446 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:ALTER TABLE [dbo].[T_Houses] ADD CONSTRAINT [FK_dbo.T_Houses_dbo.T_IdNames_StatusId] FOREIGN KEY ([StatusId]) REFERENCES [dbo].[T_IdNames] ([Id])
+2019-04-22 04:22:02,446 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,446 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,446 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,446 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,446 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:ALTER TABLE [dbo].[T_Houses] ADD CONSTRAINT [FK_dbo.T_Houses_dbo.T_IdNames_TypeId] FOREIGN KEY ([TypeId]) REFERENCES [dbo].[T_IdNames] ([Id])
+2019-04-22 04:22:02,446 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,446 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,447 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,447 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,447 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:ALTER TABLE [dbo].[T_Communities] ADD CONSTRAINT [FK_dbo.T_Communities_dbo.T_Regions_RegionId] FOREIGN KEY ([RegionId]) REFERENCES [dbo].[T_Regions] ([Id])
+2019-04-22 04:22:02,447 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,447 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,448 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,448 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,448 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:ALTER TABLE [dbo].[T_Regions] ADD CONSTRAINT [FK_dbo.T_Regions_dbo.T_Cities_CityId] FOREIGN KEY ([CityId]) REFERENCES [dbo].[T_Cities] ([Id])
+2019-04-22 04:22:02,448 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,448 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,448 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,448 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,448 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:ALTER TABLE [dbo].[T_HousePics] ADD CONSTRAINT [FK_dbo.T_HousePics_dbo.T_Houses_HouseId] FOREIGN KEY ([HouseId]) REFERENCES [dbo].[T_Houses] ([Id])
+2019-04-22 04:22:02,448 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,448 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,449 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,449 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,449 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:ALTER TABLE [dbo].[T_HouseAppointments] ADD CONSTRAINT [FK_dbo.T_HouseAppointments_dbo.T_AdminUsers_FollowAdminUserId] FOREIGN KEY ([FollowAdminUserId]) REFERENCES [dbo].[T_AdminUsers] ([Id])
+2019-04-22 04:22:02,449 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,449 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,450 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,450 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,450 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:ALTER TABLE [dbo].[T_HouseAppointments] ADD CONSTRAINT [FK_dbo.T_HouseAppointments_dbo.T_Houses_HouseId] FOREIGN KEY ([HouseId]) REFERENCES [dbo].[T_Houses] ([Id])
+2019-04-22 04:22:02,450 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,450 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,451 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,451 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,451 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:ALTER TABLE [dbo].[T_HouseAppointments] ADD CONSTRAINT [FK_dbo.T_HouseAppointments_dbo.T_Users_UserId] FOREIGN KEY ([UserId]) REFERENCES [dbo].[T_Users] ([Id])
+2019-04-22 04:22:02,451 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,451 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,452 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,452 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,452 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:ALTER TABLE [dbo].[T_Users] ADD CONSTRAINT [FK_dbo.T_Users_dbo.T_Cities_CityId] FOREIGN KEY ([CityId]) REFERENCES [dbo].[T_Cities] ([Id])
+2019-04-22 04:22:02,452 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,452 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,452 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,452 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,452 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:ALTER TABLE [dbo].[T_RolePermissions] ADD CONSTRAINT [FK_dbo.T_RolePermissions_dbo.T_Roles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [dbo].[T_Roles] ([Id]) ON DELETE CASCADE
+2019-04-22 04:22:02,452 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,452 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,461 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 8 ms with result: -1
+
+2019-04-22 04:22:02,461 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,461 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:ALTER TABLE [dbo].[T_RolePermissions] ADD CONSTRAINT [FK_dbo.T_RolePermissions_dbo.T_Permissions_PermissionId] FOREIGN KEY ([PermissionId]) REFERENCES [dbo].[T_Permissions] ([Id]) ON DELETE CASCADE
+2019-04-22 04:22:02,461 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,461 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,461 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,461 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,461 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:ALTER TABLE [dbo].[T_AdminUserRoles] ADD CONSTRAINT [FK_dbo.T_AdminUserRoles_dbo.T_AdminUsers_AdminUserId] FOREIGN KEY ([AdminUserId]) REFERENCES [dbo].[T_AdminUsers] ([Id]) ON DELETE CASCADE
+2019-04-22 04:22:02,461 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,461 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,462 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,462 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,462 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:ALTER TABLE [dbo].[T_AdminUserRoles] ADD CONSTRAINT [FK_dbo.T_AdminUserRoles_dbo.T_Roles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [dbo].[T_Roles] ([Id]) ON DELETE CASCADE
+2019-04-22 04:22:02,462 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,462 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,463 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,463 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,463 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:ALTER TABLE [dbo].[T_HouseAttachments] ADD CONSTRAINT [FK_dbo.T_HouseAttachments_dbo.T_Attachments_AttachmentId] FOREIGN KEY ([AttachmentId]) REFERENCES [dbo].[T_Attachments] ([Id]) ON DELETE CASCADE
+2019-04-22 04:22:02,463 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,463 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,463 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,463 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,463 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:ALTER TABLE [dbo].[T_HouseAttachments] ADD CONSTRAINT [FK_dbo.T_HouseAttachments_dbo.T_Houses_HouseId] FOREIGN KEY ([HouseId]) REFERENCES [dbo].[T_Houses] ([Id]) ON DELETE CASCADE
+2019-04-22 04:22:02,463 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,463 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,464 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,464 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,464 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:CREATE TABLE [dbo].[__MigrationHistory] (
+    [MigrationId] [nvarchar](150) NOT NULL,
+    [ContextKey] [nvarchar](300) NOT NULL,
+    [Model] [varbinary](max) NOT NULL,
+    [ProductVersion] [nvarchar](32) NOT NULL,
+    CONSTRAINT [PK_dbo.__MigrationHistory] PRIMARY KEY ([MigrationId], [ContextKey])
+)
+2019-04-22 04:22:02,464 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,464 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,465 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: -1
+
+2019-04-22 04:22:02,465 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,465 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:INSERT [dbo].[__MigrationHistory]([MigrationId], [ContextKey], [Model], [ProductVersion])
+VALUES (N'201904212022023_InitialCreate', N'RentHouse.Services.RhDbContext',  0x1F8B0800000000000400ED5D5B6F1CB7157E2FD0FFB0D8A73670B4929C148E20257024BB116AD982D60EDABC08A3594A1A642EDB99595B46D15FD687FEA4FE8572EEBC1E5EE6BAAB45E0D83B240FC9C3EF1C9287E790FFFBCF7F4F7F7A0AFCD96714275E149ECD8F0E0EE73314BAD1CA0B1FCEE69BF4FEDB57F39F7EFCE31F4EDFAC82A7D9AF55BE97593E5C324CCEE68F69BA3E592C12F711054E7210786E1C25D17D7AE046C1C259458BE3C3C31F1647470B8449CC31ADD9ECF46613A65E80F21FF8E77914BA689D6E1CFF2A5A213F29BFE394654E75F6DE0950B2765C7436BF4161FA4BB449D0C112C59F3D1725F3D96BDF73704B96C8BF9FCF9C308C5227C5ED3CF994A0651A47E1C3728D3F38FEC7AF6B84F3DD3B7E82CAF69F34D975BB72789C7565D114AC48B99B248D024382472F4BDE2CD8E2561C9ED7BCC3DC7B83B99C7ECD7A9D73F06CFE7A1578E1BBE8A14898CFD82A4FCEFD38CB7E36FF6DF95BC5E0833CB7879203BAF88B193F162F6A8C602865FFBD989D6FFC7413A3B3106DD2D8F15FCCAE3777BEE7FE0D7DFD18FD8EC2B370E3FB64AB71BB711AF5017FBA8EA3358AD3AF37E8BEECCBE56A3E5BD0E5166CC1BA1851A6E8DF6598FEE5BBF9EC3DAEDCB9F3510D0A8217CB348AD15F5188622745AB6B274D511C663450C9BD055857CE2C8CC0585D294CE80A2589F3802A2218D15838E7B32BE7E91D0A1FD2479CC3799ACFDE7A4F68557D29097F0A3D2CCBB8501A6F9071C5E731C23DBFC07F3E6261ADEA6F7E1B92BB4C2E908F302B2B4A3F47918F9C504DE8BDF3D97BC80745C6E339C6A29FE7481EBD75A10A18B8DE1299DFC6517013F99C4434796E97D12676B34E478A8C1F9DF801A5749B4F178DE8A9053223D346229BF27B9104EBCAFE0F88D1F7877D48D1F56314A2F79B00A8F8585571F9DBB4662749BE44F1EA172779046A3F3AECB7FAA5E3A7C377FE4DE0783E50EDCB7EAA3DC730E4200D17C14AC50BDFC47114676A3521CABE3C36AEFF9D93A40D41B9EEDE76CD7F9E8BBB4CE9371AF1B6C8C8287C265DACECD94C22450F3531239568B5B1CC296F649E41D9CA2257ABF928EBA8E554D414DDCF426D6621A53EDCE2B59C360E33285BE2B029BAC7E1F45643D3C0A1D69EA253DD5D69655877571A5EB7ADD7280EBC2483B3B8B18D2CDC52599BD68A7370538D245BABB9A6216429E92C81BDBC83755DA0C48DBD75615A027603C7DF6909FE5EB9582817F99AD05A5459CDA290683B33459A3AEE638071666BA76008EC45757AD273E94661DB8A2D37CD9397DB1CA992050103EDDB2A2FB1241067E13774927CADA6D99C86A5D81265F7120B43380A824D2832FE1882F7268A82AC7C5B3AAF57AB18250934D31FBFEA438D5C4561FA9861A59D216B89C76593B4E602D62CB53E41AE1738FE7C761DE37F95079E98054BD7C9E8993711138C32B474D3D48F1889FE5B3F8AE2F368D3967B399DCB70859EDAD1E90289171EE6B762D5D98FD1E35D14FD9E65EF6C66397F44EEEF976167F43E7CC1FA66147B505EF37847137A7B11DD73CD6D5F5D34F37EE74B0CCEEEA0588A68DBDFABF94ED86062DD704BE46C9A2BCCC0AD87C4B94CEDF0B49A56B697CD2E6E349D0B6C3993D5B4F939A96BCF055A8E53C9D1E4DACCA473A01066324544B5705132B8C928666D950E32B5CE64CA4E4D14C0A3AF31EA96A3ADC541887B4ACE49B9A67F485489A2ED49115D7EBFB398DE71D10D7AC04D6FBBF27B17B94E57E646D3856BECDCDF7B6EEF8B8B9F379E9FFE033931B3CEDEF625490100A12662C4F7B6CADAE823710E4E2B49B2B5D24D050DDBA343A2F05E2B4DCF422974AED9395BA3D4B5858427E7D7C225F267785C8E569276B9CAFEB69434B2F05ED294261885B4F535898E54ED3444D4CCC05EEF9EEC6CEC75F1BD308075E58C693B057C8A21C7D0DE56A48F9BE06E9CAAA721504A234777060EE1FE576605B117FAD7EB75E485698B73713199BD1280E557145433C14DF478E6F55FBDC44B33F96E2DEB9D28DCCA983630FFDF46BE1F7D91C761E994B6F5A0BF89BE94F25A2B492F74628CED2CD87113C72874BF5EE57DCB3B4EB143722E6B2152788BBDDEE49A7ADB67086630E57305A74D6FB9A2CCECA12C219E4FD4C5AC4CFD263D13CF86927CBABD90CF8E50DB4D074573244CD8DF3E1CAF4524DE3E084F73F6DE817838BBD54047E170969E10D38B317BDEC63C20444D159DA61398A6ADF296284D31062DB51E557AAFF8A6684DFBD5F13750BD3B7D79804C0C5E2749E47AF9B0B2613FA450D24D7A13AE663A41A405A705C14298EF18FBDE1AA31DFF3A9B7FC3F55A5145EDB8D15441466CD2D40F0F0E8EB80AB0B8A038C3ABE3E38D48820510AFA178D9F242D75B3BBE465B98B29A92998D4C5D0B9B7281D628CC844A83DB3AD557330DDF84BA26466DA8B874BA200004E34A12D7211B76553C5633F06488A43EAC5441240D7D3E3C0BACC58025E2103A5D416062A17B11362666CF82E9A6EC105D5302B616BCB384610A71E38F214FA00B4FF459DFA51A025A34942A0258AFD304CA20358E4EE20E92A5EA427EAA4C0805E57361A08BA407D25AF35B47A892B662003849D93BF9694DE204241B6A95471031DEAC73A13E9E14FE449A88ED0856706306C016CC729D06344E80A3404CEC442E1B7C85477933F6543C9C3EB8605F747D0077042FB03903A00B64B796F62203E646C717E3F4AF0302590440A74893C40E1095D06E58BD634DDCA081012766BD4E23F890BDF1A0C73A358078907A38307023FC900C11270D12D10274975093B46428904958AD537D7D5A3EBA42AB836C74B40C1F71D3A912E36275C6535F6C5306565C2CA3B556614440F8E8B032981F7B9D1727331F8E3A0F9ACF7F5398F7CAC66B6BA71E35D344B4D2881AC9541B8DAA896471D05213A6EADE15C282C9DD7064602955C55EDB60D654AAD46E4FA04018F84031BD1138C11A0AA3BE2395BEC9B9BBC32FB3260E25BEDAE3A5D32081A3E478D383CCCBCD1042F036A90FD08EBD6D52B4683C646ED9364AD70940E3FCDFEE34B2D5A97F47881AEFB47F5B0FFA213F57434D32F87C2B9B64479C5FA731A99ACEA4034E9F450B719914974071652D78BCB8CBBEA1A754E0CC879B57FAF325A55B170B948CE612A5EC51F5BBE82199CF8A64C0BB80C39D849C9416093805B1F3DC03514088D48D0A1AE575AC1C09D2CD43418274EAE109F14E342A16915741F13CE276290A72E50689A744AD49549C2E8F6A24EC66CFBB543CCF4F15855CA74E6515648A2DBA880CBD79D7615071BB92984784415D8714A142A424051A5C415A263306E2527AEA8AA8302EC00C2142FD0824995C28CD88ACD06B1CAC6ED4F4ABAC7B442B124ED56AFA5012E42A55C27A0FD35DD7608BEC12679E313A6E81545F148E81446F4AA506F045E10448D0A27AD19A3D92BBF3D5B011780882034DFB08B6070EED0FA8E2B52D67844F954998A3F417E4FB03790C8A5854CCF92A2E411E825A8CB71133FE22148184C14E6EB44048DDDCC8B1AE262E48B2A42E6D7DA81BD94D4C3C3374DCB5A88E281CB6C8DE90AB0380350AEF2C35A32D1824762112F047C3D7487A88C07B1B117DA91660006360CF223D4EB7E40D7BE725CC20C85946DA3389BB8C3DAB24AE3104C17A89D80DAFB84B28245C02FD3AF8EEC83C3B58CE148B541573645E1C4A3EB7445073A9278C1DB15F82749039CF047BBC705E08FD21A5AC514F9A8CA4A833E9194C6ACAFA74B061808B8E30D13F1EA457370BD6753AA79B46E79BE4FA8BB42B406B3AC559666F7A44E3DA06097A0C4F3EDB9C7DB2BDA777FB2AD0E99F73F6B570060FD8F4F9AB35AFA98EE4BAE665FFF39D86BD43DFD4A161E550EF5387B46D40E71BFAD0B193C75E85502679A64257C51AD726F93AED74B1741F51E0941F4E17D91D40689D6E1C3FBB02C84FAA842B67BDCE8C744DC9F2CB6CB976DC6C13F5ED723E7B0AFC30399B3FA6E9FA64B14872D2C941E0B9719444F7E9811B050B67152D8E0F0F7F581C1D2D8282C6C2A5E612F600A1AE29C5CBEA07C4A466BB8F157AEBC54976AF9473E7640AE37C1570D9C803088945B2AA4974C6C08F5E65ACAC4A55F76166FB44F6B601F640823FB229A9BCC55DCC2090F716B1EA1620804964EFC538B1E02281F3C8DF04A1FC384A5E9A72BD20C9803E19727A572849F018D2B4EA8FFA74D8207E921C9BA64F9588E5A758D67CE6699D2E9891E30ED838A43072CBC2CF0C9CDD2093B0D75B4213A2D00F368B6B2BC8F2C5177D0ACD8D3F2495E6AB0125EA061F8A1A95624EB1B8954744B148D1A7583E3C4F922A3F19C89D57383250F2E6899D1BE454B84B7F48725CA2015DC9FD3F1479499EBDEED1D63DE5CAADA5DE214EC3CD550E5478AADAE6D9E346765866041BC203C21C3650E13D6C260A1BF818DA083C9CD78B3984D424FA0112F5301D49864AD80373C8353861BA6CBB0867FDA72C56E14A1253D570CDFBCE542BEAAF7B486A43526A99374223E983670E44B0743F18A4EE6CA0061DBACC414E8F0C6D25C94121AF726AF58BC7B401A5FC68603C691E30A6CC27CD677D5A4DBC25494A1E8509F42E7FC998EA5AFEC5646A63EF3EA0E737D5CD0872CADCD3C524612E519F2EF98A314992FC6ED04A01D2CC5146BC664CB1AFF96CB24167DF27A677E86CAA81A4B20F1553D2CA26EAD3251E2C2629129F0D69896D434CD278CBB7673FD3913E476D2D118CA3B88539424561AA4BAFE6262D6A9A93DEAF25A7D43CA949AB8AEAAB813AAC5EC8A4F461F5519F0EF102264989F8BC17377DDB4DE9FAD8D67A43465258D86FC0E25315B26E8CE6CF1E8295EF534B08525138E610848BF703C1AA3FFC12D1148A7BAB0F9F6EB3C5CE7D5EBBD86537515C961B6D80403F60AC63E04912D2C078399DFCC5419246FEC14028EA670B29A1A8BFEE216D0669CA5BA90B68F3D1849610D720D40FD4458E2FE63E2FED756E777E0AC4FB7B2429E2F3F08AA0F246E70D51462619FEAA18CA32A3BE4946455BAC20D834132363F3121F6D646CBEEF9598B612EBC419AA951FD4F02E50CFCB8169CBDD86F6BBC02EC4BCBE2EA0A5A4D3770B980BBBA2FC546D11E5A35BD4E45F7CDA63904FA65DEA796FA6A2347DA582A6F7125D48EEA8A4F237C9C208B88505742303CF442DA06644C51708110DB06E9BF43E25ADB63594CC5AC8C64C186340726F8489BF755546E1542DF75C133019BC75C292C78A4B188D4000DE6231183EDB8FBE2C84D2C8D5A72EA572E801FC2A443C8643306D515053ED02067048A76513813B1AED91C08550B159EA99A8FC52FFAE43A8CAF0252AAE2AEF53162595F7252943A9D878A622CB7C86DBFED95B65B14CCBAF498A82832CC3C1F29FFEB9EFE5EE1F55862B27F4EE519216CF96CE8F0F0F5FCD67AF7DCF498A18B83252EB84BD864D2B74EBE86516BA8556C1822D6E1E009651499215F5AA2AFF122C14FA34C40BAC771E5EF7A7A58042CFAC1A3E1D4AA954BA2AEE82BCDCA9E46CFEAFBCE8C9ECF2EFB744E917B30F311EF693D9E1ECDFC6ADA8A3AF8A16849F9DD87D74E23F05CED39F3B7A5C75857FA79D3CAE7AE7A5960FAB8A5125DBB26F33AC8A2D013D9AD4C3BADF1F9ABF11CEBC8D2E227B6C4156F0F0B98874FEF27907CF9A77D4EC326C4A4EF3A5394DFAD571033D501494A980E28964B86AC91BEC79033A7D815DA407741AB8455A451698B4D30AC54284B66848655BAF9D1E528B39628B861436AA6CF3C052EEA4C0F81E1D1E7F67AA869F3968E0009B6D064D1F03DB84EFC89749BB8D17A9BD669BA14205D498AF559BD2ADF6AC641C8E71239AC2ADDA5007F0405AF6F895F97EBC09E7B15F8737C132C6ECA98AB6634E1E02540A2772BDC0F133F314FE5792DB998E305F326B1E4E3EB698E3D88820E34EB2245A75960B24B21F373280C89E8AB56874201644BC51B73B063EEAA8A5EEE7A28D5AD223628DBAED391374D4A92903582F7216C05DDBAA43413BDB3C47F781C12624C87CBE2D8BB6522B4D2091C1A6464F595691451DA09F882D126AEF1D93207938CE4E8B8FCDB6A51FEBEEAE6D99E4C135DB0CA82650A76BDDD50FD52D020C1402B3CD90A99D188C154659B295C6C8E3673A9F67EBC89CE78E57453CCB36E3D6DA9B017664E8C43A6D733EDDCFA68B08B76989D571F54415A5D32DD305A13AC6BDE368B441161BE2D3EE309B0CEF2928C5D197CFD5178940E2BDEA7A93ABA4DDD58DBBE88B33A0DF8C643EEDC671A63B23DED45D4DF61B351D5905A25FB6595CFBD94F9501360AFBD2AE41443784450F2F52F77E3EEB35100DA206595591C5B1A2DF763D45B7DCB80564718376D87ACCB6F38B82E3497401A01ECF6938590F872A6B779696EE0A8AC810BE80244E436344A99ACC879428DE6A4C87DC7BC94695885B110BA9E0B527F2E9D3E6F4ABEC05F750FDD5C64FBDB5EFB9F8D7D9FCF0E0E088E38BF479628A28974653FE86238BA182E26C2277FCF3284CD2D8F1F800CFEBD80B5D6FEDF87C8F98AC9ACB908CD7355136E502AD51982D2E24FDD5A95216F37DBAA8A93302A1620415BE04A3C3203454F82C3735A2E4677A308FB800B50F61B1D298BD768B48A37327719D152F64599096BA1DDC9242DC2E3E5B2FA003DF24E81C74FAB1C1662BA911F1278AF823C61D1C6DD5183F332C5A61625C44420BF68170A91F31DDCD6CD71328E52B74A06D7235DE11246D66C96E27664305AD88751F0D8F0A353995697A9A281C76926E07C051E7683ADCBAD902F7A307159B8926EC9BA34A24ED94DA825E099DA2AE22BDC03ADE6E42F0A09CCF287D4725ECC02E537169F6C4B6988C5B6DE9FE299FB46C8611C205EBD64B218D4DEB67A6311DAF96F850BF5F209861A457FC0F0212C2D8D80405C9F586FD904248212D9E2449EA7B3FFAC362C45A82047ED349A043A0979306C7081DAF23050AE53F4A0E299DB00D10515C533F3A3ED4CF320D0792DA01B4B0AC4BE161319A4A7034CEA71C4522A91788980E59170881EEABD73EE319418154419F7BD531BEEA805ED11B1C18FB19652AB098C24C528262AF29A6018951B584C90D9AA4D98ABD2684325C7189C35864015F0FA879FD2350E3E1E3EEAD6CFA17AB8A4D6E8A4B5047C4A6E284C06A01FCCC1039F0AABA2D1827B0C4E6E299D8F08B3E4E0E149E4892402B0EF4822CBB7298A0FD08135FB3C66B3963C26BF85DFE849034C6AEDF0E45E3AAA6DE7C2021B04874D98EB93D6E93C7A3448580D392F1286ED964B435F3D080934FD1AAFA7EFFFA1484B98B9FC34C566A8952A1EFC47C56FC0D782E1477FB9FCD577711C643E1FFFDF1B6CAC53D6325AE9004A6B846320750E5A7FC0D35559DA46AE4AA2313C5359D178FB6AB6A211D82B85AC844712DE5B32A8A4A78A74CAE2A3E8BB8C26BF23D1FD5A87166007ED8B82C9271ABF3A9ABA556405C8D54AAB8B2EAA9121540D833591E256C0E0954CA6C5A78A1FC0578C450C912CC948F9CABAAA20D7D5C5574B2B8AAEA316BAD21230E92C4A3466400062E7FB458AB42C14424AE5890116800F5C4ACAA21A05253EB333D5546C7B1F2F530E9E2AAEA27E9F4559A86DE8132CB559E9116927B60AA6611B5FEAD0BE82962D0CEA3548EBAAA0B5296F413405034D58CC82A668F60C721DD73D49CA03F734B1EC06A4290E0D2589B1CDD4D0D16C02143025E18C41851DDE2F1C73C850732452D5BAA87F57A63556994D56795F8012C302086E8A2AA6393631B187CA1216CF2608DAEC406A223812D90AB2786C96166F2DE5E6702391136891CD9652C523ABDF787276ECFD8902192DA6B28CE575BA4956087EE0E6732D19ABDC01895D0BADB129F6441DF75BC97DB778166A178B754F0914D6BCD0AB1E7AD80131A2EBA5D75436EBE276850DF3B6503E35CAAE005E48A4A7544B44BCC7B42274C8315AC0BA58C09A0AB65DBC6F3E5B99D6F438248EA140DB5A7A00207628FC2ED4540D92D3D21D82DF0979DD219F51D1971856F93688164F49E30E80F452E70B84468A1A4B611281F4EEE8F75C0F2DBE89DE30E55E83418A6E92322133C43EF925E96E8B051B419134196BED8074FD35A3E13DD4FD723B148C34037946D4E02B64E2D72D091B63E2014A263DC91C1D1C0BDC95EA79D2E0A1B70F901FFE4DE5E3F5DDC6CC2ECCEC4E2D7054ABC8786C429A61916CF183544AB3C97E17D541D55332DAAB2B04F7AA1D45939A9F33A4EBD7BC74D71B28B92C40B1FE6B3FC72C8EC49E13BB4BA0C3F6CD2F526C55D46C19D4F31233BF286EA3F5D706D3EFD90BFEB9374D105DC4C2FBB66F24398BD71B2AADBFD56705799844476965EDED5998D659A6DA21EBED694DE47A126A1927DB50BC04714AC7D4C2CF9102E9DCFC8A66D18D6EFD083E37EC5DF3F7BAB4C906444D40341B3FDF4C2731E6227484A1A4D79FC136378153CFDF87F59CFBCDEF1360100 , N'6.2.0-61023')
+
+2019-04-22 04:22:02,465 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 04:22:02,470 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 4 ms with result: 1
+
+2019-04-22 04:22:02,470 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 04:22:02,471 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:Committed transaction at 2019/04/22 4:22:02 +08:00
+
+2019-04-22 08:56:36,749 [6] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:Opened connection at 2019/04/22 8:56:36 +08:00
+
+2019-04-22 08:56:36,893 [6] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:SELECT 
+    CASE WHEN ( EXISTS (SELECT 
+        1 AS [C1]
+        FROM [dbo].[T_Cities] AS [Extent1]
+        WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[Name] = @p__linq__0)
+    )) THEN cast(1 as bit) ELSE cast(0 as bit) END AS [C1]
+    FROM  ( SELECT 1 AS X ) AS [SingleRowTable1]
+2019-04-22 08:56:36,893 [6] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 08:56:36,894 [6] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- p__linq__0: '夜上海' (Type = String, Size = 4000)
+
+2019-04-22 08:56:36,894 [6] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 8:56:36 +08:00
+
+2019-04-22 08:56:36,902 [6] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 8 ms with result: SqlDataReader
+
+2019-04-22 08:56:36,902 [6] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 08:56:36,906 [6] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:Closed connection at 2019/04/22 8:56:36 +08:00
+
+2019-04-22 08:56:36,911 [6] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:Opened connection at 2019/04/22 8:56:36 +08:00
+
+2019-04-22 08:56:36,912 [6] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:Started transaction at 2019/04/22 8:56:36 +08:00
+
+2019-04-22 08:56:36,916 [6] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:INSERT [dbo].[T_Cities]([Name], [CreateDateTime], [IsDeleted])
+VALUES (@0, @1, @2)
+SELECT [Id]
+FROM [dbo].[T_Cities]
+WHERE @@ROWCOUNT > 0 AND [Id] = scope_identity()
+2019-04-22 08:56:36,916 [6] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 08:56:36,916 [6] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- @0: '夜上海' (Type = String, Size = 20)
+
+2019-04-22 08:56:36,916 [6] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- @1: '2019/04/22 8:56:36' (Type = DateTime2)
+
+2019-04-22 08:56:36,916 [6] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- @2: 'False' (Type = Boolean)
+
+2019-04-22 08:56:36,916 [6] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 8:56:36 +08:00
+
+2019-04-22 08:56:36,925 [6] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 8 ms with result: SqlDataReader
+
+2019-04-22 08:56:36,925 [6] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 08:56:36,926 [6] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:Committed transaction at 2019/04/22 8:56:36 +08:00
+
+2019-04-22 08:56:36,926 [6] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:Closed connection at 2019/04/22 8:56:36 +08:00
+
+2019-04-22 08:59:00,618 [13] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:Opened connection at 2019/04/22 8:59:00 +08:00
+
+2019-04-22 08:59:00,759 [13] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:SELECT 
+    CASE WHEN ( EXISTS (SELECT 
+        1 AS [C1]
+        FROM [dbo].[T_Cities] AS [Extent1]
+        WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[Name] = @p__linq__0)
+    )) THEN cast(1 as bit) ELSE cast(0 as bit) END AS [C1]
+    FROM  ( SELECT 1 AS X ) AS [SingleRowTable1]
+2019-04-22 08:59:00,759 [13] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 08:59:00,760 [13] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- p__linq__0: '拉北京' (Type = String, Size = 4000)
+
+2019-04-22 08:59:00,760 [13] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 8:59:00 +08:00
+
+2019-04-22 08:59:00,765 [13] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 5 ms with result: SqlDataReader
+
+2019-04-22 08:59:00,765 [13] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 08:59:00,769 [13] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:Closed connection at 2019/04/22 8:59:00 +08:00
+
+2019-04-22 08:59:00,774 [13] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:Opened connection at 2019/04/22 8:59:00 +08:00
+
+2019-04-22 08:59:00,775 [13] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:Started transaction at 2019/04/22 8:59:00 +08:00
+
+2019-04-22 08:59:00,778 [13] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:INSERT [dbo].[T_Cities]([Name], [CreateDateTime], [IsDeleted])
+VALUES (@0, @1, @2)
+SELECT [Id]
+FROM [dbo].[T_Cities]
+WHERE @@ROWCOUNT > 0 AND [Id] = scope_identity()
+2019-04-22 08:59:00,778 [13] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 08:59:00,778 [13] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- @0: '拉北京' (Type = String, Size = 20)
+
+2019-04-22 08:59:00,778 [13] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- @1: '2019/04/22 8:59:00' (Type = DateTime2)
+
+2019-04-22 08:59:00,778 [13] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- @2: 'False' (Type = Boolean)
+
+2019-04-22 08:59:00,778 [13] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/04/22 8:59:00 +08:00
+
+2019-04-22 08:59:00,779 [13] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: SqlDataReader
+
+2019-04-22 08:59:00,779 [13] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-04-22 08:59:00,780 [13] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:Committed transaction at 2019/04/22 8:59:00 +08:00
+
+2019-04-22 08:59:00,780 [13] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:Closed connection at 2019/04/22 8:59:00 +08:00
+

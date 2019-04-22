@@ -3,13 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentHouse", "RentHouse\RentHouse.csproj", "{26BB0509-2CBE-467B-935B-757F43AC02E3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentHouse.FrontWeb", "RentHouse\RentHouse.FrontWeb.csproj", "{26BB0509-2CBE-467B-935B-757F43AC02E3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentHouse.Tests", "RentHouse.Tests\RentHouse.Tests.csproj", "{9B689932-B15F-4FBF-A2CA-A2E46BFF5E8B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentHouse.Services", "RentHouse.Services\RentHouse.Services.csproj", "{3B57B50E-12E4-4A0C-9995-93B952DBC41C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentHouse.AdminWeb", "RentHouse.AdminWeb\RentHouse.AdminWeb.csproj", "{679D4F28-548E-4C2F-8DDA-9049F7764CF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentHouse.Common", "RentHouse.Common\RentHouse.Common.csproj", "{768756D0-BB60-431E-862C-BD97B21D98E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentHouse.Web.Common", "RentHouse.Web.Common\RentHouse.Web.Common.csproj", "{9EC3CAEB-996C-4AA7-B21C-A0721FA4704B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentHouse.IService", "RentHouse.IService\RentHouse.IService.csproj", "{93F51F6B-D2A4-4A88-ADF9-968B0BCF8020}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentHouse.DTO", "RentHouse.DTO\RentHouse.DTO.csproj", "{202F929A-B576-49AF-A736-948DFF1C291D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +41,22 @@ Global
 		{679D4F28-548E-4C2F-8DDA-9049F7764CF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{679D4F28-548E-4C2F-8DDA-9049F7764CF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{679D4F28-548E-4C2F-8DDA-9049F7764CF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{768756D0-BB60-431E-862C-BD97B21D98E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{768756D0-BB60-431E-862C-BD97B21D98E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{768756D0-BB60-431E-862C-BD97B21D98E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{768756D0-BB60-431E-862C-BD97B21D98E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EC3CAEB-996C-4AA7-B21C-A0721FA4704B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EC3CAEB-996C-4AA7-B21C-A0721FA4704B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EC3CAEB-996C-4AA7-B21C-A0721FA4704B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EC3CAEB-996C-4AA7-B21C-A0721FA4704B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93F51F6B-D2A4-4A88-ADF9-968B0BCF8020}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93F51F6B-D2A4-4A88-ADF9-968B0BCF8020}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93F51F6B-D2A4-4A88-ADF9-968B0BCF8020}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93F51F6B-D2A4-4A88-ADF9-968B0BCF8020}.Release|Any CPU.Build.0 = Release|Any CPU
+		{202F929A-B576-49AF-A736-948DFF1C291D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{202F929A-B576-49AF-A736-948DFF1C291D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{202F929A-B576-49AF-A736-948DFF1C291D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{202F929A-B576-49AF-A736-948DFF1C291D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

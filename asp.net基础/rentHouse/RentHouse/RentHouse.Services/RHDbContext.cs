@@ -15,6 +15,7 @@ namespace RentHouse.Services
         private static ILog logger = LogManager.GetLogger(typeof(RhDbContext));
         public RhDbContext():base("name=ConnStr")
         {
+            Database.SetInitializer<RhDbContext>(null);//数据库搭好后就可以关掉migration功能了
             this.Database.Log = sql => logger.DebugFormat("EF执行Sql:{0}",sql);
         }
 

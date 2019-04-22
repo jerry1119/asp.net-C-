@@ -43,6 +43,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Autofac, Version=4.0.1.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.4.0.1\lib\net45\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac.Integration.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.Mvc5.4.0.2\lib\net45\Autofac.Integration.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -125,9 +131,25 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\RentHouse.Common\RentHouse.Common.csproj">
+      <Project>{768756d0-bb60-431e-862c-bd97b21d98e4}</Project>
+      <Name>RentHouse.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RentHouse.DTO\RentHouse.DTO.csproj">
+      <Project>{202f929a-b576-49af-a736-948dff1c291d}</Project>
+      <Name>RentHouse.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RentHouse.IService\RentHouse.IService.csproj">
+      <Project>{93f51f6b-d2a4-4a88-adf9-968b0bcf8020}</Project>
+      <Name>RentHouse.IService</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RentHouse.Services\RentHouse.Services.csproj">
       <Project>{3b57b50e-12e4-4a0c-9995-93b952dbc41c}</Project>
       <Name>RentHouse.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RentHouse.Web.Common\RentHouse.Web.Common.csproj">
+      <Project>{9ec3caeb-996c-4aa7-b21c-a0721fa4704b}</Project>
+      <Name>RentHouse.Web.Common</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

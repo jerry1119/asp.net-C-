@@ -1,0 +1,9 @@
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\MVC基础练习\20190413MVCLearn\Service\bin\Debug\Service.dll
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\MVC基础练习\20190413MVCLearn\Service\bin\Debug\Service.pdb
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\MVC基础练习\20190413MVCLearn\Service\bin\Debug\IService.dll
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\MVC基础练习\20190413MVCLearn\Service\bin\Debug\IService.pdb
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\MVC基础练习\20190413MVCLearn\Service\obj\Debug\Service.csprojAssemblyReference.cache
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\MVC基础练习\20190413MVCLearn\Service\obj\Debug\Service.csproj.CoreCompileInputs.cache
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\MVC基础练习\20190413MVCLearn\Service\obj\Debug\Service.csproj.CopyComplete
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\MVC基础练习\20190413MVCLearn\Service\obj\Debug\Service.dll
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\MVC基础练习\20190413MVCLearn\Service\obj\Debug\Service.pdb

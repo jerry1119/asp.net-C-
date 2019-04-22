@@ -56,16 +56,25 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="EFTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RentHouse\RentHouse.csproj">
+    <ProjectReference Include="..\RentHouse.AdminWeb\RentHouse.AdminWeb.csproj">
+      <Project>{679d4f28-548e-4c2f-8dda-9049f7764cf2}</Project>
+      <Name>RentHouse.AdminWeb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RentHouse.Services\RentHouse.Services.csproj">
+      <Project>{3b57b50e-12e4-4a0c-9995-93b952dbc41c}</Project>
+      <Name>RentHouse.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RentHouse\RentHouse.FrontWeb.csproj">
       <Project>{26BB0509-2CBE-467B-935B-757F43AC02E3}</Project>
-      <Name>RentHouse</Name>
+      <Name>RentHouse.FrontWeb</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

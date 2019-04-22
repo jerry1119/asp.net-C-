@@ -1,0 +1,6 @@
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\bin\Debug\RentHouse.Web.Common.dll
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\bin\Debug\RentHouse.Web.Common.pdb
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\obj\Debug\RentHouse.Web.Common.csprojAssemblyReference.cache
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\obj\Debug\RentHouse.Web.Common.csproj.CoreCompileInputs.cache
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\obj\Debug\RentHouse.Web.Common.dll
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\obj\Debug\RentHouse.Web.Common.pdb

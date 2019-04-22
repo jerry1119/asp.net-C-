@@ -11,3 +11,4 @@ I:\Microsoft VS Code\netCode\Projects\asp.net基础\MVC基础练习\20190413MVCL
 I:\Microsoft VS Code\netCode\Projects\asp.net基础\MVC基础练习\20190413MVCLearn\EFTest01\obj\Debug\EFTest01.exe
 I:\Microsoft VS Code\netCode\Projects\asp.net基础\MVC基础练习\20190413MVCLearn\EFTest01\obj\Debug\EFTest01.pdb
 I:\Microsoft VS Code\netCode\Projects\asp.net基础\MVC基础练习\20190413MVCLearn\EFTest01\bin\Debug\zh-Hans\EntityFramework.resources.dll
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\MVC基础练习\20190413MVCLearn\EFTest01\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
