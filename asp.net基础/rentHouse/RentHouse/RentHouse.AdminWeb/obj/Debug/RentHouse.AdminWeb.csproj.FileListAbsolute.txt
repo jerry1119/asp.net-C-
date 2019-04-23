@@ -94,3 +94,5 @@ I:\Microsoft VS Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHous
 I:\Microsoft VS Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.AdminWeb\bin\RentHouse.Web.Common.pdb
 I:\Microsoft VS Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.AdminWeb\bin\Autofac.xml
 I:\Microsoft VS Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.AdminWeb\bin\Autofac.Integration.Mvc.xml
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.AdminWeb\bin\Newtonsoft.Json.dll
+I:\Microsoft VS Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.AdminWeb\bin\Newtonsoft.Json.xml

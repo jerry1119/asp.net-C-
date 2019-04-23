@@ -5,6 +5,7 @@ using Autofac;
 using Autofac.Integration.Mvc;
 using RentHouse.AdminWeb.App_Start;
 using RentHouse.IService;
+using RentHouse.Web.Common;
 
 namespace RentHouse.AdminWeb
 {
@@ -34,6 +35,12 @@ namespace RentHouse.AdminWeb
             IContainer container = builder.Build();
             //注册系统级别的DependencyResolver，这样当MVC框架创建Controller等对象的时候都是管Autofac要对象
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
+
+            //添加自定义modelBinder实现把输入的数据全角转半角，trim
+            ModelBinders.Binders.Add(typeof(string),new TrimToDbcModelBinder());
+            ModelBinders.Binders.Add(typeof(int),new TrimToDbcModelBinder());
+            ModelBinders.Binders.Add(typeof(long),new TrimToDbcModelBinder());
+            ModelBinders.Binders.Add(typeof(double),new TrimToDbcModelBinder());
 
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
