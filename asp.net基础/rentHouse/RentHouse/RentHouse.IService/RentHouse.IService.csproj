@@ -41,9 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IAdminLogService.cs" />
+    <Compile Include="IAdminUserService.cs" />
+    <Compile Include="IAttachmentService.cs" />
     <Compile Include="ICityService.cs" />
     <Compile Include="IServiceMark.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RentHouse.DTO\RentHouse.DTO.csproj">
+      <Project>{202f929a-b576-49af-a736-948dff1c291d}</Project>
+      <Name>RentHouse.DTO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

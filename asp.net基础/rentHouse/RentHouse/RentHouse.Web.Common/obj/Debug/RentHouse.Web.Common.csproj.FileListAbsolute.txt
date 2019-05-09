@@ -20,3 +20,26 @@ I:\Microsoft VS Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHous
 I:\Microsoft VS Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\bin\Debug\zh-Hans\System.Web.Razor.resources.dll
 I:\Microsoft VS Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\bin\Debug\zh-Hans\System.Web.WebPages.Deployment.resources.dll
 I:\Microsoft VS Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\obj\Debug\RentHouse.Web.Common.csproj.CopyComplete
+I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\bin\Debug\RentHouse.Web.Common.dll
+I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\bin\Debug\RentHouse.Web.Common.pdb
+I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\bin\Debug\System.Web.Mvc.dll
+I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\bin\Debug\System.Web.WebPages.dll
+I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\bin\Debug\System.Web.WebPages.Razor.dll
+I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\bin\Debug\System.Web.Razor.dll
+I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\bin\Debug\Microsoft.Web.Infrastructure.dll
+I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\bin\Debug\System.Web.WebPages.Deployment.dll
+I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\bin\Debug\System.Web.Mvc.xml
+I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\bin\Debug\System.Web.WebPages.xml
+I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\bin\Debug\System.Web.WebPages.Razor.xml
+I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\bin\Debug\System.Web.Razor.xml
+I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\bin\Debug\System.Web.WebPages.Deployment.xml
+I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\bin\Debug\zh-Hans\System.Web.Mvc.resources.dll
+I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\bin\Debug\zh-Hans\System.Web.WebPages.resources.dll
+I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\bin\Debug\zh-Hans\System.Web.WebPages.Razor.resources.dll
+I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\bin\Debug\zh-Hans\System.Web.Razor.resources.dll
+I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\bin\Debug\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\obj\Debug\RentHouse.Web.Common.csprojAssemblyReference.cache
+I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\obj\Debug\RentHouse.Web.Common.csproj.CoreCompileInputs.cache
+I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\obj\Debug\RentHouse.Web.Common.csproj.CopyComplete
+I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\obj\Debug\RentHouse.Web.Common.dll
+I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\obj\Debug\RentHouse.Web.Common.pdb

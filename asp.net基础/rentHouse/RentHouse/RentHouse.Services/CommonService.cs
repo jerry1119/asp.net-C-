@@ -34,7 +34,7 @@ namespace RentHouse.Services
 
         public T GetById(long id)
         {
-            return GetAll().Where(t => t.Id == id).SingleOrDefault();
+            return GetAll().SingleOrDefault(t => t.Id == id);
         }
 
         public int MarkDeleted(long id)

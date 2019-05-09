@@ -1,0 +1,14 @@
+I:\Code\netCode\Projects\asp.net基础\dotNetCoreMVC\bin\Debug\netcoreapp2.1\dotNetCoreMVC.deps.json
+I:\Code\netCode\Projects\asp.net基础\dotNetCoreMVC\bin\Debug\netcoreapp2.1\dotNetCoreMVC.runtimeconfig.json
+I:\Code\netCode\Projects\asp.net基础\dotNetCoreMVC\bin\Debug\netcoreapp2.1\dotNetCoreMVC.runtimeconfig.dev.json
+I:\Code\netCode\Projects\asp.net基础\dotNetCoreMVC\bin\Debug\netcoreapp2.1\dotNetCoreMVC.dll
+I:\Code\netCode\Projects\asp.net基础\dotNetCoreMVC\bin\Debug\netcoreapp2.1\dotNetCoreMVC.pdb
+I:\Code\netCode\Projects\asp.net基础\dotNetCoreMVC\obj\Debug\netcoreapp2.1\dotNetCoreMVC.csprojAssemblyReference.cache
+I:\Code\netCode\Projects\asp.net基础\dotNetCoreMVC\obj\Debug\netcoreapp2.1\dotNetCoreMVC.csproj.CoreCompileInputs.cache
+I:\Code\netCode\Projects\asp.net基础\dotNetCoreMVC\obj\Debug\netcoreapp2.1\dotNetCoreMVC.RazorAssemblyInfo.cache
+I:\Code\netCode\Projects\asp.net基础\dotNetCoreMVC\obj\Debug\netcoreapp2.1\dotNetCoreMVC.RazorAssemblyInfo.cs
+I:\Code\netCode\Projects\asp.net基础\dotNetCoreMVC\obj\Debug\netcoreapp2.1\dotNetCoreMVC.AssemblyInfoInputs.cache
+I:\Code\netCode\Projects\asp.net基础\dotNetCoreMVC\obj\Debug\netcoreapp2.1\dotNetCoreMVC.AssemblyInfo.cs
+I:\Code\netCode\Projects\asp.net基础\dotNetCoreMVC\obj\Debug\netcoreapp2.1\dotNetCoreMVC.RazorTargetAssemblyInfo.cache
+I:\Code\netCode\Projects\asp.net基础\dotNetCoreMVC\obj\Debug\netcoreapp2.1\dotNetCoreMVC.dll
+I:\Code\netCode\Projects\asp.net基础\dotNetCoreMVC\obj\Debug\netcoreapp2.1\dotNetCoreMVC.pdb

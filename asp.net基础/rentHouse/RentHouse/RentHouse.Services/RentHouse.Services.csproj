@@ -51,6 +51,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminLogService.cs" />
+    <Compile Include="AdminUserService.cs" />
+    <Compile Include="AttachmentService.cs" />
     <Compile Include="CommonService.cs" />
     <Compile Include="CityService.cs" />
     <Compile Include="Entities\AdminLogEntity.cs" />
@@ -93,6 +96,10 @@
     <ProjectReference Include="..\RentHouse.Common\RentHouse.Common.csproj">
       <Project>{768756d0-bb60-431e-862c-bd97b21d98e4}</Project>
       <Name>RentHouse.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RentHouse.DTO\RentHouse.DTO.csproj">
+      <Project>{202f929a-b576-49af-a736-948dff1c291d}</Project>
+      <Name>RentHouse.DTO</Name>
     </ProjectReference>
     <ProjectReference Include="..\RentHouse.IService\RentHouse.IService.csproj">
       <Project>{93f51f6b-d2a4-4a88-adf9-968b0bcf8020}</Project>
