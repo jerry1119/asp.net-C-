@@ -13,6 +13,6 @@ namespace RentHouse.IService
         void AddNewLog(long adminUserId,string message);
         //根据LogID查询出这条log
         AdminLogDTO GetById(long id);
-        //todo:做日志搜索等
+        //TODO:做日志搜索等
     }
 }

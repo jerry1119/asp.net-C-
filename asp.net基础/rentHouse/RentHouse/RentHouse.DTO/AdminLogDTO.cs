@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace RentHouse.DTO
 {
+    /// <summary>
+    /// 管理员操作日志
+    /// </summary>
     public class AdminLogDTO : BaseDTO
     {
         public long AdminUserId { get; set; }

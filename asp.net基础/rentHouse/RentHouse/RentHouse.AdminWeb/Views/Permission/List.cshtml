@@ -1,0 +1,13 @@
+﻿@using RentHouse.DTO
+@model RentHouse.DTO.PermissionDTO[]
+@{
+    ViewBag.Title = "List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>List</h2>
+@foreach (PermissionDTO perm in Model)
+{
+   <a>@perm.Name</a><a>--------------</a><a>@perm.Description</a><br/>
+}
+

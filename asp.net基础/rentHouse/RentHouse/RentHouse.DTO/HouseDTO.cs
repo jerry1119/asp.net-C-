@@ -23,7 +23,7 @@ namespace RentHouse.DTO
         public int MonthRent { get; set; }
         public long StatusId { get; set; }
         public String StatusName { get; set; }
-        public decimal Area { get; set; }
+        public decimal Area { get; set; }  //房屋面积
         public long DecorateStatusId { get; set; }
         public String DecorateStatusName { get; set; }
         public int TotalFloorCount { get; set; }

@@ -16,15 +16,17 @@ namespace RentHouse.AdminWeb.Controllers
         // GET: Default
         public ActionResult Index()
         {
-            if (Session["test"] != null)
-            {
-                return Content((string)Session["test"]);
-            }
-            Session["test"] = "123";
-            return Content("ok");
+            //if (Session["test"] != null)
+            //{
+            //    return Content((string)Session["test"]);
+            //}
+            //Session["test"] = "123";
+            //return Content("ok");
 
-            var cityId = CityService.AddNew("拉北京");
-            return Content(cityId.ToString());
+            //var cityId = CityService.AddNew("拉北京");
+            //return Content(cityId.ToString());
+            var city = CityService.GetById(1);
+            return Content(city.Name);
             //return View();
         }
 

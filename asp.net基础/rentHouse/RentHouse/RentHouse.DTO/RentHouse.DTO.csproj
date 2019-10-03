@@ -47,9 +47,12 @@
     <Compile Include="BaseDTO.cs" />
     <Compile Include="CityDTO.cs" />
     <Compile Include="CommunityDTO.cs" />
+    <Compile Include="HouseAddNewDTO.cs" />
     <Compile Include="HouseAppointmentDTO.cs" />
     <Compile Include="HouseDTO.cs" />
     <Compile Include="HousePicDTO.cs" />
+    <Compile Include="HouseSearchOptions.cs" />
+    <Compile Include="HouseSearchResult.cs" />
     <Compile Include="IdNameDTO.cs" />
     <Compile Include="PermissionDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

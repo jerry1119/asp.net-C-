@@ -1,0 +1,141 @@
+2019-10-04 00:29:23,347 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:Opened connection at 2019/10/04 0:29:23 +08:00
+
+2019-10-04 00:29:27,068 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:SELECT TOP (2) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Cities] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[Id] = @p__linq__0)
+2019-10-04 00:29:27,068 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-10-04 00:29:27,069 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- p__linq__0: '1' (Type = Int64, IsNullable = false)
+
+2019-10-04 00:29:27,069 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/10/04 0:29:27 +08:00
+
+2019-10-04 00:29:27,071 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 2 ms with result: SqlDataReader
+
+2019-10-04 00:29:27,071 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-10-04 00:29:27,075 [16] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:Closed connection at 2019/10/04 0:29:27 +08:00
+
+2019-10-04 00:37:53,083 [7] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:Opened connection at 2019/10/04 0:37:53 +08:00
+
+2019-10-04 00:37:53,224 [7] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Permissions] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-10-04 00:37:53,224 [7] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-10-04 00:37:53,224 [7] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/10/04 0:37:53 +08:00
+
+2019-10-04 00:37:53,225 [7] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 1 ms with result: SqlDataReader
+
+2019-10-04 00:37:53,225 [7] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-10-04 00:37:53,228 [7] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:Closed connection at 2019/10/04 0:37:53 +08:00
+
+2019-10-04 00:38:57,229 [12] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:Opened connection at 2019/10/04 0:38:57 +08:00
+
+2019-10-04 00:38:57,229 [12] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Permissions] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-10-04 00:38:57,229 [12] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-10-04 00:38:57,229 [12] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/10/04 0:38:57 +08:00
+
+2019-10-04 00:38:57,229 [12] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: SqlDataReader
+
+2019-10-04 00:38:57,230 [12] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-10-04 00:38:57,230 [12] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:Closed connection at 2019/10/04 0:38:57 +08:00
+
+2019-10-04 00:39:30,375 [19] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:Opened connection at 2019/10/04 0:39:30 +08:00
+
+2019-10-04 00:39:30,375 [19] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Permissions] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-10-04 00:39:30,375 [19] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-10-04 00:39:30,375 [19] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/10/04 0:39:30 +08:00
+
+2019-10-04 00:39:30,376 [19] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: SqlDataReader
+
+2019-10-04 00:39:30,376 [19] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-10-04 00:39:30,376 [19] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:Closed connection at 2019/10/04 0:39:30 +08:00
+
+2019-10-04 00:39:44,263 [7] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:Opened connection at 2019/10/04 0:39:44 +08:00
+
+2019-10-04 00:39:44,263 [7] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Permissions] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-10-04 00:39:44,263 [7] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-10-04 00:39:44,263 [7] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/10/04 0:39:44 +08:00
+
+2019-10-04 00:39:44,264 [7] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: SqlDataReader
+
+2019-10-04 00:39:44,264 [7] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-10-04 00:39:44,264 [7] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:Closed connection at 2019/10/04 0:39:44 +08:00
+
+2019-10-04 00:40:02,555 [14] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:Opened connection at 2019/10/04 0:40:02 +08:00
+
+2019-10-04 00:40:02,555 [14] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Permissions] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-10-04 00:40:02,555 [14] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-10-04 00:40:02,555 [14] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/10/04 0:40:02 +08:00
+
+2019-10-04 00:40:02,555 [14] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: SqlDataReader
+
+2019-10-04 00:40:02,555 [14] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-10-04 00:40:02,556 [14] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:Closed connection at 2019/10/04 0:40:02 +08:00
+
+2019-10-04 00:40:23,117 [8] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:Opened connection at 2019/10/04 0:40:23 +08:00
+
+2019-10-04 00:40:23,117 [8] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Permissions] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-10-04 00:40:23,117 [8] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-10-04 00:40:23,118 [8] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Executing at 2019/10/04 0:40:23 +08:00
+
+2019-10-04 00:40:23,118 [8] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:-- Completed in 0 ms with result: SqlDataReader
+
+2019-10-04 00:40:23,118 [8] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:
+
+2019-10-04 00:40:23,119 [8] DEBUG RentHouse.Services.RhDbContext - EF执行Sql:Closed connection at 2019/10/04 0:40:23 +08:00
+

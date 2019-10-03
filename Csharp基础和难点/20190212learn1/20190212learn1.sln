@@ -45,6 +45,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "414Linq", "414Linq\414Linq.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "419CSharp5.0中的异步", "419CSharp5.0中的异步\419CSharp5.0中的异步.csproj", "{70D5EB0A-A7A8-4166-9A00-F495655B9631}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "919算法", "919算法\919算法.csproj", "{212F0546-B952-4F10-AC9F-21230D467251}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -135,6 +137,10 @@ Global
 		{70D5EB0A-A7A8-4166-9A00-F495655B9631}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70D5EB0A-A7A8-4166-9A00-F495655B9631}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70D5EB0A-A7A8-4166-9A00-F495655B9631}.Release|Any CPU.Build.0 = Release|Any CPU
+		{212F0546-B952-4F10-AC9F-21230D467251}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{212F0546-B952-4F10-AC9F-21230D467251}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{212F0546-B952-4F10-AC9F-21230D467251}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{212F0546-B952-4F10-AC9F-21230D467251}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace RentHouse.DTO
 {
+    /// <summary>
+    /// 租房预约
+    /// </summary>
     public class HouseAppointmentDTO : BaseDTO
     {
         public long? UserId { get; set; }
@@ -19,5 +22,7 @@ namespace RentHouse.DTO
         public DateTime? FollowDateTime { get; set; }
         public String RegionName { get; set; }
         public String CommunityName { get; set; }
+        //这个给忘了，只能直接去改数据库了,不对，这个是DTO，没有影响，跟数据库没关系
+        public String HouseAddress { get; set; }
     }
 }

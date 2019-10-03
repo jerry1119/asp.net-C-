@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace RentHouse.DTO
 {
+    /// <summary>
+    /// 管理员用户
+    /// </summary>
     public class AdminUserDTO : BaseDTO
     {
         public String Name { get; set; }

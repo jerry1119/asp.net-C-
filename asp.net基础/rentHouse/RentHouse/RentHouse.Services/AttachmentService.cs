@@ -13,7 +13,7 @@ namespace RentHouse.Services
         {
             using (RhDbContext ctx = new RhDbContext())
             {
-               return ctx.Attachments.Where(a=>a.IsDeleted==false).AsNoTracking().Select(a => Entity2DTO(a)).ToArray();
+               return ctx.Attachments.Where(a=>a.IsDeleted==false).AsNoTracking().ToList().Select(a => Entity2DTO(a)).ToArray();
             }
         }
 

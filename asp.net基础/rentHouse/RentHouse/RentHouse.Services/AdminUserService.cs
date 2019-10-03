@@ -32,7 +32,7 @@ namespace RentHouse.Services
                     CityId = cityId,
                     PasswordSalt = pwdSalt,
                     PasswordHash = CommonHelper.CalcMd5(password+pwdSalt),
-                    Email = email
+                    Email = email,
                 };
                 ctx.AdminUsers.Add(newAdminUser);
                 ctx.SaveChanges();
@@ -73,7 +73,7 @@ namespace RentHouse.Services
                 CommonService<AdminUserEntity> commonService = new CommonService<AdminUserEntity>(ctx);
                 //不用判断cityId是否为null，为null他就查出总部的,如果cityId不为null但是不存在就应该抛出异常，找到问题
                 //TODO 自己单元测试下CityId不存在的情况
-                return commonService.GetAll().Include(a=>a.City).AsNoTracking().Where(a => a.CityId == cityId).Select(a => Entity2DTO(a)).ToArray();
+                return commonService.GetAll().Include(a=>a.City).AsNoTracking().Where(a => a.CityId == cityId).ToList().Select(a => Entity2DTO(a)).ToArray();
             }
         }
 
@@ -83,7 +83,8 @@ namespace RentHouse.Services
             {
                 CommonService<AdminUserEntity> commonService = new CommonService<AdminUserEntity>(ctx);
                 //因为转换成DTO一定会用到city导航属性，为了防止延迟加载就直接用include
-                return commonService.GetAll().Include(a=>a.City).AsNoTracking().Select(a => Entity2DTO(a)).ToArray();
+                return commonService.GetAll().Include(a=>a.City).AsNoTracking().ToList().Select(a => Entity2DTO(a)).ToArray();
+                //linq语句翻译成表达式树翻译成sql语句，entity2DTO这种写法不被ef支持，所以先ToList通过ef查到内存中在执行后面的不被支持的写法
             }
         }
 

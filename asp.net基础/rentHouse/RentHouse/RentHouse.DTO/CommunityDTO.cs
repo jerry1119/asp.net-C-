@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace RentHouse.DTO
 {
+    /// <summary>
+    /// 社区
+    /// </summary>
     public class CommunityDTO : BaseDTO
     {
         public String Name { get; set; }

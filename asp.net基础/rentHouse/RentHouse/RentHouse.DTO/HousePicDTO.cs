@@ -10,6 +10,6 @@ namespace RentHouse.DTO
     {
         public long HouseId { get; set; }
         public String Url { get; set; }
-        public String ThumbUrl { get; set; }
+        public String ThumbUrl { get; set; }  //缩略图 url
     }
 }
