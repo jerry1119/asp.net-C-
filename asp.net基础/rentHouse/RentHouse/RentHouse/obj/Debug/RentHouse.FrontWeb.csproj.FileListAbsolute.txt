@@ -292,3 +292,6 @@ I:\Code\netCode\Projects\asp.net\rentHouse\RentHouse\RentHouse\obj\Debug\RentHou
 I:\Code\netCode\Projects\asp.net\rentHouse\RentHouse\RentHouse\obj\Debug\RentHouse.FrontWeb.csproj.CopyComplete
 I:\Code\netCode\Projects\asp.net\rentHouse\RentHouse\RentHouse\obj\Debug\RentHouse.dll
 I:\Code\netCode\Projects\asp.net\rentHouse\RentHouse\RentHouse\obj\Debug\RentHouse.pdb
+C:\Users\hejie\Source\Repos\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse\obj\Debug\RentHouse.FrontWeb.csprojAssemblyReference.cache
+C:\Users\hejie\Source\Repos\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse\obj\Debug\RentHouse.dll
+C:\Users\hejie\Source\Repos\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse\obj\Debug\RentHouse.pdb
