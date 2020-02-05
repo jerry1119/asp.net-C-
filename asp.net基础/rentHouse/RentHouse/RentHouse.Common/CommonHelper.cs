@@ -12,7 +12,31 @@ namespace RentHouse.Common
             byte[] bytes = System.Text.Encoding.UTF8.GetBytes(str);//先把字符串转成bytes字节数组
             return CalcMd5(bytes);
         }
+        // 计算并获取CheckSum
+        public static String GetCheckSum(String appSecret, String nonce, String curTime)
+        {
+            byte[] data = Encoding.Default.GetBytes(appSecret + nonce + curTime);
+            byte[] result;
 
+            SHA1 sha = new SHA1CryptoServiceProvider();
+            // This is one implementation of the abstract class SHA1.
+            result = sha.ComputeHash(data);
+
+            return GetFormattedText(result);
+        }
+        private static String GetFormattedText(byte[] bytes)
+        {
+            char[] HEX_DIGITS = { '0', '1', '2', '3', '4', '5',
+                '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f' };
+            int len = bytes.Length;
+            StringBuilder buf = new StringBuilder(len * 2);
+            for (int j = 0; j < len; j++)
+            {
+                buf.Append(HEX_DIGITS[(bytes[j] >> 4) & 0x0f]);
+                buf.Append(HEX_DIGITS[bytes[j] & 0x0f]);
+            }
+            return buf.ToString();
+        }
         public static string CalcMd5(byte[] bytes)
         {
             using (MD5 md5 = MD5.Create())

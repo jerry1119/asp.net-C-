@@ -194,3 +194,6 @@ I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.AdminWeb\ob
 I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.AdminWeb\obj\Debug\RentHouse.AdminWeb.csproj.CopyComplete
 I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.AdminWeb\obj\Debug\RentHouse.AdminWeb.dll
 I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.AdminWeb\obj\Debug\RentHouse.AdminWeb.pdb
+I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.AdminWeb\bin\CodeCarvings.Piczard.dll
+I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.AdminWeb\bin\CodeCarvings.Piczard.xml
+I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.AdminWeb\bin\CaptchaGen.dll

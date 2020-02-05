@@ -1,0 +1,208 @@
+﻿@model RentHouse.AdminWeb.Models.HouseAddNewGetModel
+@{
+    ViewBag.Title = "新增房源";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="pd-20">
+    <form action="" method="post" class="form form-horizontal" id="formAdd">
+        <div class="row cl">
+            <div class="col-xs-12 col-sm-4">
+                <label class="form-label col-3"><span class="c-red">*</span>区域：</label>
+                <span class="select-box" style="width:150px;">
+                    <select class="select" name="regionId" id="regionSel" size="1">
+                        @foreach (var region in Model.Regions)
+                        {
+                            <option value="@region.Id">@region.Name</option>
+                        }
+                    </select>
+                </span>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <label class="form-label col-3"><span class="c-red">*</span>小区：</label>
+                <span class="select-box" style="width:150px;">
+                    <select class="select" name="communityId" id="communitySel" size="1"></select>
+                </span>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <label class="form-label col-3"><span class="c-red">*</span>房型：</label>
+                <span class="select-box" style="width:150px;">
+                    <select class="select" name="roomTypeId" size="1">
+                        @foreach (var roomType in Model.RoomTypes)
+                        {
+                            <option value="@roomType.Id">@roomType.Name</option>
+                        }
+                    </select>
+                </span>
+            </div>
+        </div>
+
+        <div class="row cl">
+            <div class="col-xs-12 col-sm-8">
+                <label class="form-label col-3"><span class="c-red">*</span>地址：</label>
+                <input type="text" style="width: auto" class="input-text" value="" placeholder="" id="address" name="address" datatype="*" nullmsg="地址不能为空">
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <label class="form-label col-3"><span class="c-red">*</span>月租金：</label>
+                <input type="text" style="width: auto" class="input-text" value="" placeholder="" id="monthRent" name="monthRent" datatype="n" nullmsg="月租金不能为空">
+                <span>元</span>
+            </div>
+        </div>
+        <div class="row cl">
+            <div class="col-xs-12 col-sm-4">
+                <label class="form-label col-3"><span class="c-red">*</span>状态：</label>
+                <span class="select-box" style="width:150px;">
+                    <select class="select" name="statusId" id="regionSel" size="1">
+                        @foreach (var status in Model.Status)
+                        {
+                            <option value="@status.Id">@status.Name</option>
+                        }
+                    </select>
+                </span>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <label class="form-label col-3"><span class="c-red">*</span>面积：</label>
+                <input type="text" style="width: auto" class="input-text" value="" placeholder="" id="area" name="area" datatype="*" nullmsg="面积不能为空">
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <label class="form-label col-3"><span class="c-red">*</span>装修：</label>
+                <span class="select-box" style="width:150px;">
+                    <select class="select" name="DecorateStatusId" id="DecorateStatusId" size="1">
+                        @foreach (var decorateStatus in Model.DecorateStatus)
+                        {
+                            <option value="@decorateStatus.Id">@decorateStatus.Name</option>
+                        }
+                    </select>
+                </span>
+            </div>
+        </div>
+        <div class="row cl">
+            <div class="col-xs-12 col-sm-4">
+                <label class="form-label col-3"><span class="c-red">*</span>楼层：</label>
+                <input type="text" style="width: 50px" class="input-text" value="" placeholder="层数" id="floorIndex" name="floorIndex" datatype="n" nullmsg="层数不能为空">
+                <input type="text" style="width: 50px" class="input-text" value="" placeholder="总层" id="totalFloorCount" name="totalFloorCount" datatype="n" nullmsg="总层不能为空">
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <label class="form-label col-3"><span class="c-red">*</span>朝向：</label>
+                <input type="text" style="width: auto" class="input-text" value="" placeholder="" id="Direction" name="Direction" datatype="*" nullmsg="朝向不能为空">
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <label class="form-label col-3"><span class="c-red">*</span>可看房时间：</label>
+                <input type="text" style="width: auto" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" class="input-text" value="" placeholder="" id="lookableDateTime" name="lookableDateTime" datatype="*" nullmsg="可看房时间不能为空">
+            </div>
+        </div>
+        <div class="row cl">
+            <div class="col-xs-12 col-sm-4">
+                <label class="form-label col-3"><span class="c-red">*</span>入住时间：</label>
+                <input type="text" style="width: auto" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" class="input-text" value="" placeholder="" id="CheckInDateTime" name="CheckInDateTime" datatype="*" nullmsg="入住时间不能为空">
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <label class="form-label col-3"><span class="c-red">*</span>业主姓名：</label>
+                <input type="text" style="width: auto" class="input-text" value="" placeholder="" id="OwnerName" name="OwnerName" datatype="*" nullmsg="业主姓名不能为空">
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <label class="form-label col-3"><span class="c-red">*</span>业主电话：</label>
+                <input type="text" style="width: auto" class="input-text" value="" placeholder="" id="OwnerPhoneNum" name="OwnerPhoneNum" datatype="m" nullmsg="业主电话不能为空">
+            </div>
+        </div>
+        <div class="row cl">
+            <div class="formControls col-2">房屋类型</div>
+            <div class="formControls col-10">
+                @Html.DropDownList("TypeId", new SelectList(Model.Types, "Id", "Name"))
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-2">房源描述：</label>
+            <div class="formControls col-10">
+                <textarea name="Description" id="Description" class="textarea" placeholder="说点什么...最少输入10个字符" datatype="*10-200" dragonfly="true" nullmsg="备注不能为空！" onKeyUp="textarealength(this, 200)"></textarea>
+                <p class="textarea-numberbar"><em class="textarea-length">0</em>/200</p>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-3">配置设施：</label>
+            <div class="formControls col-5">
+                @foreach (var attachment in Model.Attachments)
+                {
+                    <div class="col-xs-12 col-sm-3">
+                        <label>
+                            <input type="checkbox" value=@attachment.Id name="attachmentIds" id="attachments_@attachment.Id">
+                            @attachment.Name
+                        </label>
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="row cl">
+            <div class="col-9 col-offset-3">
+                <input class="btn btn-primary radius" id="btnSave" type="button" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
+            </div>
+        </div>
+    </form>
+</div>
+@section FooterScript
+{
+    <script type="text/javascript">
+        //注意取数据的位置。在这里的话页面一加载就读取了，是取不到数据的
+        //var formData = $('#formAdd').serializeArray();
+        var saveAjax = function () {
+            var formData = $('#formAdd').serializeArray();
+            $.ajax({
+                type: "POST",
+                url: "/House/Add",
+                data: formData,
+                dataType: "json",
+                success: function (res) {
+                    if (res.status == "ok") {
+                        parent.location.reload(); //刷新父窗口
+                    } else {
+                        alert("error" + res.errorMsg);
+                    }
+                },
+                error: function () { alert("请求出错"); }
+            });
+        };
+        $(function () {
+            var validForm = $('#formAdd').Validform({ tiptype: 3 });
+            $('#btnSave').click(function () {
+                if (validForm.check(false)) {
+                    saveAjax();
+                }
+            });
+            //加载小区
+            $('#regionSel').change(function () {
+                var regionId = $(this).val();
+                $.ajax({
+                    url: "/House/LoadCommunities",
+                    datatype: "json",
+                    type: "post",
+                    data: { regionId: regionId },
+                    success: function (res) {
+                        if (res.status=="ok") {
+                            initcommunitySel(res.data);
+                        } else {
+                            //应该不会有else情况吧
+                        }
+                    },
+                    error: function () {
+                        alert("网络错误");
+                    }
+                });
+            });
+            //触发区域chagne的事件处理程序 , 注意这个要写在change事件方法的下面才行
+            $('#regionSel').triggerHandler('change');
+        });
+        //加载小区
+        function initcommunitySel(communities) {
+            var strHtmlArry = [];
+            for (let i = 0; i < communities.length; i++) {
+                const communityId = communities[i].id;
+                const communityName = communities[i].name;
+                //注意，这里要先在外面定义了才能拿到，不然界面显示undefine
+                strHtmlArry.push('<option value=' + communityId + '>' + communityName+'</option>');
+            }
+            strHtmlArry.push(' ');
+            $('#communitySel').html(strHtmlArry);
+        };
+    </script>
+}
+

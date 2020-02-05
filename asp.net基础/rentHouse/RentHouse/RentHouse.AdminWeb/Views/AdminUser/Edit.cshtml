@@ -1,0 +1,158 @@
+﻿@model RentHouse.AdminWeb.Models.AdminUserEditGetModel
+@{
+    ViewBag.Title = "编辑管理员用户";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="pd-20">
+    <form action="" method="post" class="form form-horizontal" id="formEdit">
+        <div class="row cl">
+            <label class="form-label col-3"><span class="c-red">*</span>名称：</label>
+            <div class="formControls col-5">
+                <input type="text" class="input-text" value="@Model.User.Name" placeholder="" id="name" name="name" datatype="*2-16" nullmsg="用户名不能为空">
+            </div>
+            <div class="col-4"> </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-3"><span class="c-red">*</span>初始密码：</label>
+            <div class="formControls col-5">
+                <input type="password" value="" id="password" name="password" placeholder="留空则为不修改密码" autocomplete="off" class="input-text " datatype="*0-20" >
+            </div>
+            <div class="col-4"> </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-3"><span class="c-red">*</span>确认密码：</label>
+            <div class="formControls col-5">
+                <input type="password" placeholder="留空则为不修改密码" autocomplete="off" class="input-text " errormsg="您两次输入的新密码不一致！" datatype="*0-20" recheck="password" id="newpassword2" name="newpassword2">
+            </div>
+            <div class="col-4"> </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-3"><span class="c-red">*</span>手机：</label>
+            <div class="formControls col-5">
+                <input type="text" class="input-text" value="@Model.User.PhoneNum" placeholder="" id="phoneNum" name="phoneNum" datatype="m" nullmsg="手机不能为空">
+            </div>
+            <div class="col-4"> </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-3"><span class="c-red">*</span>邮箱：</label>
+            <div class="formControls col-5">
+                <input type="text" class="input-text" value="@Model.User.Email" placeholder="" name="email" id="email" datatype="e" nullmsg="请输入邮箱！">
+            </div>
+            <div class="col-4"> </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-3">角色：</label>
+            <div class="formControls col-5">
+                @foreach (var role in Model.AllRoles)
+                {
+                    <div class="col-xs-12 col-sm-3">
+                        <label>
+                            <input type="checkbox" checked="@Model.UserRoles.Select(r=>r.Id).Contains(role.Id)" value=@role.Id name="RoleIds" id="permissions_@role.Id">
+                            @role.Name
+                        </label>
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-3">城市：</label>
+            <div class="formControls col-5">
+                <span class="select-box" style="width:150px;">
+                    <select class="select" name="cityId" size="1">
+                        <option selected="selected" value="">总部</option>
+                        @foreach (var city in Model.Cities)
+                        {
+                            <option selected="@(Model.User.CityId==city.Id)" value="@city.Id">@city.Name</option>
+                        }
+                    </select>
+                </span>
+            </div>
+        </div>
+        <div class="row cl">
+            <div class="col-9 col-offset-3">
+                <input class="btn btn-primary radius" id="btnSave" type="button" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
+            </div>
+        </div>
+    </form>
+</div>
+@section FooterScript
+{
+    <script type="text/javascript">
+        //注意取数据的位置。在这里的话页面一加载就读取了，是取不到数据的
+        //var formData = $('#formAdd').serializeArray();
+        var saveAjax = function () {
+            var formData = $('#formEdit').serializeArray();
+            //var name = $('#name').val();
+            //var description = $('#description').val();
+            $.ajax({
+                type: "POST",
+                url: "/AdminUser/Edit",
+                /*data: {
+                    name: name,
+                    description: description
+                },
+                */
+                data: formData,
+                dataType: "json",
+                success: function (res) {
+                    if (res.status == "ok") {
+                        parent.location.reload(); //刷新父窗口
+                    } else {
+                        alert("error" + res.errorMsg);
+                    }
+                },
+                error: function () { alert("请求出错"); }
+            });
+        };
+        $(function () {
+            $('.skin-minimal input').iCheck({
+                checkboxClass: 'icheckbox-blue',
+                increaseArea: '20%'
+            });
+            var validForm = $('#formEdit').Validform({ tiptype: 3 });
+            $('#btnSave').click(function () {
+                if (validForm.check(false)) {
+                    saveAjax();
+                }
+            });
+            //焦点离开时检查手机号
+            $('#phoneNum').blur(function() {
+                var phoneNum = $(this).val();
+                if (phoneNum.length <= 0) return;
+                $.ajax({
+                    url: "/AdminUser/CheckPhoneNum",
+                    datatype: "json",
+                    type: "post",
+                    data: { phoneNum: phoneNum,userId:@Model.User.Id },
+                    success: function(res) {
+                        if (res.status == "exists") {
+                            layer.msg('这个手机号已经被其他人使用了!', { icon: 2, time: 2000 });
+                        }
+                    },
+                    error: function() {
+                        alert("网络错误");
+                    }
+                });
+            });
+        });
+                //$(function(){
+                //    $('.skin-minimal input').iCheck({
+                //        checkboxClass: 'icheckbox-blue',
+                //        radioClass: 'iradio-blue',
+                //        increaseArea: '20%'
+                //    });
+
+                //    $("#formAdd").Validform({
+                //        tiptype:2,
+                //        callback:function(form){
+                //            form[0].submit();
+                //            var index = parent.layer.getFrameIndex(window.name);
+                //            parent.$('.btn-refresh').click();
+                //            parent.layer.close(index);
+                //        }
+                //    });
+                //});
+    </script>
+}
+

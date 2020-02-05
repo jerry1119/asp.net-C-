@@ -118,3 +118,6 @@ I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Tests\obj\D
 I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Tests\obj\Debug\RentHouse.Tests.csproj.CopyComplete
 I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Tests\obj\Debug\RentHouse.Tests.dll
 I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Tests\obj\Debug\RentHouse.Tests.pdb
+I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Tests\bin\Debug\CodeCarvings.Piczard.dll
+I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Tests\bin\Debug\CodeCarvings.Piczard.xml
+I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Tests\bin\Debug\CaptchaGen.dll

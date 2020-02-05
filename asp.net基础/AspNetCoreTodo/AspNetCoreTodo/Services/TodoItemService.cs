@@ -1,0 +1,46 @@
+using System;
+using System.Linq;
+using System.Threading.Tasks;
+using AspNetCoreTodo.Data;
+using AspNetCoreTodo.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+
+namespace AspNetCoreTodo.Services
+{
+    public class TodoItemService : ITodoItemService
+    {
+        private readonly ApplicationDbContext _context;
+        public TodoItemService(ApplicationDbContext context)
+        {
+            this._context = context;
+        }
+
+        public async Task<bool> AddItemAsync(ToDoItem newItem)
+        {
+            newItem.Id = Guid.NewGuid();
+            newItem.IsDone = false;
+            newItem.DueAt = DateTimeOffset.Now.AddDays(3);
+            _context.Items.Add(newItem);
+            var saveResult = await _context.SaveChangesAsync();
+            return saveResult ==1;
+        }
+
+        public async Task<ToDoItem[]> GetIncompleteItemAsync(IdentityUser user)
+        {
+            return await _context.Items
+                .Where(x=>x.IsDone == false)
+                .ToArrayAsync();           
+        }
+
+        public async Task<bool> MarkDoneAsync(Guid id)
+        {
+            var item =await _context.Items.SingleOrDefaultAsync(x=>x.Id==id);
+            if(item == null) return false;
+            item.IsDone = true;
+            var saveResult = await _context.SaveChangesAsync();
+            return saveResult == 1;
+        }
+    }
+}

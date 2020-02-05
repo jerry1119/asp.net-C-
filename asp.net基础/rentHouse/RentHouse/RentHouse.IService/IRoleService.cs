@@ -2,7 +2,7 @@
 
 namespace RentHouse.IService
 {
-    public interface IRoleService
+    public interface IRoleService:IServiceMark
     {
         //新增角色
         long AddNew(string roleName);

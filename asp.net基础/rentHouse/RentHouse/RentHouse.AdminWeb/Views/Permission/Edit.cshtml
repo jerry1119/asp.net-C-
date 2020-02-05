@@ -1,0 +1,49 @@
+﻿@model RentHouse.DTO.PermissionDTO
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form id="formEdit">
+    <input type="hidden" name="id" id="id" value="@Model.Id"/>
+    名称：<input type="text" name="name" id="name" value="@Model.Name"/>
+    描述：<input type="text" name="description" id="description" value="@Model.Description"/>
+    <input type="button" value="保存" id="btnSave"/>
+</form>
+@section FooterScript
+{
+    <script type="text/javascript">
+        //注意取数据的位置。在这里的话页面一加载就读取了，是取不到数据的
+        //如果还想提交一些额外的数据，只能通过隐藏字段的方式，才能被这个方法识别
+        //var formData = $('#formEdit').serializeArray(); 
+        var saveAjax = function () {
+            var formData = $('#formEdit').serializeArray();   //通过JQ提供的这个方法可以更方便的提交表单数据，仅适用于表单
+            //var id = $('#id').val();
+            //var name = $('#name').val();
+            //var description = $('#description').val();
+            $.ajax({
+                type: "POST",
+                url: "/Permission/Edit",
+               /* data: {
+                    id: id,
+                    name: name,
+                    description:description
+                },
+                */
+                data: formData,
+                dataType: "json",
+                success: function(res) {
+                    if (res.status == "ok") {
+                        parent.location.reload(); //刷新父窗口
+                    } else {
+                        alert("error");
+                    }
+                },
+                error: function() { alert("请求出错"); }
+            });
+        };
+        $(function() {
+            $('#btnSave').click(saveAjax);
+        });
+    </script>
+}

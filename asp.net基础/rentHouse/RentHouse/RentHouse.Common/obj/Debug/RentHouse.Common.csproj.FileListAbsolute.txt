@@ -5,7 +5,13 @@ I:\Microsoft VS Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHous
 I:\Microsoft VS Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Common\obj\Debug\RentHouse.Common.pdb
 I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Common\bin\Debug\RentHouse.Common.dll
 I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Common\bin\Debug\RentHouse.Common.pdb
-I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Common\obj\Debug\RentHouse.Common.csprojAssemblyReference.cache
 I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Common\obj\Debug\RentHouse.Common.csproj.CoreCompileInputs.cache
 I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Common\obj\Debug\RentHouse.Common.dll
 I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Common\obj\Debug\RentHouse.Common.pdb
+I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Common\obj\Debug\RentHouse.Common.csprojAssemblyReference.cache
+I:\Code\netCode\Projects\asp.net\rentHouse\RentHouse\RentHouse.Common\bin\Debug\RentHouse.Common.dll
+I:\Code\netCode\Projects\asp.net\rentHouse\RentHouse\RentHouse.Common\bin\Debug\RentHouse.Common.pdb
+I:\Code\netCode\Projects\asp.net\rentHouse\RentHouse\RentHouse.Common\obj\Debug\RentHouse.Common.csprojAssemblyReference.cache
+I:\Code\netCode\Projects\asp.net\rentHouse\RentHouse\RentHouse.Common\obj\Debug\RentHouse.Common.csproj.CoreCompileInputs.cache
+I:\Code\netCode\Projects\asp.net\rentHouse\RentHouse\RentHouse.Common\obj\Debug\RentHouse.Common.dll
+I:\Code\netCode\Projects\asp.net\rentHouse\RentHouse\RentHouse.Common\obj\Debug\RentHouse.Common.pdb

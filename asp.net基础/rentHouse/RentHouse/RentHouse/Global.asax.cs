@@ -19,8 +19,10 @@ namespace RentHouse
         {
             //配置log4net读取config配置文件
             log4net.Config.XmlConfigurator.Configure();
+            //filter 
             GlobalFilters.Filters.Add(new FrontExceptionFilter());
 
+            GlobalFilters.Filters.Add(new JsonNetActionFilter()); //jsonNet filter
             //添加autoFac
             ContainerBuilder builder = new ContainerBuilder();
             builder.RegisterControllers(Assembly.GetAssembly(typeof(MvcApplication))).PropertiesAutowired();

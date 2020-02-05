@@ -49,6 +49,12 @@
     <Reference Include="Autofac.Integration.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
       <HintPath>..\packages\Autofac.Mvc5.4.0.2\lib\net45\Autofac.Integration.Mvc.dll</HintPath>
     </Reference>
+    <Reference Include="CaptchaGen, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CaptchaGen.1.0.0\lib\net40\CaptchaGen.dll</HintPath>
+    </Reference>
+    <Reference Include="CodeCarvings.Piczard, Version=1.2.3.0, Culture=neutral, PublicKeyToken=88d00d4422733d60, processorArchitecture=MSIL">
+      <HintPath>..\packages\CodeCarvings.Piczard.1.2.3.3\lib\CodeCarvings.Piczard.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -1107,10 +1113,16 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminHelper.cs" />
     <Compile Include="App_Start\AdminExceptionFilter.cs" />
+    <Compile Include="App_Start\AuthorizeFilter.cs" />
+    <Compile Include="App_Start\CheckPermissionAttribute.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\DefaultController.cs" />
+    <Compile Include="Controllers\AdminUserController.cs" />
+    <Compile Include="Controllers\HouseController.cs" />
+    <Compile Include="Controllers\MainController.cs" />
     <Compile Include="Controllers\PermissionController.cs" />
+    <Compile Include="Controllers\RoleController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -1122,6 +1134,19 @@
     <Compile Include="lib\ueditor\1.4.3\net\App_Code\NotSupportedHandler.cs" />
     <Compile Include="lib\ueditor\1.4.3\net\App_Code\PathFormater.cs" />
     <Compile Include="lib\ueditor\1.4.3\net\App_Code\UploadHandler.cs" />
+    <Compile Include="Models\AdminUserAddNewGetModel.cs" />
+    <Compile Include="Models\AdminUserAddNewModel.cs" />
+    <Compile Include="Models\AdminUserEditGetModel.cs" />
+    <Compile Include="Models\AdminUserEditModel.cs" />
+    <Compile Include="Models\HouseAddNewGetModel.cs" />
+    <Compile Include="Models\HouseEditModel.cs" />
+    <Compile Include="Models\HouseEditGetModel.cs" />
+    <Compile Include="Models\LoginModel.cs" />
+    <Compile Include="Models\PermissionAddNewModel.cs" />
+    <Compile Include="Models\PermissionEditModel.cs" />
+    <Compile Include="Models\RoleAddNewModel.cs" />
+    <Compile Include="Models\RoleEditGetModel.cs" />
+    <Compile Include="Models\RoleEditModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -1159,16 +1184,29 @@
     <Content Include="lib\zTree\v3\css\zTreeStyle\img\Thumbs.db" />
     <Content Include="lib\zTree\v3\README.md" />
     <None Include="packages.config" />
-    <Content Include="Views\Default\Index.cshtml" />
+    <Content Include="Views\Main\Index.cshtml" />
     <Content Include="skin\blue\Thumbs.db" />
     <Content Include="skin\default\Thumbs.db" />
     <Content Include="skin\green\Thumbs.db" />
     <Content Include="skin\orange\Thumbs.db" />
     <Content Include="skin\red\Thumbs.db" />
     <Content Include="skin\yellow\Thumbs.db" />
-    <Content Include="Views\Default\Login.cshtml" />
+    <Content Include="Views\Main\Login.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Permission\List.cshtml" />
+    <Content Include="Views\Permission\Edit.cshtml" />
+    <Content Include="Views\Permission\Add.cshtml" />
+    <Content Include="Views\Role\Add.cshtml" />
+    <Content Include="Views\Role\Edit.cshtml" />
+    <Content Include="Views\Role\List.cshtml" />
+    <Content Include="Views\AdminUser\Add.cshtml" />
+    <Content Include="Views\AdminUser\Edit.cshtml" />
+    <Content Include="Views\AdminUser\List.cshtml" />
+    <Content Include="Views\House\List.cshtml" />
+    <Content Include="Views\House\Add.cshtml" />
+    <Content Include="Views\House\Edit.cshtml" />
+    <Content Include="Views\House\PicUpLoad.cshtml" />
+    <Content Include="Views\House\PicList.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -1178,7 +1216,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RentHouse.Common\RentHouse.Common.csproj">

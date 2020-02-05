@@ -1,0 +1,68 @@
+﻿@model RentHouse.AdminWeb.Models.RoleEditGetModel
+@{
+    ViewBag.Title = "编辑角色";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form id="formAdd">
+    <div class="row cl">
+        <input type="hidden" name="id" id="id" value="@Model.Role.Id" />
+        <label class="form-label col-3"><span class="c-red">*</span>管理员：</label>
+        <div class="formControls col-5">
+            <input type="text" value="@Model.Role.Name" class="input-text" name="name" id="name" datatype="*1-50" nullmsg="角色名称不能为空" />
+        </div>
+        <div class="col-4"> </div>
+    </div>
+    权限：<br />
+    @foreach (var perm in Model.AllPerms)
+    {
+        <div class="col-xs-12 col-sm-3">
+            <label>
+                <input type="checkbox" checked="@Model.RolePerms.Select(p=>p.Id).Contains(perm.Id)" value=@perm.Id name="PermissionIds" id="permissions_@perm.Id">
+                @perm.Description
+            </label>
+        </div>
+    }
+    <br />
+    <input type="button" value="保存" id="btnSave" />
+</form>
+@section FooterScript
+{
+    <script type="text/javascript">
+        //注意取数据的位置。在这里的话页面一加载就读取了，是取不到数据的
+        //var formData = $('#formAdd').serializeArray();
+        var saveAjax = function () {
+            var formData = $('#formAdd').serializeArray();
+            //var name = $('#name').val();
+            //var description = $('#description').val();
+            $.ajax({
+                type: "POST",
+                url: "/Role/Edit",
+                /*data: {
+                    name: name,
+                    description: description
+                },
+                */
+                data: formData,
+                dataType: "json",
+                success: function (res) {
+                    if (res.status == "ok") {
+                        parent.location.reload(); //刷新父窗口
+                    } else {
+                        alert("error");
+                    }
+                },
+                error: function () { alert("请求出错"); }
+            });
+        };
+        $(function () {
+            var validForm = $('#formAdd').Validform({ tiptype: 3 });
+            $('#btnSave').click(function () {
+                if (validForm.check(false)) {
+                    saveAjax();
+                }
+            });
+        });
+    </script>
+}
+

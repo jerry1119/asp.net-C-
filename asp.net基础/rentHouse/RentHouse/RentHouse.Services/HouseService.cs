@@ -161,7 +161,7 @@ namespace RentHouse.Services
                 houseEntity.CommunityId = house.CommunityId;
                 houseEntity.CheckInDateTime = house.CheckInDateTime;
                 houseEntity.Description = house.Description;
-                houseEntity.DecorateStatusId = houseEntity.DecorateStatusId;
+                houseEntity.DecorateStatusId = house.DecorateStatusId;   //单元测试不充分呀。。这里写错了，后面才发现
                 houseEntity.Direction = house.Direction;
                 houseEntity.FloorIndex = house.FloorIndex;
                 houseEntity.LookableDateTime = house.LookableDateTime;
@@ -192,7 +192,8 @@ namespace RentHouse.Services
             {
                 CommonService<HouseEntity> cs = new CommonService<HouseEntity>(ctx);
                 HouseEntity house = cs.GetById(houseId);
-                return house.HousePics.Select(p => new HousePicDTO
+                //妈的这里忘了判断pic是否deleted的情况
+                return house.HousePics.Where(p=>p.IsDeleted==false).Select(p => new HousePicDTO
                 {
                     HouseId = p.HouseId,
                     Url = p.Url,

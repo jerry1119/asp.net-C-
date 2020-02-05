@@ -17,7 +17,8 @@ namespace RentHouse.AdminWeb
             log4net.Config.XmlConfigurator.Configure();
             //添加Filter
             GlobalFilters.Filters.Add(new AdminExceptionFilter());
-
+            GlobalFilters.Filters.Add(new JsonNetActionFilter()); //jsonNet filter
+            GlobalFilters.Filters.Add(new AuthorizeFilter());
             //添加autoFac
             ContainerBuilder builder = new ContainerBuilder();
             builder.RegisterControllers(Assembly.GetAssembly(typeof(MvcApplication))).PropertiesAutowired();

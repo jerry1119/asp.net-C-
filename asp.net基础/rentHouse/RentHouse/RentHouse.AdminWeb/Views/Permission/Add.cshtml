@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "Add";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form id="formAdd">
+    名称：<input type="text" name="name" id="name" />
+    描述：<input type="text" name="description" id="description" />
+    <input type="button" value="保存" id="btnSave" />
+</form>
+@section FooterScript
+{
+    <script type="text/javascript">
+        //注意取数据的位置。在这里的话页面一加载就读取了，是取不到数据的
+        //var formData = $('#formAdd').serializeArray();
+        var saveAjax = function () {
+            var formData = $('#formAdd').serializeArray();
+            //var name = $('#name').val();
+            //var description = $('#description').val();
+            $.ajax({
+                type: "POST",
+                url: "/Permission/Add",
+                /*data: {
+                    name: name,
+                    description: description
+                },
+                */
+                data: formData,
+                dataType: "json",
+                success: function (res) {
+                    if (res.status == "ok") {
+                        parent.location.reload(); //刷新父窗口
+                    } else {
+                        alert("error");
+                    }
+                },
+                error: function () { alert("请求出错"); }
+            });
+        };
+        $(function () {
+            $('#btnSave').click(saveAjax);
+        });
+    </script>
+}
+
