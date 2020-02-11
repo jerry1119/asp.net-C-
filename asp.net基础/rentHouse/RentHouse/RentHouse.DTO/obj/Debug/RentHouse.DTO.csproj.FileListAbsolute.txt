@@ -15,3 +15,8 @@ I:\Code\netCode\Projects\asp.net\rentHouse\RentHouse\RentHouse.DTO\obj\Debug\Ren
 I:\Code\netCode\Projects\asp.net\rentHouse\RentHouse\RentHouse.DTO\obj\Debug\RentHouse.DTO.csproj.CoreCompileInputs.cache
 I:\Code\netCode\Projects\asp.net\rentHouse\RentHouse\RentHouse.DTO\obj\Debug\RentHouse.DTO.dll
 I:\Code\netCode\Projects\asp.net\rentHouse\RentHouse\RentHouse.DTO\obj\Debug\RentHouse.DTO.pdb
+C:\Users\hejie\Source\Repos\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.DTO\bin\Debug\RentHouse.DTO.dll
+C:\Users\hejie\Source\Repos\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.DTO\bin\Debug\RentHouse.DTO.pdb
+C:\Users\hejie\Source\Repos\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.DTO\obj\Debug\RentHouse.DTO.dll
+C:\Users\hejie\Source\Repos\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.DTO\obj\Debug\RentHouse.DTO.pdb
+C:\Users\hejie\Source\Repos\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.DTO\obj\Debug\RentHouse.DTO.csprojAssemblyReference.cache

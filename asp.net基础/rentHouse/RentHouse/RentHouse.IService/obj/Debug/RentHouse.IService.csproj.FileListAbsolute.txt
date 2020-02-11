@@ -21,3 +21,11 @@ I:\Code\netCode\Projects\asp.net\rentHouse\RentHouse\RentHouse.IService\obj\Debu
 I:\Code\netCode\Projects\asp.net\rentHouse\RentHouse\RentHouse.IService\obj\Debug\RentHouse.IService.csproj.CopyComplete
 I:\Code\netCode\Projects\asp.net\rentHouse\RentHouse\RentHouse.IService\obj\Debug\RentHouse.IService.dll
 I:\Code\netCode\Projects\asp.net\rentHouse\RentHouse\RentHouse.IService\obj\Debug\RentHouse.IService.pdb
+C:\Users\hejie\Source\Repos\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.IService\bin\Debug\RentHouse.IService.dll
+C:\Users\hejie\Source\Repos\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.IService\bin\Debug\RentHouse.IService.pdb
+C:\Users\hejie\Source\Repos\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.IService\bin\Debug\RentHouse.DTO.dll
+C:\Users\hejie\Source\Repos\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.IService\bin\Debug\RentHouse.DTO.pdb
+C:\Users\hejie\Source\Repos\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.IService\obj\Debug\RentHouse.IService.csprojAssemblyReference.cache
+C:\Users\hejie\Source\Repos\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.IService\obj\Debug\RentHouse.IService.csproj.CopyComplete
+C:\Users\hejie\Source\Repos\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.IService\obj\Debug\RentHouse.IService.dll
+C:\Users\hejie\Source\Repos\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.IService\obj\Debug\RentHouse.IService.pdb

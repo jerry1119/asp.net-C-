@@ -90,7 +90,7 @@ C:\Users\hejie\Source\Repos\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHou
 C:\Users\hejie\Source\Repos\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\bin\Debug\zh-Hans\System.Web.WebPages.Razor.resources.dll
 C:\Users\hejie\Source\Repos\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\bin\Debug\zh-Hans\System.Web.Razor.resources.dll
 C:\Users\hejie\Source\Repos\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\bin\Debug\zh-Hans\System.Web.WebPages.Deployment.resources.dll
-C:\Users\hejie\Source\Repos\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\obj\Debug\RentHouse.Web.Common.csprojAssemblyReference.cache
 C:\Users\hejie\Source\Repos\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\obj\Debug\RentHouse.Web.Common.csproj.CopyComplete
 C:\Users\hejie\Source\Repos\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\obj\Debug\RentHouse.Web.Common.dll
 C:\Users\hejie\Source\Repos\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\obj\Debug\RentHouse.Web.Common.pdb
+C:\Users\hejie\Source\Repos\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\obj\Debug\RentHouse.Web.Common.csprojAssemblyReference.cache

@@ -150,5 +150,11 @@ namespace RentHouse.Controllers
             //TempData["SMSCode"] = "1234";
             //return Json(new AjaxResult() { Status = "ok"});
         }
+
+        [HttpPost]
+        public ActionResult SwitchCityId(string cityId)
+        {
+            return null;
+        }
     }
 }
