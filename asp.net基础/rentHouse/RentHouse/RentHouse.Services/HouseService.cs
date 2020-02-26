@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.SqlServer;
 using System.Linq;
@@ -9,7 +10,7 @@ using ZSZ.Service.Entities;
 
 namespace RentHouse.Services
 {
-    public class HouseService:IHouseService
+    public class HouseService : IHouseService
     {
         public HouseDTO[] GetAll()
         {
@@ -18,7 +19,7 @@ namespace RentHouse.Services
                 CommonService<HouseEntity> cs = new CommonService<HouseEntity>(ctx);
                 //为了避免延迟加载，所以直接include 在读取本表时把指定的外键表信息也读出来
                 return cs.GetAll().Include(a => a.Community).Include(a => a.Community.Region)
-                    .Include(a => a.Community.Region.City).Include(a => a.Attachments).Include(a => a.HousePics).Include(a=>a.DecorateStatus)
+                    .Include(a => a.Community.Region.City).Include(a => a.Attachments).Include(a => a.HousePics).Include(a => a.DecorateStatus)
                     .Include(a => a.Status).Include(a => a.RoomType).Include(a => a.Type).AsNoTracking()
                     .ToList().Select(a => Entity2DTO(a)).ToArray();
             }
@@ -30,7 +31,7 @@ namespace RentHouse.Services
             {
                 Address = entity.Address,
                 Area = entity.Area,
-                AttachmentIds = entity.Attachments.Select(a=>a.Id).ToArray(),
+                AttachmentIds = entity.Attachments.Select(a => a.Id).ToArray(),
                 CheckInDateTime = entity.CheckInDateTime,
                 CityId = entity.Community.Region.CityId,
                 CityName = entity.Community.Region.City.Name,
@@ -46,7 +47,7 @@ namespace RentHouse.Services
                 Description = entity.Description,
                 FloorIndex = entity.FloorIndex,
                 //房屋缩略图url
-                FirstThumbUrl = entity.HousePics.FirstOrDefault()!=null? entity.HousePics.FirstOrDefault().ThumbUrl:null,
+                FirstThumbUrl = entity.HousePics.FirstOrDefault() != null ? entity.HousePics.FirstOrDefault().ThumbUrl : null,
                 Id = entity.Id,
                 LookableDateTime = entity.LookableDateTime,
                 MonthRent = entity.MonthRent,
@@ -74,7 +75,7 @@ namespace RentHouse.Services
                     .Include(a => a.DecorateStatus)
                     .Include(a => a.Status).Include(a => a.RoomType).Include(a => a.Type).AsNoTracking()
                     .SingleOrDefault(a => a.Id == id);
-                if (house==null)
+                if (house == null)
                 {
                     return null;
                 }
@@ -88,7 +89,7 @@ namespace RentHouse.Services
             using (RhDbContext ctx = new RhDbContext())
             {
                 CommonService<HouseEntity> cs = new CommonService<HouseEntity>(ctx);
-                return cs.GetAll().LongCount(a => a.Community.Region.CityId == cityId&&a.TypeId==typeId);
+                return cs.GetAll().LongCount(a => a.Community.Region.CityId == cityId && a.TypeId == typeId);
             }
         }
 
@@ -147,7 +148,7 @@ namespace RentHouse.Services
         {
             using (RhDbContext ctx = new RhDbContext())
             {
-                CommonService<HouseEntity> cs= new CommonService<HouseEntity>(ctx);
+                CommonService<HouseEntity> cs = new CommonService<HouseEntity>(ctx);
                 HouseEntity houseEntity = cs.GetById(house.Id);
                 houseEntity.Address = house.Address;
                 houseEntity.Area = house.Area;
@@ -193,7 +194,7 @@ namespace RentHouse.Services
                 CommonService<HouseEntity> cs = new CommonService<HouseEntity>(ctx);
                 HouseEntity house = cs.GetById(houseId);
                 //妈的这里忘了判断pic是否deleted的情况
-                return house.HousePics.Where(p=>p.IsDeleted==false).Select(p => new HousePicDTO
+                return house.HousePics.Where(p => p.IsDeleted == false).Select(p => new HousePicDTO
                 {
                     HouseId = p.HouseId,
                     Url = p.Url,
@@ -229,7 +230,78 @@ namespace RentHouse.Services
 
         public HouseSearchResult Search(HouseSearchOptions options)
         {
-            throw new NotImplementedException();
+            using (RhDbContext ctx = new RhDbContext())
+            {
+                CommonService<HouseEntity> cs = new CommonService<HouseEntity>(ctx);
+                //判断所有的searchoptions
+                var items = cs.GetAll().Where(t => t.Community.Region.CityId == options.CityId);
+                if (options.TypeId != null)
+                {
+                    items = items.Where(t => t.TypeId == options.TypeId);
+                }
+
+                if (options.RegionId != null)
+                {
+                    items = items.Where(t => t.Community.RegionId == options.RegionId);
+                }
+
+                if (options.StartMonthRent != null)
+                {
+                    items = items.Where(t => t.MonthRent >= options.StartMonthRent);
+                }
+
+                if (options.EndMonthRent != null)
+                {
+                    items = items.Where(t => t.MonthRent <= options.EndMonthRent);
+                }
+
+                if (!string.IsNullOrEmpty(options.Keywords))
+                {
+                    items = items.Where(t => t.Address.Contains(options.Keywords)
+                    || t.Description.Contains(options.Keywords)
+                    || t.Community.Name.Contains(options.Keywords)
+                    || t.Community.Location.Contains(options.Keywords)
+                    || t.Community.Traffic.Contains(options.Keywords));
+                }
+                //使用include连接查询，是立即把外键表都查询出来，正常是用到外键表才去查的，但是这里已知肯定要用到外键表，所以用include，避免延迟加载，不然查询的时候一直去查外键表肯定不好
+                items = items.Include(h => h.Attachments).Include(h => h.Community)
+                    .Include(h => h.Community.Region).Include(h => h.Community.Region.City).Include(h=>h.Type);
+                //搜索结果总条数
+                long totalCount = items.LongCount();
+                switch (options.OrderByType)
+                {
+                    case HouseSearchOrderByType.AreaAsc:
+                        items = items.OrderBy(t => t.Area);
+                        break;
+                    case HouseSearchOrderByType.AreaDesc:
+                        items = items.OrderByDescending(t => t.Area);
+                        break;
+                    case HouseSearchOrderByType.MonthRentAsc:
+                        items = items.OrderBy(t => t.MonthRent);
+                        break;
+                    case HouseSearchOrderByType.MonthRentDesc:
+                        items = items.OrderByDescending(t => t.MonthRent);
+                        break;
+                    case HouseSearchOrderByType.CreateDateDesc:
+                        items = items.OrderBy(t => t.CreateDateTime);
+                        break;
+                }
+                //一定不要items.Where
+                //而要items=items.Where();
+                //OrderBy要在Skip和Take之前
+                //给用户看的页码从1开始，程序中是从0开始
+                items = items.Skip((options.CurrentIndex - 1) * options.PageSize).Take(options.PageSize);
+                HouseSearchResult searchResult = new HouseSearchResult();
+                searchResult.totalCount = totalCount;
+                List<HouseDTO> houses = new List<HouseDTO>();
+                foreach (var houseEntity in items)
+                {
+                    houses.Add(Entity2DTO(houseEntity)); 
+                }
+
+                searchResult.result = houses.ToArray();
+                return searchResult;
+            }
         }
 
         public long GetCount(long cityId, DateTime startDateTime, DateTime endDateTime)
@@ -237,8 +309,8 @@ namespace RentHouse.Services
             using (RhDbContext ctx = new RhDbContext())
             {
                 CommonService<HouseEntity> cs = new CommonService<HouseEntity>(ctx);
-                return cs.GetAll().LongCount(a => a.Community.Region.CityId == cityId&&
-                    a.CreateDateTime>=startDateTime  && a.CreateDateTime<=endDateTime);
+                return cs.GetAll().LongCount(a => a.Community.Region.CityId == cityId &&
+                    a.CreateDateTime >= startDateTime && a.CreateDateTime <= endDateTime);
                 //这里时间居然可以直接用运算符比较。。
             }
         }
@@ -253,7 +325,7 @@ namespace RentHouse.Services
 
                 //房子创建的时间是在当前时间内的24个小时，就认为是“今天的房源”
                 return cs.GetAll().Count(a =>
-                    a.Community.Region.CityId == cityId && SqlFunctions.DateDiff("hh",a.CreateDateTime,DateTime.Now)<=24);
+                    a.Community.Region.CityId == cityId && SqlFunctions.DateDiff("hh", a.CreateDateTime, DateTime.Now) <= 24);
             }
         }
     }

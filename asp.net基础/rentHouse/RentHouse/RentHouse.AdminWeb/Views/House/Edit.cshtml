@@ -6,7 +6,7 @@
 
 <div class="pd-20">
     <form action="" method="post" class="form form-horizontal" id="formAdd">
-        <input type="hidden" name="houseId" value="@Model.House.Id"/>
+        <input type="hidden" name="houseId" value="@Model.House.Id" />
         <div class="row cl">
             <div class="col-xs-12 col-sm-4">
                 <label class="form-label col-3"><span class="c-red">*</span>区域：</label>
@@ -14,7 +14,14 @@
                     <select class="select" name="regionId" id="regionSel" size="1">
                         @foreach (var region in Model.Regions)
                         {
-                            <option value="@region.Id" selected="@(Model.House.RegionId == region.Id)">@region.Name</option>
+                            if (Model.House.RegionId == region.Id)
+                            {
+                                <option value="@region.Id" selected="selected">@region.Name</option>
+                            }
+                            else
+                            {
+                                <option value="@region.Id" selected="">@region.Name</option>
+                            }
                         }
                     </select>
                 </span>
@@ -89,7 +96,7 @@
             </div>
             <div class="col-xs-12 col-sm-4">
                 <label class="form-label col-3"><span class="c-red">*</span>可看房时间：</label>
-                <input type="text" style="width: auto"onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" class="input-text" value="@Model.House.LookableDateTime"  id="lookableDateTime" name="lookableDateTime">
+                <input type="text" style="width: auto" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" class="input-text" value="@Model.House.LookableDateTime" id="lookableDateTime" name="lookableDateTime">
             </div>
         </div>
         <div class="row cl">

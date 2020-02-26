@@ -17,6 +17,11 @@ namespace RentHouse.Controllers
         // GET: 
         public ActionResult Index()
         {
+            //获取当前用户城市名
+            var cityId = FrontHelper.GetCityId(HttpContext);
+            var cityName = CityService.GetById(cityId).Name;
+            ViewBag.cityName = cityName;
+            //获取所有城市名
             var cities = CityService.GetAll();
             return View(cities);
         }
@@ -152,9 +157,20 @@ namespace RentHouse.Controllers
         }
 
         [HttpPost]
-        public ActionResult SwitchCityId(string cityId)
+        public ActionResult SwitchCityId(long cityId)
         {
-            return null;
+            //将cityId存到数据库user字段中
+            var userId =  FrontHelper.GetUserId(HttpContext);
+            if (userId==null)
+            {
+                HttpContext.Session["CityId"] = cityId;
+            }
+            else
+            {
+                var user = UserService.GetById((long)userId);
+                UserService.SetUserCityId(user.Id,cityId);
+            }
+            return Json(new AjaxResult(){Status = "ok"});
         }
     }
 }

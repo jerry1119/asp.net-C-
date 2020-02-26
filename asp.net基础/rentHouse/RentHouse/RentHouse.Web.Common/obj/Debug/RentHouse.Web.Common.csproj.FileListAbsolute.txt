@@ -44,7 +44,6 @@ I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\
 I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\obj\Debug\RentHouse.Web.Common.pdb
 I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\bin\Debug\Newtonsoft.Json.dll
 I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\bin\Debug\Newtonsoft.Json.xml
-I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\obj\Debug\RentHouse.Web.Common.csprojAssemblyReference.cache
 I:\Code\netCode\Projects\asp.net\rentHouse\RentHouse\RentHouse.Web.Common\bin\Debug\RentHouse.Web.Common.dll
 I:\Code\netCode\Projects\asp.net\rentHouse\RentHouse\RentHouse.Web.Common\bin\Debug\RentHouse.Web.Common.pdb
 I:\Code\netCode\Projects\asp.net\rentHouse\RentHouse\RentHouse.Web.Common\bin\Debug\Newtonsoft.Json.dll
@@ -94,3 +93,4 @@ C:\Users\hejie\Source\Repos\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHou
 C:\Users\hejie\Source\Repos\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\obj\Debug\RentHouse.Web.Common.dll
 C:\Users\hejie\Source\Repos\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\obj\Debug\RentHouse.Web.Common.pdb
 C:\Users\hejie\Source\Repos\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\obj\Debug\RentHouse.Web.Common.csprojAssemblyReference.cache
+I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.Web.Common\obj\Debug\RentHouse.Web.Common.csprojAssemblyReference.cache
