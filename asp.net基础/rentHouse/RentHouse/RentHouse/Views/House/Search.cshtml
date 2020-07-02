@@ -1,0 +1,88 @@
+﻿@using RentHouse.Web.Common
+@model RentHouse.Models.HouseSearchViewModel
+@{
+    ViewBag.Title = "整租";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section HeaderScript
+{
+    <script type="text/javascript" src="~/js/menu.js"></script>
+}
+<div class="headertwo clearfloat" id="header">
+    <a href="javascript:history.go(-1)" class="fl box-s"><i class="iconfont icon-arrow-l fl"></i></a>
+    <p class="fl">北京</p>
+    <a href="javascript:history.go(-1)" class="fr"><i class="iconfont icon-sousuo fl"></i></a>
+</div>
+<div class="clearfloat" id="main">
+    <div class="menu-list clearfloat am-sharetwo">
+        <ul class="yiji" id="oe_menu">
+            <li>
+                <a href="#" class="inactive">区域<i></i></a>
+                <ul style="display: none">
+                    <li><a href="~/House/Search?@(MVCHelper.DeleteQueryString(Request.QueryString,"RegionId"))">全部</a></li>
+                    @foreach (var region in Model.Regions)
+                    {
+                        <li><a href="~/House/Search?@(MVCHelper.UpdateQueryString(Request.QueryString,"RegionId",region.Id.ToString()))">@region.Name</a></li>
+                    }
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="inactive">租金<i></i></a>
+                <ul style="display: none">
+                    <li><a href="~/House/Search?@(MVCHelper.DeleteQueryString(Request.QueryString,"Monthrent"))">全部</a></li>
+                    <li><a href="~/House/Search?@(MVCHelper.UpdateQueryString(Request.QueryString,"Monthrent","*-99"))">100元以下</a></li>
+                    <li><a href="~/House/Search?@(MVCHelper.UpdateQueryString(Request.QueryString,"Monthrent","100-299"))">100-299元</a></li>
+                    <li><a href="~/House/Search?@(MVCHelper.UpdateQueryString(Request.QueryString,"Monthrent","300-499"))">300-499元</a></li>
+                    <li><a href="~/House/Search?@(MVCHelper.UpdateQueryString(Request.QueryString,"Monthrent","500-799"))">500-799元</a></li>
+                    <li><a href="~/House/Search?@(MVCHelper.UpdateQueryString(Request.QueryString,"Monthrent","800-999"))">800-999元</a></li>
+                    <li><a href="~/House/Search?@(MVCHelper.UpdateQueryString(Request.QueryString,"Monthrent","1000-*"))">1000元以上</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="inactive">排序<i></i></a>
+                <ul style="display: none">
+                    <li><a href="~/House/Search?@(MVCHelper.UpdateQueryString(Request.QueryString,"OderByType","MonthRentAsc"))">按价格升序</a></li>
+                    <li><a href="~/House/Search?@(MVCHelper.UpdateQueryString(Request.QueryString,"OderByType","MonthRentDesc"))">按价格降序</a></li>
+                    <li><a href="~/House/Search?@(MVCHelper.UpdateQueryString(Request.QueryString,"OderByType","AreaAsc"))">按面积升序</a></li>
+                    <li><a href="~/House/Search?@(MVCHelper.UpdateQueryString(Request.QueryString,"OderByType","AreaDesc"))">按面积降序</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div id="oe_overlay" class="oe_overlay"></div>
+
+    <div class="recom clearfloat recomtwo">
+        @foreach (var house in Model.Houses)
+        {
+            <div class="content clearfloat box-s">
+                <div class="list clearfloat fl box-s">
+                    <a href="house-details.html">
+                        <div class="tu clearfloat">
+                            <span></span>
+                            <img src="@house.FirstThumbUrl" />
+                        </div>
+                        <div class="right clearfloat">
+                            <div class="tit clearfloat">
+                                <p class="fl">@house.CommunityName</p>
+                                <span class="fr">@house.MonthRent<samp>元/月</samp></span>
+                            </div>
+                            <p class="recom-jianjie">@house.RoomTypeName   |  @(house.Area)m²  |  @(house.DecorateStatusName)</p>
+                            @*<div class="recom-bottom clearfloat">
+                                <span><i class="iconfont icon-duihao"></i>随时住</span>
+                                <span><i class="iconfont icon-duihao"></i>家电齐全</span>
+                            </div>*@
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        }
+    </div>
+</div>
+@section FooterScript
+{
+    <script type="text/javascript" src="~/js/psong.js"></script> 
+}
+

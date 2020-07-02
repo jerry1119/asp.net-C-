@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.329
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29911.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "20190212learn1", "20190212learn1\20190212learn1.csproj", "{2FA32382-CE74-4C64-B918-7F682C85535A}"
 EndProject
@@ -46,6 +46,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "419CSharp5.0中的异步", "419CSharp5.0中的异步\419CSharp5.0中的异步.csproj", "{70D5EB0A-A7A8-4166-9A00-F495655B9631}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "919算法", "919算法\919算法.csproj", "{212F0546-B952-4F10-AC9F-21230D467251}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "unZipPwd", "unZipPwd\unZipPwd.csproj", "{3C850E60-1940-43A0-9727-A95F4C8E02D4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "outputfileinfo", "outputfileinfo\outputfileinfo.csproj", "{58BA103D-ED7F-4186-89DF-AA8EAE81CC2D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "add", "add\add.csproj", "{D3082CC1-5E6D-4799-B6FB-89F35EBE9B24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReNameAndClassify", "ReNameAndClassify\ReNameAndClassify.csproj", "{033015AC-D5AA-4E4D-A29E-91D943261A9C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -141,6 +149,22 @@ Global
 		{212F0546-B952-4F10-AC9F-21230D467251}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{212F0546-B952-4F10-AC9F-21230D467251}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{212F0546-B952-4F10-AC9F-21230D467251}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C850E60-1940-43A0-9727-A95F4C8E02D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C850E60-1940-43A0-9727-A95F4C8E02D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C850E60-1940-43A0-9727-A95F4C8E02D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C850E60-1940-43A0-9727-A95F4C8E02D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58BA103D-ED7F-4186-89DF-AA8EAE81CC2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58BA103D-ED7F-4186-89DF-AA8EAE81CC2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58BA103D-ED7F-4186-89DF-AA8EAE81CC2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58BA103D-ED7F-4186-89DF-AA8EAE81CC2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3082CC1-5E6D-4799-B6FB-89F35EBE9B24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3082CC1-5E6D-4799-B6FB-89F35EBE9B24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3082CC1-5E6D-4799-B6FB-89F35EBE9B24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3082CC1-5E6D-4799-B6FB-89F35EBE9B24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{033015AC-D5AA-4E4D-A29E-91D943261A9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{033015AC-D5AA-4E4D-A29E-91D943261A9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{033015AC-D5AA-4E4D-A29E-91D943261A9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{033015AC-D5AA-4E4D-A29E-91D943261A9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

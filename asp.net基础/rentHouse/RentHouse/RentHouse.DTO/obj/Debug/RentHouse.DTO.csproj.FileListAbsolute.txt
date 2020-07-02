@@ -20,3 +20,9 @@ C:\Users\hejie\Source\Repos\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHou
 C:\Users\hejie\Source\Repos\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.DTO\obj\Debug\RentHouse.DTO.pdb
 C:\Users\hejie\Source\Repos\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.DTO\obj\Debug\RentHouse.DTO.csprojAssemblyReference.cache
 I:\Code\netCode\Projects\asp.net基础\rentHouse\RentHouse\RentHouse.DTO\obj\Debug\RentHouse.DTO.csprojAssemblyReference.cache
+F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.DTO\bin\Debug\RentHouse.DTO.dll
+F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.DTO\bin\Debug\RentHouse.DTO.pdb
+F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.DTO\obj\Debug\RentHouse.DTO.csproj.CoreCompileInputs.cache
+F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.DTO\obj\Debug\RentHouse.DTO.dll
+F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.DTO\obj\Debug\RentHouse.DTO.pdb
+F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.DTO\obj\Debug\RentHouse.DTO.csprojAssemblyReference.cache

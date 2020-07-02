@@ -46,7 +46,7 @@ namespace RentHouse.Services
                 Direction = entity.Direction,
                 Description = entity.Description,
                 FloorIndex = entity.FloorIndex,
-                //房屋缩略图url
+                //房屋第一张图的缩略图url
                 FirstThumbUrl = entity.HousePics.FirstOrDefault() != null ? entity.HousePics.FirstOrDefault().ThumbUrl : null,
                 Id = entity.Id,
                 LookableDateTime = entity.LookableDateTime,
@@ -235,10 +235,9 @@ namespace RentHouse.Services
                 CommonService<HouseEntity> cs = new CommonService<HouseEntity>(ctx);
                 //判断所有的searchoptions
                 var items = cs.GetAll().Where(t => t.Community.Region.CityId == options.CityId);
-                if (options.TypeId != null)
-                {
-                    items = items.Where(t => t.TypeId == options.TypeId);
-                }
+               
+                items = items.Where(t => t.TypeId == options.TypeId);
+                
 
                 if (options.RegionId != null)
                 {
@@ -293,8 +292,9 @@ namespace RentHouse.Services
                 items = items.Skip((options.CurrentIndex - 1) * options.PageSize).Take(options.PageSize);
                 HouseSearchResult searchResult = new HouseSearchResult();
                 searchResult.totalCount = totalCount;
+                HouseEntity[] lastItems = items.ToArray();
                 List<HouseDTO> houses = new List<HouseDTO>();
-                foreach (var houseEntity in items)
+                foreach (var houseEntity in lastItems)
                 {
                     houses.Add(Entity2DTO(houseEntity)); 
                 }
