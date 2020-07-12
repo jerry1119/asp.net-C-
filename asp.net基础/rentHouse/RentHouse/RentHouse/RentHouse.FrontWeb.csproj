@@ -175,6 +175,7 @@
     <Content Include="js\swiper.jquery.min.js" />
     <Content Include="js\swiper.min.js" />
     <Content Include="js\tchuang.js" />
+    <Content Include="js\template.js" />
     <Content Include="js\yhq.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -199,6 +200,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\HouseAppointmentModel.cs" />
     <Compile Include="Models\HouseIndexModel.cs" />
     <Compile Include="Models\HouseSearchViewModel.cs" />
     <Compile Include="Models\RegisterModel.cs" />
@@ -232,6 +234,7 @@
     <Content Include="Views\User\ForgotPassword4.cshtml" />
     <Content Include="Views\House\Index.cshtml" />
     <Content Include="Views\House\Search.cshtml" />
+    <Content Include="Views\House\Search2.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

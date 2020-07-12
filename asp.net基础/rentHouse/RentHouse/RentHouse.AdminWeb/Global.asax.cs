@@ -1,9 +1,14 @@
 ﻿using System.Reflection;
+using System.Threading.Tasks;
 using System.Web.Mvc;
 using System.Web.Routing;
 using Autofac;
 using Autofac.Integration.Mvc;
+using Quartz;
+using Quartz.Impl;
+using Quartz.Spi;
 using RentHouse.AdminWeb.App_Start;
+using RentHouse.AdminWeb.jobs;
 using RentHouse.IService;
 using RentHouse.Web.Common;
 
@@ -45,6 +50,23 @@ namespace RentHouse.AdminWeb
 
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            StartQuartz().GetAwaiter().GetResult();
+        }
+        private async Task StartQuartz()
+        {
+            var schedulerFactory = new StdSchedulerFactory();
+            IScheduler scheduler = await schedulerFactory.GetScheduler();
+            //启动调度
+            await scheduler.Start();
+
+            //创建作业和触发器
+            IJobDetail jobDetail = JobBuilder.Create<MailReportJob>().Build();
+            //Cron表达式，设置为工作日23点整
+            var trigger = TriggerBuilder.Create()
+                                        .WithCronSchedule("0 0 23 ? * MON,TUE,WED,THU,FRI")
+                                        .Build();
+            //添加调度
+            await scheduler.ScheduleJob(jobDetail, trigger);
         }
     }
 }

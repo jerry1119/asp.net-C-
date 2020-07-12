@@ -69,6 +69,7 @@ namespace RentHouse.AdminWeb.Controllers
         }
         [HttpGet]
         [CheckPermission("House.Add")]
+        
         public ActionResult Add()
         {
             long userId = (long)AdminHelper.GetUserId(HttpContext);
@@ -100,6 +101,7 @@ namespace RentHouse.AdminWeb.Controllers
 
         [HttpPost]
         [CheckPermission("House.Add")]
+        [ValidateInput(false)]
         public ActionResult Add(HouseAddNewDTO house)
         {
             long userId = (long)AdminHelper.GetUserId(HttpContext);
@@ -154,6 +156,7 @@ namespace RentHouse.AdminWeb.Controllers
 
         [HttpPost]
         [CheckPermission("House.Edit")]
+        [ValidateInput(false)]  //允许输入的内容包含标签 脚本 解决 从客户端中检测到有潜在危险的 Request.Form 值错误
         public ActionResult Edit(HouseEditModel model)
         {
             long userId = (long)AdminHelper.GetUserId(HttpContext);

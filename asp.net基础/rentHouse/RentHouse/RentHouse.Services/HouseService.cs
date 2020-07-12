@@ -235,9 +235,9 @@ namespace RentHouse.Services
                 CommonService<HouseEntity> cs = new CommonService<HouseEntity>(ctx);
                 //判断所有的searchoptions
                 var items = cs.GetAll().Where(t => t.Community.Region.CityId == options.CityId);
-               
+
                 items = items.Where(t => t.TypeId == options.TypeId);
-                
+
 
                 if (options.RegionId != null)
                 {
@@ -264,7 +264,7 @@ namespace RentHouse.Services
                 }
                 //使用include连接查询，是立即把外键表都查询出来，正常是用到外键表才去查的，但是这里已知肯定要用到外键表，所以用include，避免延迟加载，不然查询的时候一直去查外键表肯定不好
                 items = items.Include(h => h.Attachments).Include(h => h.Community)
-                    .Include(h => h.Community.Region).Include(h => h.Community.Region.City).Include(h=>h.Type);
+                    .Include(h => h.Community.Region).Include(h => h.Community.Region.City).Include(h => h.Type);
                 //搜索结果总条数
                 long totalCount = items.LongCount();
                 switch (options.OrderByType)
@@ -296,7 +296,7 @@ namespace RentHouse.Services
                 List<HouseDTO> houses = new List<HouseDTO>();
                 foreach (var houseEntity in lastItems)
                 {
-                    houses.Add(Entity2DTO(houseEntity)); 
+                    houses.Add(Entity2DTO(houseEntity));
                 }
 
                 searchResult.result = houses.ToArray();
@@ -320,12 +320,14 @@ namespace RentHouse.Services
             using (RhDbContext ctx = new RhDbContext())
             {
                 CommonService<HouseEntity> cs = new CommonService<HouseEntity>(ctx);
-                //return cs.GetAll().Count(a =>
-                //    a.Community.Region.CityId == cityId && a.CreateDateTime.Date == DateTime.Now.Date);
 
                 //房子创建的时间是在当前时间内的24个小时，就认为是“今天的房源”
-                return cs.GetAll().Count(a =>
-                    a.Community.Region.CityId == cityId && SqlFunctions.DateDiff("hh", a.CreateDateTime, DateTime.Now) <= 24);
+                DateTime time24HourAgo = DateTime.Now.AddHours(-24);
+                return cs.GetAll().Count(h => 
+                         h.Community.Region.CityId == cityId && h.CreateDateTime >= time24HourAgo);
+                //下面的写法也是正确的，但是仅限于sqlserver，还有一种错误写法是直接把两个时间相减写在linq中，这样ef是无法识别的
+                //return cs.GetAll().Count(a =>
+                //    a.Community.Region.CityId == cityId && SqlFunctions.DateDiff("hh", a.CreateDateTime, DateTime.Now) <= 24);
             }
         }
     }

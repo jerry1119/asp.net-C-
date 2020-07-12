@@ -212,7 +212,6 @@ F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.Tests\bin\Deb
 F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.Tests\bin\Debug\RentHouse.Common.dll
 F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.Tests\bin\Debug\CaptchaGen.dll
 F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.Tests\bin\Debug\EntityFramework.dll
-F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.Tests\bin\Debug\EntityFramework.SqlServer.dll
 F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.Tests\bin\Debug\System.Web.WebPages.dll
 F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.Tests\bin\Debug\System.Web.WebPages.Razor.dll
 F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.Tests\bin\Debug\System.Web.Razor.dll
@@ -237,7 +236,6 @@ F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.Tests\bin\Deb
 F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.Tests\bin\Debug\Autofac.Integration.Mvc.xml
 F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.Tests\bin\Debug\RentHouse.Common.pdb
 F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.Tests\bin\Debug\EntityFramework.xml
-F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.Tests\bin\Debug\EntityFramework.SqlServer.xml
 F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.Tests\bin\Debug\System.Web.WebPages.xml
 F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.Tests\bin\Debug\System.Web.WebPages.Razor.xml
 F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.Tests\bin\Debug\System.Web.Razor.xml
@@ -252,3 +250,6 @@ F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.Tests\obj\Deb
 F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.Tests\obj\Debug\RentHouse.Tests.csproj.CopyComplete
 F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.Tests\obj\Debug\RentHouse.Tests.dll
 F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.Tests\obj\Debug\RentHouse.Tests.pdb
+F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.Tests\bin\Debug\Quartz.dll
+F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.Tests\bin\Debug\Quartz.pdb
+F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.Tests\bin\Debug\Quartz.xml

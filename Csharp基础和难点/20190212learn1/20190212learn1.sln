@@ -53,7 +53,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "outputfileinfo", "outputfil
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "add", "add\add.csproj", "{D3082CC1-5E6D-4799-B6FB-89F35EBE9B24}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReNameAndClassify", "ReNameAndClassify\ReNameAndClassify.csproj", "{033015AC-D5AA-4E4D-A29E-91D943261A9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReNameAndClassify", "ReNameAndClassify\ReNameAndClassify.csproj", "{033015AC-D5AA-4E4D-A29E-91D943261A9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "suo", "suo\suo.csproj", "{AD405E66-0527-435A-B52B-E02C10E4924C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "embylaunchPotPlayer", "embylaunchPotPlayer\embylaunchPotPlayer.csproj", "{45936527-BAAC-48A8-88D5-FE4D899F2E3A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -165,6 +169,14 @@ Global
 		{033015AC-D5AA-4E4D-A29E-91D943261A9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{033015AC-D5AA-4E4D-A29E-91D943261A9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{033015AC-D5AA-4E4D-A29E-91D943261A9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD405E66-0527-435A-B52B-E02C10E4924C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD405E66-0527-435A-B52B-E02C10E4924C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD405E66-0527-435A-B52B-E02C10E4924C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD405E66-0527-435A-B52B-E02C10E4924C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45936527-BAAC-48A8-88D5-FE4D899F2E3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45936527-BAAC-48A8-88D5-FE4D899F2E3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45936527-BAAC-48A8-88D5-FE4D899F2E3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45936527-BAAC-48A8-88D5-FE4D899F2E3A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

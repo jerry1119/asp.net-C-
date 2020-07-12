@@ -19,8 +19,20 @@ namespace RentHouse.Controllers
         public IRegionService RegionService { get; set; }
 
         public ICityService CityService { get; set; }
+        public IHouseAppointmentService HouseAppointmentService { get; set; }
 
-        // GET: House
+        public ActionResult MakeAppointment(HouseAppointmentModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                string msg = MVCHelper.GetValidMesg(ModelState);
+                return Json(new AjaxResult { Status = "error", ErrorMsg = msg });
+            }
+            long? userId = FrontHelper.GetUserId(HttpContext);
+            HouseAppointmentService.AddNew(userId,model.Name, model.PhoneNum, model.HouseId, model.VisitDate);
+            return Json(new AjaxResult { Status="ok"});
+        }
+
         public ActionResult Search(long typeId,string keyWords,string monthRent,string oderByType,long? regionId)
         {
             //获取当前用户城市ID
@@ -64,6 +76,56 @@ namespace RentHouse.Controllers
             var houseSearchResult = HouseService.Search(searchOptions);
             viewModel.Houses = houseSearchResult.result;
             return View(viewModel);
+        }
+        public ActionResult Search2(long typeId, string keyWords, string monthRent, string oderByType, long? regionId)
+        {
+            //获取当前用户城市ID
+            var cityId = FrontHelper.GetCityId(HttpContext);
+            //获取城市下所有区域
+            var regions = RegionService.GetAll(cityId);
+            
+            return View(regions);
+        }
+        public ActionResult LoadMore(long typeId, string keyWords, string monthRent, string oderByType,int currentIndex, long? regionId)
+        {
+            //获取当前用户城市ID
+            var cityId = FrontHelper.GetCityId(HttpContext);
+            
+            HouseSearchOptions searchOptions = new HouseSearchOptions();
+
+            searchOptions.TypeId = typeId;
+            searchOptions.Keywords = keyWords;
+            searchOptions.PageSize = 10;
+            searchOptions.RegionId = regionId;
+            searchOptions.CityId = cityId;
+            searchOptions.CurrentIndex = currentIndex;
+
+            switch (oderByType)
+            {
+                case "MonthRentDesc":
+                    searchOptions.OrderByType = HouseSearchOrderByType.MonthRentDesc;
+                    break;
+                case "MonthRentAsc":
+                    searchOptions.OrderByType = HouseSearchOrderByType.MonthRentAsc;
+                    break;
+                case "AreaAsc":
+                    searchOptions.OrderByType = HouseSearchOrderByType.AreaAsc;
+                    break;
+                case "AreaDesc":
+                    searchOptions.OrderByType = HouseSearchOrderByType.AreaDesc;
+                    break;
+            }
+            //解析月租部分
+            int? startMonthRent;
+            int? endMonthRent;
+            ParseMonthRent(monthRent, out startMonthRent, out endMonthRent);
+
+            searchOptions.StartMonthRent = startMonthRent;
+            searchOptions.EndMonthRent = endMonthRent;
+
+            var houseSearchResult = HouseService.Search(searchOptions);
+            var houses = houseSearchResult.result;
+            return Json(new AjaxResult { Status = "ok", Data = houses }) ;
         }
         public ActionResult Index(long id)
         {

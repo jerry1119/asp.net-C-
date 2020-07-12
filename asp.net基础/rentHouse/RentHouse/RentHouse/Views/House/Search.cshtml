@@ -51,14 +51,14 @@
         </ul>
     </div>
 
-    <div id="oe_overlay" class="oe_overlay"></div>
+    
 
     <div class="recom clearfloat recomtwo">
         @foreach (var house in Model.Houses)
         {
             <div class="content clearfloat box-s">
                 <div class="list clearfloat fl box-s">
-                    <a href="house-details.html">
+                    <a href="~/House/Index?id=@(house.Id)">
                         <div class="tu clearfloat">
                             <span></span>
                             <img src="@house.FirstThumbUrl" />

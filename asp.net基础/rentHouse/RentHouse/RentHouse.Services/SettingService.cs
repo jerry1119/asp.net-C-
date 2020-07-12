@@ -86,7 +86,7 @@ namespace RentHouse.Services
         {
             SetValue(name, value.ToString());
         }
-
+        //新增或更改配置信息
         public void SetValue(string name, string value)
         {
             using (RhDbContext ctx = new RhDbContext())

@@ -398,3 +398,6 @@ F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.AdminWeb\obj\
 F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.AdminWeb\obj\Debug\RentHouse.AdminWeb.csproj.CopyComplete
 F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.AdminWeb\obj\Debug\RentHouse.AdminWeb.dll
 F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.AdminWeb\obj\Debug\RentHouse.AdminWeb.pdb
+F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.AdminWeb\bin\Quartz.dll
+F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.AdminWeb\bin\Quartz.pdb
+F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.AdminWeb\bin\Quartz.xml

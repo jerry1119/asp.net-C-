@@ -1,0 +1,127 @@
+﻿@using RentHouse.Web.Common
+@model RentHouse.DTO.RegionDTO[]
+@{
+    ViewBag.Title = "整租";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<script type="text/javascript" src="~/js/menu.js"></script>
+<script type="text/javascript" src="~/js/template.js"></script>
+
+<div class="headertwo clearfloat" id="header">
+    <a href="javascript:history.go(-1)" class="fl box-s"><i class="iconfont icon-arrow-l fl"></i></a>
+    <p class="fl">北京</p>
+    <a href="javascript:history.go(-1)" class="fr"><i class="iconfont icon-sousuo fl"></i></a>
+</div>
+<div class="clearfloat" id="main">
+    <div class="menu-list clearfloat am-sharetwo">
+        <ul class="yiji" id="oe_menu">
+            <li>
+                <a href="#" class="inactive">区域<i></i></a>
+                <ul style="display: none">
+                    <li><a href="~/House/Search2?@(MVCHelper.DeleteQueryString(Request.QueryString,"RegionId"))">全部</a></li>
+                    @foreach (var region in Model)
+                    {
+                        <li><a href="~/House/Search2?@(MVCHelper.UpdateQueryString(Request.QueryString,"RegionId",region.Id.ToString()))">@region.Name</a></li>
+                    }
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="inactive">租金<i></i></a>
+                <ul style="display: none">
+                    <li><a href="~/House/Search2?@(MVCHelper.DeleteQueryString(Request.QueryString,"Monthrent"))">全部</a></li>
+                    <li><a href="~/House/Search2?@(MVCHelper.UpdateQueryString(Request.QueryString,"Monthrent","*-99"))">100元以下</a></li>
+                    <li><a href="~/House/Search2?@(MVCHelper.UpdateQueryString(Request.QueryString,"Monthrent","100-299"))">100-299元</a></li>
+                    <li><a href="~/House/Search2?@(MVCHelper.UpdateQueryString(Request.QueryString,"Monthrent","300-499"))">300-499元</a></li>
+                    <li><a href="~/House/Search2?@(MVCHelper.UpdateQueryString(Request.QueryString,"Monthrent","500-799"))">500-799元</a></li>
+                    <li><a href="~/House/Search2?@(MVCHelper.UpdateQueryString(Request.QueryString,"Monthrent","800-999"))">800-999元</a></li>
+                    <li><a href="~/House/Search2?@(MVCHelper.UpdateQueryString(Request.QueryString,"Monthrent","1000-*"))">1000元以上</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="inactive">排序<i></i></a>
+                <ul style="display: none">
+                    <li><a href="~/House/Search2?@(MVCHelper.UpdateQueryString(Request.QueryString,"OderByType","MonthRentAsc"))">按价格升序</a></li>
+                    <li><a href="~/House/Search2?@(MVCHelper.UpdateQueryString(Request.QueryString,"OderByType","MonthRentDesc"))">按价格降序</a></li>
+                    <li><a href="~/House/Search2?@(MVCHelper.UpdateQueryString(Request.QueryString,"OderByType","AreaAsc"))">按面积升序</a></li>
+                    <li><a href="~/House/Search2?@(MVCHelper.UpdateQueryString(Request.QueryString,"OderByType","AreaDesc"))">按面积降序</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="recom clearfloat recomtwo">
+
+        <div class="content clearfloat box-s">
+
+            <!--下拉刷新容器-->
+            <div id="refreshContainer" class="mui-content mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <!--数据列表-->
+                    <ul class="mui-table-view mui-table-view-chevron" id="ul1">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section FooterScript
+{
+    <script type="text/javascript" src="~/js/psong.js"></script>
+    <script type="text/javascript">
+        var currentIndex = 1; //当前数据页码
+        mui.init({
+            pullRefresh: {
+                container: refreshContainer,//待刷新区域标识，querySelector能定位的css选择器均可，比如：id、.class等
+                up: {
+                    height: 50,//可选.默认50.触发上拉加载拖动距离
+                    auto: true,//可选,默认false.自动上拉加载一次
+                    contentrefresh: "正在加载...",//可选，正在加载状态时，上拉加载控件上显示的标题内容
+                    contentnomore: '没有更多数据了',//可选，请求完毕若没有更多数据时显示的提醒内容；
+                    //必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
+                    callback: function () {
+                        var that = this;  //下面直接用this有作用域的问题，常用的写法是在外面这样赋值一下
+                        $.ajax({
+                            url: "/house/loadmore" + location.search + "&currentIndex=" + currentIndex,
+                            type: "post",
+                            dataType: "json",
+                            success: function (res) {
+                                currentIndex++;//页码++
+                                var hasMoreData = (res.data.length == 10);//是否有更多数据
+
+                                var html = template('houseslist', {houses:res.data});  //使用js模版将数据转换为想要的html
+                                $("#ul1").append($(html)); //将html填充到上拉模版中
+                                that.endPullupToRefresh(!hasMoreData);//剩余数据不足时，结束上拉加载
+                            },
+                            error: function (res) {
+                                alert("加载数据失败");
+                            }
+                        });
+                    }
+                }
+            }
+        });
+    </script>
+    <script id="houseslist" type="text/html">
+        {{each houses as h}}
+        <div class="list clearfloat fl box-s">
+            <a href="/House/Index?id={{h.id}}">
+                <div class="tu clearfloat">
+                    <span></span>
+                    <img src="{{h.firstThumbUrl}}" />
+                </div>
+                <div class="right clearfloat">
+                    <div class="tit clearfloat">
+                        <p class="fl">{{h.communityName}}</p>
+                        <span class="fr">{{h.monthRent}}<samp>元/月</samp></span>
+                    </div>
+                    <p class="recom-jianjie">{{h.roomTypeName}}   |  {{h.area}}m²  |  {{h.decorateStatusName}}</p>
+
+                </div>
+            </a>
+        </div>
+        {{/each}}
+    </script>
+}
+

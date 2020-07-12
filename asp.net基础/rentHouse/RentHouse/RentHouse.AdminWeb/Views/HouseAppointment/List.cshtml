@@ -1,0 +1,115 @@
+﻿@using RentHouse.DTO
+@using RentHouse.Web.Common
+@model RentHouse.DTO.HouseAppointmentDTO[]
+@{
+    ViewBag.Title = "预约看房抢单";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 房源管理 <span class="c-gray en">&gt;</span> 房源列表 <a class="btn btn-success radius r mr-20" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新"><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<div class="pd-20">
+
+    <div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"><a href="javascript:;" onclick="batch_del()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> <a href="javascript:;" onclick="admin_add('添加房源','/House/Add','800','500')" class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加房源</a></span> <span class="r">共有数据：<strong>@Model.Length</strong> 条</span> </div>
+    <form id="formList">
+        <table class="table table-border table-bordered table-bg">
+            <thead>
+                <tr>
+                    <th scope="col" colspan="9">预约订单列表</th>
+                </tr>
+                <tr class="text-c">
+                    <th width="25"><input type="checkbox" name="" value=""></th>
+                    <th width="90">姓名</th>
+                    <th width="150">电话</th>
+                    <th width="90">预约时间</th>
+                    <th width="90">看房时间</th>
+                    <th width="90">小区</th>
+                    <th width="90">地址</th>
+                    <th width="90">状态</th>
+                    <th width="100">跟进员工</th>
+                    <th width="100">查看房源</th>
+                    <th width="100">接单</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var houseApp in Model)
+                {
+                    <tr class="text-c">
+                        <td><input type="checkbox" value="@houseApp.Id" name="selectedIds"></td>
+                        <td>@houseApp.Name</td>
+                        <td>@houseApp.PhoneNum</td>
+                        <td>@houseApp.CreateDateTime</td>
+                        <td>@houseApp.VisitDate</td>
+                        <td>@houseApp.CommunityName</td>
+                        <td>@houseApp.HouseAddress</td>
+                        <td>@houseApp.Status</td>
+                        <td>@houseApp.FollowAdminUserName</td>
+                        <td>
+                            <a title="查看房源" href="javascript:;" onclick="admin_look('查看房源', '/House/Edit/@houseApp.HouseId',  '800', '500')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a>
+                        </td>
+                        <td>
+                            <a title="接单" href="javascript:;" onclick="admin_follow(@houseApp.Id)" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe687;</i></a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </form>
+    @{
+        PageBarHelper pageBarHelper = new PageBarHelper();
+        pageBarHelper.CurrentPageClassName = "pageBar";
+        pageBarHelper.UrlPattern = "/HouseAppointment/List?pageIndex={pn}";
+        pageBarHelper.TotalCount = (int)ViewBag.totalCount;
+        pageBarHelper.PageIndex = ViewBag.pageIndex;
+        pageBarHelper.PageSize = ViewBag.pageSize;
+    }
+    <div>
+        @Html.Raw(pageBarHelper.GetPagerHtml())
+    </div>
+</div>
+@section FooterScript
+{
+    <script type="text/javascript">
+        /*
+        参数解释：
+        title	标题
+        url		请求的url
+        id		需要操作的数据id
+        w		弹出层宽度（缺省调默认值）
+        h		弹出层高度（缺省调默认值）
+*/
+        $(function() {
+            $('.pageBar').css('float', 'left');
+        });
+        
+        function admin_look(title, url, w, h) {
+            layer_show(title, url, w, h);
+        }
+        function admin_follow(houseAppId) {
+            $.ajax({
+                url: "/HouseAppointment/Follow/",
+                data: { houseAppId: houseAppId },
+                dataType: "json",
+                type: "post",
+                success: function(res){
+                    if (res.status == "ok") {
+                        alert("抢单成功");
+                    }
+                    else {
+                        alert("抢单失败");
+                    }
+                },
+                error: function (res) {
+                    alert("网络错误");
+                }
+            });
+        }
+       
+    </script>
+}
+
+
+
+
+
+
+

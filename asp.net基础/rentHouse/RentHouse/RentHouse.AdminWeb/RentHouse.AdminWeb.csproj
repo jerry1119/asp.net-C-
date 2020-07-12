@@ -68,6 +68,10 @@
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="Quartz, Version=3.0.7.0, Culture=neutral, PublicKeyToken=f6b8c98a402cc8a4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Quartz.3.0.7\lib\net452\Quartz.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -1119,6 +1123,7 @@
     <Compile Include="App_Start\CheckPermissionAttribute.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AdminUserController.cs" />
+    <Compile Include="Controllers\HouseAppointmentController.cs" />
     <Compile Include="Controllers\HouseController.cs" />
     <Compile Include="Controllers\MainController.cs" />
     <Compile Include="Controllers\PermissionController.cs" />
@@ -1126,6 +1131,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="jobs\MailReportJob.cs" />
     <Compile Include="lib\ueditor\1.4.3\net\App_Code\Config.cs" />
     <Compile Include="lib\ueditor\1.4.3\net\App_Code\ConfigHandler.cs" />
     <Compile Include="lib\ueditor\1.4.3\net\App_Code\CrawlerHandler.cs" />
@@ -1207,6 +1213,7 @@
     <Content Include="Views\House\Edit.cshtml" />
     <Content Include="Views\House\PicUpLoad.cshtml" />
     <Content Include="Views\House\PicList.cshtml" />
+    <Content Include="Views\HouseAppointment\List.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
