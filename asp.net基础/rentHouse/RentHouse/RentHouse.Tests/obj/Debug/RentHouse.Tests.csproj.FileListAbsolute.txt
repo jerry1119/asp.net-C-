@@ -253,3 +253,4 @@ F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.Tests\obj\Deb
 F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.Tests\bin\Debug\Quartz.dll
 F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.Tests\bin\Debug\Quartz.pdb
 F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.Tests\bin\Debug\Quartz.xml
+F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.Tests\bin\Debug\Qiniu.dll

@@ -31,7 +31,7 @@ namespace ZSZ.CommonMVC
                 && string.Equals(context.HttpContext.Request.HttpMethod, "GET", StringComparison.OrdinalIgnoreCase))
                 throw new InvalidOperationException("JSON GET is not allowed");
 
-            HttpResponseBase response = context.HttpContext.Response;
+            HttpResponseBase response = context.HttpContext.Response; 
             response.ContentType = string.IsNullOrEmpty(this.ContentType) ? "application/json" : this.ContentType;
 
             if (this.ContentEncoding != null)

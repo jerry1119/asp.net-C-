@@ -1,9 +1,13 @@
-﻿using System;
+﻿using Qiniu.Http;
+using Qiniu.Storage;
+using Qiniu.Util;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Web;
+using RentHouse.Common;
 
 /// <summary>
 /// UploadHandler 的摘要说明
@@ -63,16 +67,59 @@ public class UploadHandler : Handler
 
         Result.OriginFileName = uploadFileName;
 
-        var savePath = PathFormatter.Format(uploadFileName, UploadConfig.PathFormat);
-        var localPath = Server.MapPath(savePath);
+        //var savePath = PathFormatter.Format(uploadFileName, UploadConfig.PathFormat);
+        //var localPath = Server.MapPath(savePath);
+        //try
+        //{
+        //    if (!Directory.Exists(Path.GetDirectoryName(localPath)))
+        //    {
+        //        Directory.CreateDirectory(Path.GetDirectoryName(localPath));
+        //    }
+        //    File.WriteAllBytes(localPath, uploadFileBytes);
+        //    Result.Url = savePath;
+        //    Result.State = UploadState.Success;
+        //}
+        //catch (Exception e)
+        //{
+        //    Result.State = UploadState.FileAccessError;
+        //    Result.ErrorMessage = e.Message;
+        //}
+        //finally
+        //{
+        //    WriteResult();
+        //}
+
         try
         {
-            if (!Directory.Exists(Path.GetDirectoryName(localPath)))
-            {
-                Directory.CreateDirectory(Path.GetDirectoryName(localPath));
-            }
-            File.WriteAllBytes(localPath, uploadFileBytes);
-            Result.Url = savePath;
+            string AccessKey = "nDdaH3SGk5NXCyQ8eZMsnRTApJndj0fOKy_f6Lix";
+            string SecretKey = "HgxcM58TEplyx6H9CBJTbYDqpF4uXAKsiBp-W6u4";
+            Mac mac = new Mac(AccessKey, SecretKey);
+            // 上传文件名
+            
+            string key = DateTime.Now.ToString("yyyy/MM/dd")+"/"+CommonHelper.CalcMd5(uploadFileBytes)+Path.GetExtension(uploadFileName);
+            // 存储空间名
+            string Bucket = "renthouse2019";
+            // 设置上传策略，详见：https://developer.qiniu.com/kodo/manual/1206/put-policy
+            PutPolicy putPolicy = new PutPolicy();
+            // 设置要上传的目标空间
+            putPolicy.Scope = Bucket;
+            // 上传策略的过期时间(单位:秒)
+            putPolicy.SetExpires(3600);
+            // 文件上传完毕后，在多少天后自动被删除
+            putPolicy.DeleteAfterDays = 1;
+            // 生成上传token
+            string token = Auth.CreateUploadToken(mac, putPolicy.ToJsonString());
+            Qiniu.Storage.Config qiniuConfig = new Qiniu.Storage.Config();
+            // 设置上传区域
+            qiniuConfig.Zone = Zone.ZONE_CN_South;
+            // 设置 http 或者 https 上传
+            qiniuConfig.UseHttps = true;
+            qiniuConfig.UseCdnDomains = true;
+            qiniuConfig.ChunkSize = ChunkUnit.U512K;
+            // 表单上传
+            FormUploader target = new FormUploader(qiniuConfig);
+            HttpResult result = target.UploadData(uploadFileBytes, key, token, null);
+            Result.Url = key;
             Result.State = UploadState.Success;
         }
         catch (Exception e)
@@ -85,6 +132,9 @@ public class UploadHandler : Handler
             WriteResult();
         }
     }
+
+  
+
 
     private void WriteResult()
     {

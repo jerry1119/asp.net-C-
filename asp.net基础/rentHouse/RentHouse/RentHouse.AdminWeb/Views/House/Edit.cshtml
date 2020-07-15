@@ -214,8 +214,8 @@
         function initcommunitySel(communities) {
             var strHtmlArry = [];
             for (let i = 0; i < communities.length; i++) {
-                const communityId = communities[i].id;
-                const communityName = communities[i].name;
+                var communityId = communities[i].id;
+                var communityName = communities[i].name;
                 //注意，这里要先在外面定义了才能拿到，不然界面显示undefine
                 if (communityId==@Model.House.CommunityId) {
                     strHtmlArry.push('<option selected="selected" value=' + communityId + '>' + communityName+'</option>');
