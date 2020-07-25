@@ -129,19 +129,71 @@ namespace RentHouse.Controllers
         }
         public ActionResult Index(long id)
         {
-            var house = HouseService.GetById(id);
-            if (house==null)
-            {
-                //return Json(new AjaxResult() {Status = "error", ErrorMsg = "房源获取失败"}); 这里写这个干嘛，是url又不是ajax,应该直接返回error页面
-                return View("Error",(object)"不存在的房源id");
-            }
+            #region 未使用缓存
+            //var house = HouseService.GetById(id);
+            //if (house==null)
+            //{
+            //    //return Json(new AjaxResult() {Status = "error", ErrorMsg = "房源获取失败"}); 这里写这个干嘛，是url又不是ajax,应该直接返回error页面
+            //    return View("Error",(object)"不存在的房源id");
+            //}
 
-            var housePics = HouseService.GetPics(house.Id);
-            var attachments = AttachmentService.GetById(house.Id);
-            HouseIndexModel model = new HouseIndexModel()
+            //var housePics = HouseService.GetPics(house.Id);
+            //var attachments = AttachmentService.GetById(house.Id);
+            //HouseIndexModel model = new HouseIndexModel()
+            //{
+            //    Attachments = attachments,House = house,HousePics = housePics
+            //}; 
+            #endregion
+            //使用asp.net内置缓存
+            #region 使用asp.net内置缓存
+            //string cacheKey = "HouseIndex_" + id;
+            ////先尝试去缓存中找
+            //HouseIndexModel model = (HouseIndexModel)HttpContext.Cache[cacheKey];
+            //if (model == null)
+            //{
+            //    var house = HouseService.GetById(id);
+            //    if (house == null)
+            //    {
+            //        //return Json(new AjaxResult() {Status = "error", ErrorMsg = "房源获取失败"}); 这里写这个干嘛，是url又不是ajax,应该直接返回error页面
+            //        return View("Error", (object)"不存在的房源id");
+            //    }
+
+            //    var housePics = HouseService.GetPics(house.Id);
+            //    var attachments = AttachmentService.GetById(house.Id);
+            //    model = new HouseIndexModel()
+            //    {
+            //        Attachments = attachments,
+            //        House = house,
+            //        HousePics = housePics
+            //    };
+            //    //存入缓存
+            //    HttpContext.Cache.Insert(cacheKey, model, null, DateTime.Now.AddMinutes(1), TimeSpan.Zero); 
+            //}
+            #endregion
+            //使用redis缓存
+            string cacheKey = "HouseIndex_" + id;
+            //先尝试去缓存中找
+            HouseIndexModel model = RedisHelper.GetValue<HouseIndexModel>(cacheKey);
+            if (model == null)
             {
-                Attachments = attachments,House = house,HousePics = housePics
-            };
+                var house = HouseService.GetById(id);
+                if (house == null)
+                {
+                    //return Json(new AjaxResult() {Status = "error", ErrorMsg = "房源获取失败"}); 这里写这个干嘛，是url又不是ajax,应该直接返回error页面
+                    return View("Error", (object)"不存在的房源id");
+                }
+
+                var housePics = HouseService.GetPics(house.Id);
+                var attachments = AttachmentService.GetById(house.Id);
+                model = new HouseIndexModel()
+                {
+                    Attachments = attachments,
+                    House = house,
+                    HousePics = housePics
+                };
+                //存入缓存
+                RedisHelper.SetValue(cacheKey,model,TimeSpan.FromMinutes(1));
+            }
             return View(model);
         }
         /// <summary>
