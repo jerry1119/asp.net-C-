@@ -11,6 +11,7 @@ using RentHouse.AdminWeb.Models;
 using RentHouse.Common;
 using RentHouse.DTO;
 using RentHouse.IService;
+using RentHouse.Models;
 using RentHouse.Web.Common;
 
 namespace RentHouse.AdminWeb.Controllers
@@ -116,6 +117,7 @@ namespace RentHouse.AdminWeb.Controllers
             var houseId = HouseService.AddNew(house);
             if (houseId>0)
             {
+                //生成房源查看的html文件
                 return Json(new AjaxResult() {Status = "ok"});
             }
 
@@ -236,6 +238,17 @@ namespace RentHouse.AdminWeb.Controllers
             }
             //不建议删除图片
             return Json(new AjaxResult() {Status = "ok"});
+        }
+
+        public void CreateStaticPages(long houseId)
+        {
+            HouseIndexModel model = new HouseIndexModel
+            {
+                Attachments = AttachmentService.GetById(houseId),
+                House = HouseService.GetById(houseId),
+                HousePics = HouseService.GetPics(houseId)
+            };
+            MVCHelper.RenderViewToString(this.ControllerContext, "", model);
         }
     }
 }

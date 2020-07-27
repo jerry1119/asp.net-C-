@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Specialized;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Web.Mvc;
@@ -14,7 +15,7 @@ namespace RentHouse.Web.Common
             StringBuilder sb = new StringBuilder();
             foreach (var key in modelState.Keys)
             {
-                if (modelState[key].Errors.Count<=0)
+                if (modelState[key].Errors.Count <= 0)
                 {
                     continue;
                 }
@@ -43,7 +44,7 @@ namespace RentHouse.Web.Common
         }
         // 修改 QueryString 中 name 的值为 value，如果不存在，则添加
         // NameValueCollection 存放的是 QueryString 中的键值对 
-        public static string UpdateQueryString(NameValueCollection nvc,string name,string value)
+        public static string UpdateQueryString(NameValueCollection nvc, string name, string value)
         {
             NameValueCollection newNvc = new NameValueCollection(nvc);
             if (newNvc.AllKeys.Contains(name))
@@ -66,6 +67,21 @@ namespace RentHouse.Web.Common
             }
 
             return ToQueryString(newNvc);
+        }
+
+        public static string RenderViewToString(ControllerContext context, string viewPath, object model = null)
+        {
+            ViewEngineResult viewEngineResult = ViewEngines.Engines.FindView(context, viewPath, null); 
+            if (viewEngineResult == null) 
+                throw new FileNotFoundException("View" + viewPath + "cannot be found.");
+            var view = viewEngineResult.View; 
+            context.Controller.ViewData.Model = model;
+            using (var sw = new StringWriter())
+            {
+                var ctx = new ViewContext(context, view, context.Controller.ViewData, context.Controller.TempData, sw);
+                view.Render(ctx, sw);
+                return sw.ToString();
+            }
         }
     }
 }
