@@ -25,3 +25,4 @@ F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.Common\bin\De
 F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.Common\obj\Debug\RentHouse.Common.csproj.CoreCompileInputs.cache
 F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.Common\obj\Debug\RentHouse.Common.dll
 F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.Common\obj\Debug\RentHouse.Common.pdb
+F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.Common\obj\Debug\RentHouse.Common.csprojAssemblyReference.cache
