@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using RentHouse.DTO;
 
-namespace RentHouse.Models
+namespace RentHouse.AdminWeb.Models
 {
     public class HouseIndexModel
     {

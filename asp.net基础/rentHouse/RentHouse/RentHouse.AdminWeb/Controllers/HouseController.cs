@@ -11,7 +11,6 @@ using RentHouse.AdminWeb.Models;
 using RentHouse.Common;
 using RentHouse.DTO;
 using RentHouse.IService;
-using RentHouse.Models;
 using RentHouse.Web.Common;
 
 namespace RentHouse.AdminWeb.Controllers
@@ -118,6 +117,7 @@ namespace RentHouse.AdminWeb.Controllers
             if (houseId>0)
             {
                 //生成房源查看的html文件
+                CreateStaticPages(houseId);
                 return Json(new AjaxResult() {Status = "ok"});
             }
 
@@ -186,6 +186,8 @@ namespace RentHouse.AdminWeb.Controllers
             house.TypeId = model.TypeId;
             house.TotalFloorCount = model.TotalFloorCount;
             HouseService.Update(house);
+            //编辑房源后，也生成静态页
+            CreateStaticPages(model.HouseId);
             return Json(new AjaxResult() { Status = "ok" });
         }
 
@@ -221,6 +223,8 @@ namespace RentHouse.AdminWeb.Controllers
 
             HouseService.AddNewHousePic(new HousePicDTO()
                 {HouseId = houseId, Url = path, ThumbUrl = trumbPath});
+
+            CreateStaticPages(houseId);//页面内容有变化，重新生成静态页
             return Json(new AjaxResult(){Status = "ok"});
         }
 
@@ -248,7 +252,19 @@ namespace RentHouse.AdminWeb.Controllers
                 House = HouseService.GetById(houseId),
                 HousePics = HouseService.GetPics(houseId)
             };
-            MVCHelper.RenderViewToString(this.ControllerContext, "", model);
+            var html =  MVCHelper.RenderViewToString(this.ControllerContext, "~/Views/House/StaticIndex.cshtml", model);
+            System.IO.File.WriteAllText(@"F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse\staticPages\" + houseId+".html", html);
+        }
+
+        public ActionResult RebuildAllStaticPages()
+        {
+            var houses = HouseService.GetAll();
+            foreach (var house in houses)
+            {
+                CreateStaticPages(house.Id);
+            }
+
+            return Json(new AjaxResult{Status = "ok"});
         }
     }
 }

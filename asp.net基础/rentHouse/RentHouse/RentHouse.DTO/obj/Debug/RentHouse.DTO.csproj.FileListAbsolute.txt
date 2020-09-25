@@ -25,3 +25,4 @@ F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.DTO\bin\Debug
 F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.DTO\obj\Debug\RentHouse.DTO.csproj.CoreCompileInputs.cache
 F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.DTO\obj\Debug\RentHouse.DTO.dll
 F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.DTO\obj\Debug\RentHouse.DTO.pdb
+F:\code2020\asp.net-C-\asp.net基础\rentHouse\RentHouse\RentHouse.DTO\obj\Debug\RentHouse.DTO.csprojAssemblyReference.cache
