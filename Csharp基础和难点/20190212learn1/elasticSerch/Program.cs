@@ -20,10 +20,11 @@ namespace elasticSerch
             //byte[] responseBytes = indexResponse.Body;
 
             //异步的方式
-            //var asyncIndexResponse = await lowlevelClient.IndexAsync<StringResponse>("people", "2", PostData.Serializable(person));
-            //string responseString = asyncIndexResponse.Body;
-            //Console.WriteLine(responseString);
-            //Console.ReadKey();
+            //如果不指定id，那么会每次添加都会自动生成一个id，就算是相同的数据，指定了的话，如果原先没有doc就会创建，已有的话就会update
+            var asyncIndexResponse = await lowlevelClient.IndexAsync<StringResponse>("people", "2", PostData.Serializable(person));
+            string responseString = asyncIndexResponse.Body;
+            Console.WriteLine(responseString);
+            Console.ReadKey();
 
             //search 搜索 
             var searchResponse = lowlevelClient.Search<StringResponse>("people", PostData.Serializable(new
@@ -34,9 +35,9 @@ namespace elasticSerch
                 {
                     match = new
                     {
-                        firstName = new
+                        LastName = new
                         {
-                            query = "li"
+                            query = "jie"
                         }
                     }
                 }

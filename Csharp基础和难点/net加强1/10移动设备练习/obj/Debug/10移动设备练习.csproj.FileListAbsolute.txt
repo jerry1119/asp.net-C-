@@ -1,6 +1,0 @@
-C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\10移动设备练习\bin\Debug\10移动设备练习.exe.config
-C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\10移动设备练习\bin\Debug\10移动设备练习.exe
-C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\10移动设备练习\bin\Debug\10移动设备练习.pdb
-C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\10移动设备练习\obj\Debug\10移动设备练习.csprojResolveAssemblyReference.cache
-C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\10移动设备练习\obj\Debug\10移动设备练习.exe
-C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\10移动设备练习\obj\Debug\10移动设备练习.pdb

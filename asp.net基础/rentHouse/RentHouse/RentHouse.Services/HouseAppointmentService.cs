@@ -119,7 +119,7 @@ namespace RentHouse.Services
             {
                 CommonService<HouseAppointmentEntity> cs = new CommonService<HouseAppointmentEntity>(ctx);
                 var pageData = cs.GetAll()
-                    .Include(h=>h.House)
+                    .Include(h=>h.House)     //这种include写法可读性太差,efcore可以用.include().theninclude()的方式
                     .Include(nameof(HouseAppointmentEntity.House)+"."+nameof(HouseEntity.Community))
                     .Include(nameof(HouseAppointmentEntity.House) + "." + nameof(HouseEntity.Community)+"."+nameof(CommunityEntity.Region))
                     .Include(h=>h.FollowAdminUser).AsNoTracking().Where(h =>

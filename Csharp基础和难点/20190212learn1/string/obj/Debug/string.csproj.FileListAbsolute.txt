@@ -1,7 +1,0 @@
-C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\string\bin\Debug\@string.exe.config
-C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\string\bin\Debug\@string.exe
-C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\string\bin\Debug\@string.pdb
-C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\string\obj\Debug\string.csprojAssemblyReference.cache
-C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\string\obj\Debug\string.csproj.CoreCompileInputs.cache
-C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\string\obj\Debug\@string.exe
-C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\string\obj\Debug\@string.pdb

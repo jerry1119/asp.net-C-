@@ -1,6 +1,0 @@
-C:\Users\hejie\documents\visual studio 2015\Projects\Net加强03\05out参数的使用\bin\Debug\05out参数的使用.exe.config
-C:\Users\hejie\documents\visual studio 2015\Projects\Net加强03\05out参数的使用\bin\Debug\05out参数的使用.exe
-C:\Users\hejie\documents\visual studio 2015\Projects\Net加强03\05out参数的使用\bin\Debug\05out参数的使用.pdb
-C:\Users\hejie\documents\visual studio 2015\Projects\Net加强03\05out参数的使用\obj\Debug\05out参数的使用.csprojResolveAssemblyReference.cache
-C:\Users\hejie\documents\visual studio 2015\Projects\Net加强03\05out参数的使用\obj\Debug\05out参数的使用.exe
-C:\Users\hejie\documents\visual studio 2015\Projects\Net加强03\05out参数的使用\obj\Debug\05out参数的使用.pdb

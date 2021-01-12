@@ -1,7 +1,0 @@
-C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\310匿名方法等\bin\Debug\310匿名方法等.exe.config
-C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\310匿名方法等\bin\Debug\310匿名方法等.exe
-C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\310匿名方法等\bin\Debug\310匿名方法等.pdb
-C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\310匿名方法等\obj\Debug\310匿名方法等.csprojAssemblyReference.cache
-C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\310匿名方法等\obj\Debug\310匿名方法等.csproj.CoreCompileInputs.cache
-C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\310匿名方法等\obj\Debug\310匿名方法等.exe
-C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\310匿名方法等\obj\Debug\310匿名方法等.pdb

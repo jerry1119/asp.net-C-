@@ -1,9 +1,0 @@
-C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\16剪刀石头布\bin\Debug\16剪刀石头布.exe.config
-C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\16剪刀石头布\bin\Debug\16剪刀石头布.exe
-C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\16剪刀石头布\bin\Debug\16剪刀石头布.pdb
-C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\16剪刀石头布\obj\Debug\16剪刀石头布.csprojResolveAssemblyReference.cache
-C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\16剪刀石头布\obj\Debug\_16剪刀石头布.Form1.resources
-C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\16剪刀石头布\obj\Debug\_16剪刀石头布.Properties.Resources.resources
-C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\16剪刀石头布\obj\Debug\16剪刀石头布.csproj.GenerateResource.Cache
-C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\16剪刀石头布\obj\Debug\16剪刀石头布.exe
-C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\16剪刀石头布\obj\Debug\16剪刀石头布.pdb

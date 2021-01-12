@@ -1,7 +1,0 @@
-C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\312异步模式\bin\Debug\312异步模式.exe.config
-C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\312异步模式\bin\Debug\312异步模式.exe
-C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\312异步模式\bin\Debug\312异步模式.pdb
-C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\312异步模式\obj\Debug\312异步模式.csprojAssemblyReference.cache
-C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\312异步模式\obj\Debug\312异步模式.csproj.CoreCompileInputs.cache
-C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\312异步模式\obj\Debug\312异步模式.exe
-C:\Users\Administrator\Documents\Visual Studio 2017\Projects\20190212learn1\312异步模式\obj\Debug\312异步模式.pdb

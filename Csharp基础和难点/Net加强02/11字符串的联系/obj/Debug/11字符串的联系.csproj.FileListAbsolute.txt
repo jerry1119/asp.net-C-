@@ -1,6 +1,0 @@
-C:\Users\hejie\documents\visual studio 2015\Projects\Net加强02\11字符串的联系\bin\Debug\11字符串的联系.exe.config
-C:\Users\hejie\documents\visual studio 2015\Projects\Net加强02\11字符串的联系\bin\Debug\11字符串的联系.exe
-C:\Users\hejie\documents\visual studio 2015\Projects\Net加强02\11字符串的联系\bin\Debug\11字符串的联系.pdb
-C:\Users\hejie\documents\visual studio 2015\Projects\Net加强02\11字符串的联系\obj\Debug\11字符串的联系.csprojResolveAssemblyReference.cache
-C:\Users\hejie\documents\visual studio 2015\Projects\Net加强02\11字符串的联系\obj\Debug\11字符串的联系.exe
-C:\Users\hejie\documents\visual studio 2015\Projects\Net加强02\11字符串的联系\obj\Debug\11字符串的联系.pdb

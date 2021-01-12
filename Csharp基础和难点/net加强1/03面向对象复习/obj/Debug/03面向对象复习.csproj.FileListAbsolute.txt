@@ -1,6 +1,0 @@
-C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\03面向对象复习\bin\Debug\03面向对象复习.exe.config
-C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\03面向对象复习\bin\Debug\03面向对象复习.exe
-C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\03面向对象复习\bin\Debug\03面向对象复习.pdb
-C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\03面向对象复习\obj\Debug\03面向对象复习.csprojResolveAssemblyReference.cache
-C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\03面向对象复习\obj\Debug\03面向对象复习.exe
-C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\03面向对象复习\obj\Debug\03面向对象复习.pdb

@@ -1,9 +1,0 @@
-c:\users\hejie\documents\visual studio 2015\Projects\MOOC\01说你好\bin\Debug\01说你好.exe.config
-c:\users\hejie\documents\visual studio 2015\Projects\MOOC\01说你好\bin\Debug\01说你好.exe
-c:\users\hejie\documents\visual studio 2015\Projects\MOOC\01说你好\bin\Debug\01说你好.pdb
-c:\users\hejie\documents\visual studio 2015\Projects\MOOC\01说你好\obj\Debug\01说你好.csprojResolveAssemblyReference.cache
-c:\users\hejie\documents\visual studio 2015\Projects\MOOC\01说你好\obj\Debug\_01说你好.Form1.resources
-c:\users\hejie\documents\visual studio 2015\Projects\MOOC\01说你好\obj\Debug\_01说你好.Properties.Resources.resources
-c:\users\hejie\documents\visual studio 2015\Projects\MOOC\01说你好\obj\Debug\01说你好.csproj.GenerateResource.Cache
-c:\users\hejie\documents\visual studio 2015\Projects\MOOC\01说你好\obj\Debug\01说你好.exe
-c:\users\hejie\documents\visual studio 2015\Projects\MOOC\01说你好\obj\Debug\01说你好.pdb

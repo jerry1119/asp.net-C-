@@ -1,9 +1,0 @@
-C:\Users\hejie\documents\visual studio 2015\Projects\MOOC\05屏保程序\bin\Debug\05屏保程序.exe.config
-C:\Users\hejie\documents\visual studio 2015\Projects\MOOC\05屏保程序\bin\Debug\05屏保程序.exe
-C:\Users\hejie\documents\visual studio 2015\Projects\MOOC\05屏保程序\bin\Debug\05屏保程序.pdb
-C:\Users\hejie\documents\visual studio 2015\Projects\MOOC\05屏保程序\obj\Debug\05屏保程序.csprojResolveAssemblyReference.cache
-C:\Users\hejie\documents\visual studio 2015\Projects\MOOC\05屏保程序\obj\Debug\_05屏保程序.Form1.resources
-C:\Users\hejie\documents\visual studio 2015\Projects\MOOC\05屏保程序\obj\Debug\_05屏保程序.Properties.Resources.resources
-C:\Users\hejie\documents\visual studio 2015\Projects\MOOC\05屏保程序\obj\Debug\05屏保程序.csproj.GenerateResource.Cache
-C:\Users\hejie\documents\visual studio 2015\Projects\MOOC\05屏保程序\obj\Debug\05屏保程序.exe
-C:\Users\hejie\documents\visual studio 2015\Projects\MOOC\05屏保程序\obj\Debug\05屏保程序.pdb

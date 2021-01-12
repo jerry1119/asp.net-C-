@@ -1,6 +1,0 @@
-C:\Users\hejie\documents\visual studio 2015\Projects\Net加强04\09提取页面的所有邮箱\bin\Debug\09提取页面的所有邮箱.exe.config
-C:\Users\hejie\documents\visual studio 2015\Projects\Net加强04\09提取页面的所有邮箱\bin\Debug\09提取页面的所有邮箱.exe
-C:\Users\hejie\documents\visual studio 2015\Projects\Net加强04\09提取页面的所有邮箱\bin\Debug\09提取页面的所有邮箱.pdb
-C:\Users\hejie\documents\visual studio 2015\Projects\Net加强04\09提取页面的所有邮箱\obj\Debug\09提取页面的所有邮箱.csprojResolveAssemblyReference.cache
-C:\Users\hejie\documents\visual studio 2015\Projects\Net加强04\09提取页面的所有邮箱\obj\Debug\09提取页面的所有邮箱.exe
-C:\Users\hejie\documents\visual studio 2015\Projects\Net加强04\09提取页面的所有邮箱\obj\Debug\09提取页面的所有邮箱.pdb

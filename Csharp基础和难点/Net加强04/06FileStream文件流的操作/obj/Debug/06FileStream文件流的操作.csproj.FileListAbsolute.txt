@@ -1,6 +1,0 @@
-C:\Users\hejie\Documents\Visual Studio 2015\Projects\Net加强04\06FileStream文件流的操作\bin\Debug\06FileStream文件流的操作.exe.config
-C:\Users\hejie\Documents\Visual Studio 2015\Projects\Net加强04\06FileStream文件流的操作\bin\Debug\06FileStream文件流的操作.exe
-C:\Users\hejie\Documents\Visual Studio 2015\Projects\Net加强04\06FileStream文件流的操作\bin\Debug\06FileStream文件流的操作.pdb
-C:\Users\hejie\Documents\Visual Studio 2015\Projects\Net加强04\06FileStream文件流的操作\obj\Debug\06FileStream文件流的操作.csprojResolveAssemblyReference.cache
-C:\Users\hejie\Documents\Visual Studio 2015\Projects\Net加强04\06FileStream文件流的操作\obj\Debug\06FileStream文件流的操作.exe
-C:\Users\hejie\Documents\Visual Studio 2015\Projects\Net加强04\06FileStream文件流的操作\obj\Debug\06FileStream文件流的操作.pdb

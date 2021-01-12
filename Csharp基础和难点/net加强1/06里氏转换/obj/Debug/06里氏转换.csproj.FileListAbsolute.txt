@@ -1,6 +1,0 @@
-C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\06里氏转换\bin\Debug\06里氏转换.exe.config
-C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\06里氏转换\bin\Debug\06里氏转换.exe
-C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\06里氏转换\bin\Debug\06里氏转换.pdb
-C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\06里氏转换\obj\Debug\06里氏转换.csprojResolveAssemblyReference.cache
-C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\06里氏转换\obj\Debug\06里氏转换.exe
-C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\06里氏转换\obj\Debug\06里氏转换.pdb

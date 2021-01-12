@@ -1,5 +1,0 @@
-C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\15接口登记案例\bin\Debug\15接口登记案例.exe.config
-C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\15接口登记案例\bin\Debug\15接口登记案例.exe
-C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\15接口登记案例\bin\Debug\15接口登记案例.pdb
-C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\15接口登记案例\obj\Debug\15接口登记案例.exe
-C:\Users\hejie\Documents\Visual Studio 2015\Projects\net加强1\15接口登记案例\obj\Debug\15接口登记案例.pdb

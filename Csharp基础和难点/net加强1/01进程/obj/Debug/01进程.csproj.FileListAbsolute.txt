@@ -1,6 +1,0 @@
-c:\users\hejie\documents\visual studio 2015\Projects\net加强1\01进程\bin\Debug\01进程.exe.config
-C:\Users\hejie\documents\visual studio 2015\Projects\net加强1\01进程\bin\Debug\01进程.exe
-C:\Users\hejie\documents\visual studio 2015\Projects\net加强1\01进程\bin\Debug\01进程.pdb
-C:\Users\hejie\documents\visual studio 2015\Projects\net加强1\01进程\obj\Debug\01进程.csprojResolveAssemblyReference.cache
-C:\Users\hejie\documents\visual studio 2015\Projects\net加强1\01进程\obj\Debug\01进程.exe
-C:\Users\hejie\documents\visual studio 2015\Projects\net加强1\01进程\obj\Debug\01进程.pdb

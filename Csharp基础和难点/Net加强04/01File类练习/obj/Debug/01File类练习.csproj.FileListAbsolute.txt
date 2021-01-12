@@ -1,6 +1,0 @@
-c:\users\hejie\documents\visual studio 2015\Projects\Net加强04\01File类练习\bin\Debug\01File类练习.exe.config
-c:\users\hejie\documents\visual studio 2015\Projects\Net加强04\01File类练习\bin\Debug\01File类练习.exe
-c:\users\hejie\documents\visual studio 2015\Projects\Net加强04\01File类练习\bin\Debug\01File类练习.pdb
-c:\users\hejie\documents\visual studio 2015\Projects\Net加强04\01File类练习\obj\Debug\01File类练习.csprojResolveAssemblyReference.cache
-c:\users\hejie\documents\visual studio 2015\Projects\Net加强04\01File类练习\obj\Debug\01File类练习.exe
-c:\users\hejie\documents\visual studio 2015\Projects\Net加强04\01File类练习\obj\Debug\01File类练习.pdb

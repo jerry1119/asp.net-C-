@@ -1,5 +1,0 @@
-c:\users\hejie\documents\visual studio 2015\Projects\Net加强06\04多播委托\bin\Debug\04多播委托.exe.config
-c:\users\hejie\documents\visual studio 2015\Projects\Net加强06\04多播委托\bin\Debug\04多播委托.exe
-c:\users\hejie\documents\visual studio 2015\Projects\Net加强06\04多播委托\bin\Debug\04多播委托.pdb
-c:\users\hejie\documents\visual studio 2015\Projects\Net加强06\04多播委托\obj\Debug\04多播委托.exe
-c:\users\hejie\documents\visual studio 2015\Projects\Net加强06\04多播委托\obj\Debug\04多播委托.pdb
